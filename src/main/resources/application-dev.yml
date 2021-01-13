@@ -1,0 +1,44 @@
+server:
+  port: 8010
+  servlet:
+    context-path:
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/
+      suffix: .jsp
+    datasource:
+      name: mywebpage
+      url: jdbc:mysql://localhost:3306/mywebpage?serverTimezone=UTC   #纠正mysql8.0可能出现的时区错误
+      username: root
+      password: azsx18327946
+      driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
+      type: com.alibaba.druid.pool.DruidDataSource    # 切换数据源
+      druid:
+        filters: log4j                                        # stat监控统计  log4j日志记录  wall防止sql注入
+  devtools:                         # 如果存在多个项目，则要更改默认的热部署端口
+    livereload:
+      port: 35730
+  mail:
+    username: 1596253661@qq.com
+    password: sjjvxuahzcrrigbh
+    host: smtp.qq.com
+  redis:
+    host: 10.102.19.38
+    port: 6379
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      username: root
+      password: Ostrich5yw
+      authentication-database: admin
+      database: workproject
+#  thymeleaf:                       # thymleaf默认搜索templates目录，我们可以更改这个目录
+#    prefix: classpath:/static/
+mybatis:
+  mapper-locations: classpath:Mapper/*.xml  #配置映射文件
+  type-aliases-package: com.example.workproject.entity.Mapper #配置实体类
+#logging:      #展示数据库日志文件  可以被druid取代
+#  level:
+#    com.example.mywebpage.dao: DEBUG

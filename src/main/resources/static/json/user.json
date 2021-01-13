@@ -1,0 +1,25 @@
+{
+  "user1": [
+    {
+      "title": "江西",
+      "children": [
+        {
+          "title": "南昌",
+          "children": [
+            {
+              "title": "高新区"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "陕西",
+      "children": [
+        {
+          "title": "西安"
+        }
+      ]
+    }
+  ]
+}
