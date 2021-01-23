@@ -34,6 +34,9 @@ spring:
       password: Ostrich5yw
       authentication-database: admin
       database: workproject
+  web:
+    resources:
+      static-locations: classpath:static/
 #  thymeleaf:                       # thymleaf默认搜索templates目录，我们可以更改这个目录
 #    prefix: classpath:/static/
 mybatis:

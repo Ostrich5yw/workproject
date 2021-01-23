@@ -23,11 +23,11 @@ public class testController {
     @Resource
     private MongoTemplate mongoTemplate;
 
-    @RequestMapping("/index")
+    @RequestMapping("/test")
     public String test(){
         return "test";
     }
-    @RequestMapping("/index2")
+    @RequestMapping("/test2")
     public String test2(Model model){
         Bson bson = eq("name", "user1");
         Query query = new Query(Criteria.where("name").is("user1"));

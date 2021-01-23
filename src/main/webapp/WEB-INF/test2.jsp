@@ -37,9 +37,11 @@
 
         //渲染
         var inst1 = tree.render({
-            elem: '#test1'  //绑定元素
+            elem: '#test1' , //绑定元素
+            edit: ['add', 'del']
             // ,data: data.user1
-            ,data: data
+            ,data: data,
+
         });
     });
 </script>

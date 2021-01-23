@@ -30,7 +30,7 @@
     </div>
 </div>
 <!-- 操作列 -->
-<script type="text/html" id="auth-state">
+<script type="text/html" id="tbBar">
     <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="edit">修改</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
@@ -45,14 +45,22 @@
 
         // 渲染表格
         layer.load(2);
-        treetable.render({
+        var tt = treetable.render({
             treeColIndex: 1,
             treeSpid: -1,
             treeIdName: 'authorityId',
             treePidName: 'parentId',
             elem: '#munu-table',
             url: '../api/menus.json',
-            page: false,
+            tree: {
+                iconIndex: 1,
+                isPidData: true,
+                idName: 'authorityId',
+                pidName: 'parentId',
+                arrowType: 'arrow2',
+                getIcon: 'ew-tree-icon-style2'
+            },
+            toolbar: 'default',
             cols: [[
                 {type: 'numbers'},
                 {field: 'authorityName', minWidth: 200, title: '权限名称'},
@@ -71,7 +79,7 @@
                         }
                     }, title: '类型'
                 },
-                {templet: '#auth-state', width: 120, align: 'center', title: '操作'}
+                {align: 'center', toolbar: '#tbBar', title: '操作', width: 120}
             ]],
             done: function () {
                 layer.closeAll('loading');
@@ -79,19 +87,19 @@
         });
 
         $('#btn-expand').click(function () {
-            treetable.expandAll('#munu-table');
+            tt.expandAll('#munu-table');
         });
 
         $('#btn-fold').click(function () {
-            treetable.foldAll('#munu-table');
+            tt.foldAll('#munu-table');
         });
 
         //监听工具条
-        table.on('tool(munu-table)', function (obj) {
+        treetable.on('tool(munu-table)', function (obj) {
             var data = obj.data;
             var layEvent = obj.event;
-
             if (layEvent === 'del') {
+                console.log(tt.options.data)
                 layer.msg('删除' + data.id);
             } else if (layEvent === 'edit') {
                 layer.msg('修改' + data.id);
