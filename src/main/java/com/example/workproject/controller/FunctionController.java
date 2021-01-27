@@ -24,7 +24,7 @@ public class FunctionController {
         sb.append(" ]\n" +
                 "}");
         toJsonUtil ts = new toJsonUtil();
-        ts.saveAsFileWriter(sb.toString(), "E:\\IdeaProjects\\workproject\\src\\main\\resources\\static\\layuimini\\api\\test.json");
+        ts.saveAsFileWriter(sb.toString(), "/Users/koooooooo5/IdeaProjects/workproject/src/main/resources/static/layuimini/api/test.json");
 //        Gson gson = new Gson();
 //        TreeNode temp = gson.fromJson(res, TreeNode.class);
         return "Page/mainmenu";

@@ -1581,7 +1581,6 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
         if (index === undefined) index = this.getIndexById(id);
         var indexList = (typeof index === 'number' ? [index] : index.split('-'));
         var d = this.options.data;
-        console.log(indexList)
         if (indexList.length > 1) {
             for (var i = 0; i < indexList.length - 1; i++) {
                 d = d[parseInt(indexList[i])][this.options.tree.childName];

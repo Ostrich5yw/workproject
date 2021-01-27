@@ -30,9 +30,9 @@ spring:
     mongodb:
       host: 127.0.0.1
       port: 27017
-      username: root
-      password: Ostrich5yw
-      authentication-database: admin
+#      username: root
+#      password: Ostrich5yw
+#      authentication-database: admin
       database: workproject
   web:
     resources:
