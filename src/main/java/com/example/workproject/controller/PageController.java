@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PageController {
     @RequestMapping("/")
     public String MainPage(){
-        return "Page/mainmenu";
+        return "iframe/index.html";
+    }
+    @RequestMapping("/authorities")
+    public String authoritiesPage(){
+        return "iframe/page/authorities.html";
     }
 }

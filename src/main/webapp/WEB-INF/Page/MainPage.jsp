@@ -1,173 +1,254 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: PanGPanG5
-  Date: 2021/1/15
-  Time: 15:33
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>MainPage</title>
-    <meta name="renderer" content="webkit">
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Access-Control-Allow-Origin" content="*">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="icon" href="layuimini/images/favicon.ico">
-    <link rel="stylesheet" href="layuimini/lib/layui-v2.5.5/css/layui.css">
-    <link rel="stylesheet" href="layuimini/css/layuimini.css?v=2.0.4.2">
-    <link rel="stylesheet" href="layuimini/css/themes/default.css">
-    <link rel="stylesheet" href="layuimini/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="assets/images/favicon.ico" rel="icon">
+    <title>EasyWeb后台管理模板</title>
+    <link rel="stylesheet" href="assets/libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="assets/module/admin.css?v=318"/>
     <!--[if lt IE 9]>
-    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
-    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style id="layuimini-bg-color">
-    </style>
 </head>
-<body class="layui-layout-body layuimini-all">
+<body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
+    <!-- 头部 -->
+    <div class="layui-header">
+        <div class="layui-logo">
+            <img src="assets/images/logo.png"/>
+            <cite>&nbsp;EasyWeb iframe</cite>
+        </div>
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item" lay-unselect>
+                <a ew-event="flexible" title="侧边伸缩"><i class="layui-icon layui-icon-shrink-right"></i></a>
+            </li>
+            <li class="layui-nav-item" lay-unselect>
+                <a ew-event="refresh" title="刷新"><i class="layui-icon layui-icon-refresh-3"></i></a>
+            </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item" lay-unselect>
+                <a ew-event="message" title="消息">
+                    <i class="layui-icon layui-icon-notice"></i>
+                    <span class="layui-badge-dot"></span>
+                </a>
+            </li>
+            <li class="layui-nav-item" lay-unselect>
+                <a ew-event="note" title="便签"><i class="layui-icon layui-icon-note"></i></a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs" lay-unselect>
+                <a ew-event="fullScreen" title="全屏"><i class="layui-icon layui-icon-screen-full"></i></a>
+            </li>
+            <li class="layui-nav-item layui-hide-xs" lay-unselect>
+                <a ew-event="lockScreen" title="锁屏"><i class="layui-icon layui-icon-password"></i></a>
+            </li>
+            <li class="layui-nav-item" lay-unselect>
+                <a>
+                    <img src="assets/images/head.jpg" class="layui-nav-img">
+                    <cite>管理员</cite>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd lay-unselect><a ew-href="page/template/user-info.html">个人中心</a></dd>
+                    <dd lay-unselect><a ew-event="psw">修改密码</a></dd>
+                    <hr>
+                    <dd lay-unselect><a ew-event="logout" data-url="page/template/login/login.html">退出</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item" lay-unselect>
+                <a ew-event="theme" title="主题"><i class="layui-icon layui-icon-more-vertical"></i></a>
+            </li>
+        </ul>
+    </div>
 
-    <div class="layui-header header">
-        <div class="layui-logo layuimini-logo"></div>
-
-        <div class="layuimini-header-content">
-            <a>
-                <div class="layuimini-tool"><i title="展开" class="fa fa-outdent" data-side-fold="1"></i></div>
-            </a>
-
-            <!--电脑端头部菜单-->
-            <ul class="layui-nav layui-layout-left layuimini-header-menu layuimini-menu-header-pc layuimini-pc-show">
-            </ul>
-
-            <!--手机端头部菜单-->
-            <ul class="layui-nav layui-layout-left layuimini-header-menu layuimini-mobile-show">
+    <!-- 侧边栏 -->
+    <div class="layui-side">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree arrow2" lay-filter="admin-side-nav" lay-shrink="_all">
                 <li class="layui-nav-item">
-                    <a href="javascript:;"><i class="fa fa-list-ul"></i> 选择模块</a>
-                    <dl class="layui-nav-child layuimini-menu-header-mobile">
+                    <a><i class="layui-icon layui-icon-home"></i>&emsp;<cite>Dashboard</cite></a>
+                    <dl class="layui-nav-child">
+                        <dd><a lay-href="page/console/workplace.html">工作台</a></dd>
+                        <dd><a lay-href="page/console/console.html">控制台</a></dd>
+                        <dd><a lay-href="page/console/dashboard.html">分析页</a></dd>
                     </dl>
                 </li>
-            </ul>
-
-            <ul class="layui-nav layui-layout-right">
-
-                <li class="layui-nav-item" lay-unselect>
-                    <a href="javascript:;" data-refresh="刷新"><i class="fa fa-refresh"></i></a>
+                <li class="layui-nav-item">
+                    <a><i class="layui-icon layui-icon-set"></i>&emsp;<cite>系统管理</cite></a>
+                    <dl class="layui-nav-child">
+                        <dd><a lay-href="page/system/user.html">用户管理</a></dd>
+                        <dd><a lay-href="page/system/role.html">角色管理</a></dd>
+                        <dd><a lay-href="page/system/authorities.html">权限管理</a></dd>
+                        <dd><a lay-href="page/system/dictionary.html">字典管理</a></dd>
+                        <dd><a lay-href="page/system/organization.html">机构管理</a></dd>
+                        <dd><a lay-href="page/system/login-record.html">登录日志</a></dd>
+                    </dl>
                 </li>
-                <li class="layui-nav-item" lay-unselect>
-                    <a href="javascript:;" data-clear="清理" class="layuimini-clear                                                                                  "><i class="fa fa-trash-o"></i></a>
-                </li>
-                <li class="layui-nav-item mobile layui-hide-xs" lay-unselect>
-                    <a href="javascript:;" data-check-screen="full"><i class="fa fa-arrows-alt"></i></a>
-                </li>
-                <li class="layui-nav-item layuimini-setting">
-                    <a href="javascript:;">admin</a>
+                <li class="layui-nav-item">
+                    <a><i class="layui-icon layui-icon-template"></i>&emsp;<cite>模板页面</cite></a>
                     <dl class="layui-nav-child">
                         <dd>
-                            <a href="javascript:;" layuimini-content-href="page/user-setting.html" data-title="基本资料" data-icon="fa fa-gears">基本资料<span class="layui-badge-dot"></span></a>
+                            <a>表单页</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="page/template/form/form-basic.html">基础表单</a></dd>
+                                <dd><a lay-href="page/template/form/form-advance.html">复杂表单</a></dd>
+                                <dd><a lay-href="page/template/form/form-step.html">分步表单</a></dd>
+                            </dl>
                         </dd>
                         <dd>
-                            <a href="javascript:;" layuimini-content-href="page/user-password.html" data-title="修改密码" data-icon="fa fa-gears">修改密码</a>
+                            <a>列表页</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="page/template/table/table-basic.html">数据表格</a></dd>
+                                <dd><a lay-href="page/template/table/table-advance.html">复杂表格</a></dd>
+                                <dd><a lay-href="page/template/table/table-img.html">图片表格</a></dd>
+                                <dd><a lay-href="page/template/table/table-card.html">卡片列表</a></dd>
+                            </dl>
                         </dd>
                         <dd>
-                            <hr>
+                            <a>错误页</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="page/template/error/error-500.html">500</a></dd>
+                                <dd><a lay-href="page/template/error/error-404.html">404</a></dd>
+                                <dd><a lay-href="page/template/error/error-403.html">403</a></dd>
+                            </dl>
                         </dd>
                         <dd>
-                            <a href="javascript:;" class="login-out">退出登录</a>
+                            <a>登录页</a>
+                            <dl class="layui-nav-child">
+                                <dd><a href="page/template/login/login.html" target="_blank">登录页</a></dd>
+                                <dd><a href="page/template/login/reg.html" target="_blank">注册页</a></dd>
+                                <dd><a href="page/template/login/forget.html" target="_blank">忘记密码</a></dd>
+                            </dl>
+                        </dd>
+                        <dd><a lay-href="page/template/user-info.html">个人中心</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a><i class="layui-icon layui-icon-component"></i>&emsp;<cite>扩展组件</cite></a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a>常用组件</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="page/plugin/basic/dialog.html">弹窗扩展</a></dd>
+                                <dd><a lay-href="page/plugin/basic/dropdown.html">下拉菜单</a></dd>
+                                <dd><a lay-href="page/plugin/basic/notice.html">消息通知</a></dd>
+                                <dd><a lay-href="page/plugin/basic/tagsInput.html">标签输入</a></dd>
+                                <dd><a lay-href="page/plugin/basic/cascader.html">级联选择</a></dd>
+                                <dd><a lay-href="page/plugin/basic/steps.html">步骤条</a></dd>
+                            </dl>
+                        </dd>
+                        <dd>
+                            <a>进阶组件</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="page/plugin/advance/printer.html">打印插件</a></dd>
+                                <dd><a lay-href="page/plugin/advance/split.html">分割面板</a></dd>
+                                <dd><a lay-href="page/plugin/advance/formX.html">表单扩展</a></dd>
+                                <dd><a lay-href="page/plugin/advance/tableX.html">表格扩展</a></dd>
+                                <dd><a lay-href="page/plugin/advance/dataGrid.html">数据列表</a></dd>
+                                <dd><a lay-href="page/plugin/advance/contextMenu.html">鼠标右键</a></dd>
+                            </dl>
+                        </dd>
+                        <dd>
+                            <a>其他组件</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="page/plugin/other/circleProgress.html">圆形进度条</a></dd>
+                                <dd><a lay-href="page/plugin/other/editor.html">富文本编辑</a></dd>
+                                <dd><a lay-href="page/plugin/other/mousewheel.html">鼠标滚轮</a></dd>
+                                <dd><a lay-href="page/plugin/other/other.html">更多组件</a></dd>
+                            </dl>
+                        </dd>
+                        <dd><a lay-href="page/plugin/more.html">更多扩展</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a><i class="layui-icon layui-icon-app"></i>&emsp;<cite>经典实例</cite></a>
+                    <dl class="layui-nav-child">
+                        <dd><a lay-href="page/example/dialog.html">弹窗实例</a></dd>
+                        <dd><a lay-href="page/example/course.html">课程管理</a></dd>
+                        <dd><a lay-href="page/example/calendar.html">排课管理</a></dd>
+                        <dd><a lay-href="page/example/question.html">添加试题</a></dd>
+                        <dd><a lay-href="page/example/file.html">文件管理</a></dd>
+                        <dd><a lay-href="page/example/table-crud.html">表格CRUD</a></dd>
+                        <dd><a href="page/example/side-more.html" target="_blank">多系统模式</a></dd>
+                        <dd><a href="page/example/side-ajax.html" target="_blank">Ajax侧边栏</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a><i class="layui-icon layui-icon-release"></i>&emsp;<cite>LayUI组件</cite></a>
+                    <dl class="layui-nav-child">
+                        <dd><a lay-href="page/plugin/other/layui.html">组件演示</a></dd>
+                        <dd><a lay-href="https://www.layui.com/doc/element/button.html#use">layui文档</a></dd>
+                        <dd><a lay-href="https://layer.layui.com/">layer弹窗</a></dd>
+                        <dd><a lay-href="https://www.layui.com/laydate/">laydate日期</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a><i class="layui-icon layui-icon-unlink"></i>&emsp;<cite>多级菜单</cite></a>
+                    <dl class="layui-nav-child">
+                        <dd><a>二级菜单</a></dd>
+                        <dd>
+                            <a>二级菜单</a>
+                            <dl class="layui-nav-child">
+                                <dd><a lay-href="javascript:layer.msg('Hello!');">三级菜单</a></dd>
+                                <dd>
+                                    <a>三级菜单</a>
+                                    <dl class="layui-nav-child">
+                                        <dd><a lay-href="javascript:;">四级菜单</a></dd>
+                                        <dd>
+                                            <a>四级菜单</a>
+                                            <dl class="layui-nav-child">
+                                                <dd><a>五级菜单</a></dd>
+                                                <dd>
+                                                    <a lay-href="https://baidu.com">百度一下</a>
+                                                </dd>
+                                            </dl>
+                                        </dd>
+                                    </dl>
+                                </dd>
+                            </dl>
                         </dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item layuimini-select-bgcolor" lay-unselect>
-                    <a href="javascript:;" data-bgcolor="配色方案"><i class="fa fa-ellipsis-v"></i></a>
+                <li class="layui-nav-item">
+                    <a lay-href="//baidu.com"><i class="layui-icon layui-icon-unlink"></i>&emsp;<cite>一级菜单</cite></a>
                 </li>
             </ul>
         </div>
     </div>
 
-    <!--无限极左侧菜单-->
-    <div class="layui-side layui-bg-black layuimini-menu-left">
-    </div>
-
-    <!--初始化加载层-->
-    <div class="layuimini-loader">
-        <div class="layuimini-loader-inner"></div>
-    </div>
-
-    <!--手机端遮罩层-->
-    <div class="layuimini-make"></div>
-
-    <!-- 移动导航 -->
-    <div class="layuimini-site-mobile"><i class="layui-icon"></i></div>
-
-    <div class="layui-body">
-
-        <div class="layuimini-tab layui-tab-rollTool layui-tab" lay-filter="layuiminiTab" lay-allowclose="true">
-            <ul class="layui-tab-title">
-                <li class="layui-this" id="layuiminiHomeTabId" lay-id=""></li>
-            </ul>
-            <div class="layui-tab-control">
-                <li class="layuimini-tab-roll-left layui-icon layui-icon-left"></li>
-                <li class="layuimini-tab-roll-right layui-icon layui-icon-right"></li>
-                <li class="layui-tab-tool layui-icon layui-icon-down">                    <ul class="layui-nav close-box">
-                    <li class="layui-nav-item">
-                        <a href="javascript:;"><span class="layui-nav-more"></span></a>
-                        <dl class="layui-nav-child">
-                            <dd><a href="javascript:;" layuimini-tab-close="current">关 闭 当 前</a></dd>
-                            <dd><a href="javascript:;" layuimini-tab-close="other">关 闭 其 他</a></dd>
-                            <dd><a href="javascript:;" layuimini-tab-close="all">关 闭 全 部</a></dd>
-                        </dl>
-                    </li>
-                </ul>
-                </li>
-            </div>
-            <div class="layui-tab-content">
-                <div id="layuiminiHomeTabIframe" class="layui-tab-item layui-show"></div>
-            </div>
-        </div>
-
+    <!-- 主体部分 -->
+    <div class="layui-body"></div>
+    <!-- 底部 -->
+    <div class="layui-footer layui-text">
+        copyright © 2020 <a href="http://easyweb.vip" target="_blank">easyweb.vip</a> all rights reserved.
+        <span class="pull-right">Version 3.1.8</span>
     </div>
 </div>
-<script src="layuimini/lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
-<script src="layuimini/js/lay-config.js?v=2.0.0" charset="utf-8"></script>
+
+<!-- 加载动画 -->
+<div class="page-loading">
+    <div class="ball-loader">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</div>
+
+<!-- js部分 -->
+<script type="text/javascript" src="assets/libs/layui/layui.js"></script>
+<script type="text/javascript" src="assets/js/common.js?v=318"></script>
 <script>
-    layui.use(['jquery', 'layer', 'miniAdmin','miniTongji'], function () {
-        var $ = layui.jquery,
-            layer = layui.layer,
-            miniAdmin = layui.miniAdmin,
-            miniTongji = layui.miniTongji;
+    layui.use(['index'], function () {
+        var $ = layui.jquery;
+        var index = layui.index;
 
-        var options = {
-            iniUrl: "layuimini/api/init.json",    // 初始化接口
-            clearUrl: "layuimini/api/clear.json", // 缓存清理接口
-            urlHashLocation: true,      // 是否打开hash定位
-            bgColorDefault: false,      // 主题默认配置
-            multiModule: true,          // 是否开启多模块
-            menuChildOpen: false,       // 是否默认展开菜单
-            loadingTime: 0,             // 初始化加载时间
-            pageAnim: true,             // iframe窗口动画
-            maxTabNum: 20,              // 最大的tab打开数量
-        };
-        miniAdmin.render(options);
-
-        // 百度统计代码，只统计指定域名
-        miniTongji.render({
-            specific: true,
-            domains: [
-                '99php.cn',
-                'layuimini.99php.cn',
-                'layuimini-onepage.99php.cn',
-            ],
+        // 默认加载主页
+        index.loadHome({
+            menuPath: 'page/console/workplace.html',
+            menuName: '<i class="layui-icon layui-icon-home"></i>'
         });
 
-        $('.login-out').on("click", function () {
-            layer.msg('退出登录成功', function () {
-                window.location = 'page/login-3.html';
-            });
-        });
     });
 </script>
 </body>
