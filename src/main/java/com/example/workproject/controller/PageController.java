@@ -13,4 +13,8 @@ public class PageController {
     public String authoritiesPage(){
         return "iframe/page/authorities.html";
     }
+    @RequestMapping("/new")
+    public String newPage(){
+        return "iframe/page/new.html";
+    }
 }

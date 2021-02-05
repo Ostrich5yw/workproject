@@ -99,19 +99,19 @@
                         <input name="menuUrl" placeholder="请输入菜单url" class="layui-input"/>
                     </div>
                 </div>
-<!--                <div class="layui-form-item">-->
-<!--                    <label class="layui-form-label">菜单图标:</label>-->
-<!--                    <div class="layui-input-block">-->
-<!--                        <input name="menuIcon" placeholder="请输入菜单图标" class="layui-input"/>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="layui-form-item">-->
-<!--                    <label class="layui-form-label layui-form-required">排序号:</label>-->
-<!--                    <div class="layui-input-block">-->
-<!--                        <input name="orderNumber" placeholder="请输入排序号" type="number" class="layui-input"-->
-<!--                               lay-verType="tips" lay-verify="required|number" required/>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="layui-form-item">-->
+                <!--                    <label class="layui-form-label">菜单图标:</label>-->
+                <!--                    <div class="layui-input-block">-->
+                <!--                        <input name="menuIcon" placeholder="请输入菜单图标" class="layui-input"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="layui-form-item">-->
+                <!--                    <label class="layui-form-label layui-form-required">排序号:</label>-->
+                <!--                    <div class="layui-input-block">-->
+                <!--                        <input name="orderNumber" placeholder="请输入排序号" type="number" class="layui-input"-->
+                <!--                               lay-verType="tips" lay-verify="required|number" required/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
         </div>
         <div class="layui-form-item text-right">
@@ -133,11 +133,12 @@
         var util = layui.util;
         var xmSelect = layui.xmSelect;
         var tbDataList = [];
+
         // 渲染表格
         var insTb = treeTable.render({
             elem: '#authoritiesTable',
-            url: '/iframe/test.json',
-            // url: '/request/getMongoJson?name=user1',
+            // url: '/iframe/test.json',
+            url: '/request/getMongoJson?name=user1',
             toolbar: ['<p>',
                 '<button lay-event="add" class="layui-btn layui-btn-sm icon-btn"><i class="layui-icon">&#xe654;</i>添加</button>&nbsp;',
                 '<button lay-event="del" class="layui-btn layui-btn-sm layui-btn-danger icon-btn"><i class="layui-icon">&#xe640;</i>删除</button>',
@@ -164,7 +165,7 @@
                 {field: 'authorityName', title: '文件名称<i class=\"layui-icon\">&#xe642;</i>', minWidth: 150,edit:'text'},
                 {field: 'menuUrl', title: '菜单url'},
                 {field: 'authority', title: '权限标识'},
-                {field: 'orderNumber', title: '排序号', align: 'center', width: 80},
+                // {field: 'orderNumber', title: '排序号', align: 'center', width: 80},
 
                 {title: '创建时间', templet: '<p>{{layui.util.toDateString(d.createTime)}}</p>', align: 'center'},
                 {title: '操作', toolbar: '#authoritiesTbBar', align: 'center', width: 190}
@@ -294,29 +295,14 @@
             }
             // console.log(res)
             $.ajax({
-                url:'request/changeJson',
+                url:'request/changeMongoJson',
                 type:'POST',
                 async: false,
                 traditional: true,
                 data:{"res": res, "name": "user1"},
                 success:function(response){
                     layer.msg("更新成功", {icon: 1});
-                    insTb.options.data[0].authorityName="1"
-                    obj.data.authorityName = "2"
-                    obj.data.children[4] = $.extend(true, {}, obj.data.children[3])
-                    obj.data.children[4].authorityId = 12
-                    obj.data.children[4].orderNumber = 12
-                    obj.data.children[4].LAY_INDEX = "0-4"
-
-                    obj.data.LAY_CHECKED = false
-                    obj.data.LAY_INDETERMINATE = false
-
-                    // insTb.refresh()
-                    // console.log(obj)
-                    obj.add()
-                    // console.log(insTb.options)
-                    // insTb.reload()
-                    // insTb.refresh();
+                    insTb.refresh();
                 },
                 error:function () {
                     layer.msg("更新失败", {icon: 2});
@@ -333,7 +319,7 @@
             }, function (i) {
                 layer.close(i);
                 var loadIndex = layer.load(2);
-                var optiondata = $.extend(true, {}, insTb.options.data)
+                // var optiondata = $.extend(true, {}, insTb.options.data)
                 var tree = insTb.options.data[0]              //insTb.options.data中存放着整个树
                 var delNode = obj.data.authorityId              //delNode记录待删除的节点号
                 var delParent
@@ -387,7 +373,7 @@
                 }
                 console.log(res)
                 $.ajax({
-                    url:'request/changeJson',
+                    url:'request/changeMongoJson',
                     type:'POST',
                     async: false,
                     traditional: true,
@@ -398,7 +384,6 @@
                         // obj.del()
                         layer.close(loadIndex);
                         layer.msg("删除成功", {icon: 1});
-                        insTb.options.data = optiondata
                         insTb.refresh();
                     },
                     error:function(status){
@@ -492,14 +477,14 @@
                                         node.unshift(temp.children[i])
                                     }
                             }
-                           //  console.log(tree)
-                           // console.log(res)
+                            //  console.log(tree)
+                            // console.log(res)
                             for(var i = 0; i < res.length;i ++){
                                 res[i] = JSON.stringify(res[i])
                             }
                             console.log(res)
                             $.ajax({
-                                url:'request/changeJson',
+                                url:'request/changeMongoJson',
                                 type:'POST',
                                 async: false,
                                 traditional: true,

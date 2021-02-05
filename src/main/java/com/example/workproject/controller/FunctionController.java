@@ -3,24 +3,94 @@ package com.example.workproject.controller;
 import com.example.workproject.util.toJsonUtil;
 import com.google.gson.Gson;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.mongodb.client.model.Filters.eq;
+
 
 @Controller
 @RequestMapping("/request")
 public class FunctionController {
+    @RequestMapping(path = "/changenewJson", method = RequestMethod.POST)
+    @ResponseBody
+    public String changenewJson(String status, String filename, String title, String id, String parentId) throws FileNotFoundException {
+        System.out.println(status);
+        System.out.println(title +" "+ id + " "+parentId);
+        StringBuilder sb = new StringBuilder();
+        JsonParser parser=new JsonParser();
+        JsonObject object=(JsonObject) parser.parse(new FileReader("D:\\javaprojects\\workproject\\src\\main\\resources\\static\\iframe\\"+ filename +".json"));
+        JsonArray jsonArray = object.getAsJsonArray("data");
+        sb.append("{\n" +
+                "  \"status\":{\"code\":200,\"message\":\"操作成功\"},\n" +
+                "  \"data\": [");
+        switch (status) {
+            case "add":
+                String addParam = "{\"id\":\"" + id + "\",\"title\": \"" + title + "\",\"checkArr\": \"0\",\"parentId\": \"" + parentId + "\"}";
+                for (int i = 0; i < jsonArray.size(); i++) {
+                    sb.append(jsonArray.get(i).toString() + ",");
+                    JsonObject tt = (JsonObject) jsonArray.get(i);
+                    if (tt.get("id").getAsString().equals(parentId)) {
+                        sb.append(addParam + ",");
+                    }
+                }
+                break;
+            case "del":
+                boolean mark = true;
+                for (int i = 0; i < jsonArray.size(); i++) {
+                    JsonObject tt = (JsonObject) jsonArray.get(i);
+                    String temp = tt.get("id").getAsString();
+                    if (!mark && temp.length() <= id.length()){
+                        mark = true;
+                    }
+                    if (temp.equals(id)) {
+                        mark = false;
+                    }
+                    if(mark)
+                        sb.append(jsonArray.get(i).toString() + ",");
+
+                }
+                break;
+            case "edit":
+                String editParam = "{\"id\":\"" + id + "\",\"title\": \"" + title + "\",\"checkArr\": \"0\",\"parentId\": \"" + parentId + "\"}";
+                for (int i = 0; i < jsonArray.size(); i++) {
+                    JsonObject tt = (JsonObject) jsonArray.get(i);
+                    if (!tt.get("id").getAsString().equals(id)) {
+                        sb.append(jsonArray.get(i).toString() + ",");
+                    } else {
+                        sb.append(editParam + ",");
+                    }
+                }
+                break;
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.append("  ]\n" +
+                "}");
+        System.out.println(sb);
+        toJsonUtil.saveAsFileWriter(sb.toString(), "D:\\javaprojects\\workproject\\src\\main\\resources\\static\\iframe\\" + filename + ".json");
+        return "s";
+    }
+
+    /***************************************************************************************************************/
+    /***************************************************************************************************************/
+    /***************************************************************************************************************/
+    /***************************************************************************************************************/
+    /***************************************************************************************************************/
     @Resource
     private MongoTemplate mongoTemplate;
 

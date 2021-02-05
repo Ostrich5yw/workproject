@@ -1,0 +1,4 @@
+{
+  "status":{"code":200,"message":"操作成功"},
+  "data": [{"id":"000","title":"根目录","checkArr":"0","parentId":"0"}  ]
+}

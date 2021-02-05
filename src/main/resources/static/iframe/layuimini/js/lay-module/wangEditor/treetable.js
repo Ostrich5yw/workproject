@@ -77,7 +77,7 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
     /** TreeTable类构造方法 */
     var TreeTable = function (options) {
         _instances[options.elem.substring(1)] = this;
-        this.load(options);
+        this.reload(options);
     };
 
     /** 参数设置 */
@@ -436,22 +436,8 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
                     });
                     that.checkChooseAllCB();  // 联动全选框
                 },
-                addfile: function (fields) { // 新增行
-                    console.log(that.options.data[0].checked)
-                    that.options.data[0].checked = 1
-                    console.log(that.options.data)
-                    var index = $tr.data('index');
-                    var indexLength = (typeof index === 'number' ? 1 : index.split('-').length) + 1;
-                    $tr.nextAll('tr').each(function () {
-                        var $this = $(this);
-                        if (parseInt($this.data('index').length) == index.length) return false;
-                        var _index = $this.data('index').toString().split('-');
-                        console.log(_index)
-                        _index[indexLength - 1] = parseInt(_index[indexLength - 1]) + 1;
-                        console.log(_index)
-                        $this.data('index', _index.join('-'));
-                    });
-
+                add: function (fields) {  // 修改行
+                    data = $.extend(true, data, fields);
                     var indent = parseInt($tr.data('indent'));
                     that.renderBodyTr(data, indent, undefined, $tr);  // 更新界面
                     form.render(null, components.filter);  // 渲染表单元素
@@ -464,7 +450,7 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
                         indent = tInd;
                     });
                     that.checkChooseAllCB();  // 联动全选框
-                },
+                }
             };
             return $.extend(obj, ext);
         };
@@ -1192,8 +1178,8 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
     /** 根据id获取tr的index */
     TreeTable.prototype.getIndexById = function (id) {
         var options = this.options;
+
         function each(data, pi) {
-            console.log(data)
             for (var i = 0; i < data.length; i++) {
                 if (data[i][options.tree.idName] === id) return pi !== undefined ? pi + '-' + i : i;
                 if (data[i][options.tree.childName]) {
@@ -1203,6 +1189,7 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
                 }
             }
         }
+
         return each(options.data);
     };
 
@@ -1253,16 +1240,11 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
 
     /** 重载表格 */
     TreeTable.prototype.reload = function (opt) {
-        // console.log(opt.data.authorityId)
         this.initOptions(this.options ? $.extend(true, this.options, opt) : opt);
         this.init();  // 初始化表格
         this.bindEvents();  // 绑定事件
     };
-    TreeTable.prototype.load = function (opt) {
-        this.initOptions(this.options ? $.extend(true, this.options, opt) : opt);
-        this.init();  // 初始化表格
-        this.bindEvents();  // 绑定事件
-    };
+
     /** 获取当前选中行 */
     TreeTable.prototype.checkStatus = function (needIndeterminate) {
         if (needIndeterminate === undefined) needIndeterminate = true;
@@ -1620,16 +1602,9 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
             }
         }
         d.splice(indexList[indexList.length - 1], 1);
+
     };
-    /** 添加数据 */
-    TreeTable.prototype.addfile = function (id,index) {
-        console.log(this.options)
-        console.log(this.options.data)
-        if (index === undefined) index = this.getIndexById(id);
-        var indexList = (typeof index === 'number' ? [index] : index.split('-'));
-        var d = this.options.data;
-        d.splice(indexList[indexList.length - 2], 0, fields);
-    };
+
     /** 更新数据 */
     TreeTable.prototype.update = function (id, fields) {
         $.extend(true, this.getDataByTr(this.getIndexById(id)), fields);
