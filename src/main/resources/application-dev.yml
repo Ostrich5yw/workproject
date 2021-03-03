@@ -7,15 +7,15 @@ spring:
 #    view:
 #      prefix: /WEB-INF/
 #      suffix: .jsp
-    datasource:
-      name: mywebpage
-      url: jdbc:mysql://localhost:3306/mywebpage?serverTimezone=UTC   #纠正mysql8.0可能出现的时区错误
-      username: root
-      password: azsx18327946
-      driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
-      type: com.alibaba.druid.pool.DruidDataSource    # 切换数据源
-      druid:
-        filters: log4j                                        # stat监控统计  log4j日志记录  wall防止sql注入
+  datasource:
+    name: workproject
+    url: jdbc:mysql://localhost:3306/workproject?serverTimezone=UTC   #纠正mysql8.0可能出现的时区错误
+    username: root
+    password: azsx18327946
+    driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
+    type: com.alibaba.druid.pool.DruidDataSource    # 切换数据源
+    druid:
+      filters: log4j                                        # stat监控统计  log4j日志记录  wall防止sql注入
   devtools:                         # 如果存在多个项目，则要更改默认的热部署端口
     livereload:
       port: 35730

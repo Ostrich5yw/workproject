@@ -1,15 +1,62 @@
 {
-  "status":{"code":200,"message":"操作成功"},
+  "status": {
+    "code": 200,
+    "message": "操作成功"
+  },
   "data": [
-    {"id":"000","title": "湖南省","checkArr": "0","parentId": "0"},
-    {"id":"000000","title": "长沙市","checkArr": "0","parentId": "000"},
-    {"id":"000001","title": "株洲市","checkArr": "0","parentId": "000"},
-    {"id":"000002","title": "湘潭市","checkArr": "0","parentId": "000"},
-    {"id":"000003","title": "衡阳市","checkArr": "0","parentId": "000"},
-    {"id":"001","title": "湖北省","checkArr": "0","parentId": "0"},
-    {"id":"002","title": "广东省","checkArr": "0","parentId": "0"},
-    {"id":"003","title": "浙江省","checkArr": "0","parentId": "0"},
-    {"id":"004","title": "福建省","checkArr": "0","parentId": "0"}
-
+    {
+      "id": "000",
+      "title": "湖南省",
+      "checkArr": "0",
+      "parentId": "0"
+    },
+    {
+      "id": "000000",
+      "title": "长沙市",
+      "checkArr": "0",
+      "parentId": "000"
+    },
+    {
+      "id": "000001",
+      "title": "株洲市",
+      "checkArr": "0",
+      "parentId": "000"
+    },
+    {
+      "id": "000002",
+      "title": "湘潭市",
+      "checkArr": "0",
+      "parentId": "000"
+    },
+    {
+      "id": "000003",
+      "title": "衡阳市",
+      "checkArr": "0",
+      "parentId": "000"
+    },
+    {
+      "id": "001",
+      "title": "湖北省",
+      "checkArr": "0",
+      "parentId": "0"
+    },
+    {
+      "id": "002",
+      "title": "广东省",
+      "checkArr": "0",
+      "parentId": "0"
+    },
+    {
+      "id": "003",
+      "title": "浙江省",
+      "checkArr": "0",
+      "parentId": "0"
+    },
+    {
+      "id": "004",
+      "title": "福建省",
+      "checkArr": "0",
+      "parentId": "0"
+    }
   ]
 }

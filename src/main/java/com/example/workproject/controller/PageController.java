@@ -17,4 +17,12 @@ public class PageController {
     public String newPage(){
         return "iframe/page/new.html";
     }
+    @RequestMapping("/organization")
+    public String organizationPage(){
+        return "iframe/page/organization.html";
+    }
+    @RequestMapping("/user")
+    public String userPage(){
+        return "iframe/page/user.html";
+    }
 }

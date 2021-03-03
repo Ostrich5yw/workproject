@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>用户管理</title>
-    <link rel="stylesheet" href="../../assets/libs/layui/css/layui.css"/>
-    <link rel="stylesheet" href="../../assets/module/admin.css?v=318"/>
+    <link rel="stylesheet" href="../assets/libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../assets/module/admin.css?v=318"/>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -113,8 +113,8 @@
 </script>
 
 <!-- js部分 -->
-<script type="text/javascript" src="../../assets/libs/layui/layui.js"></script>
-<script type="text/javascript" src="../../assets/js/common.js?v=318"></script>
+<script type="text/javascript" src="../assets/libs/layui/layui.js"></script>
+<script type="text/javascript" src="../assets/js/common.js?v=318"></script>
 <script>
     layui.use(['layer', 'form', 'table', 'util', 'admin', 'xmSelect'], function () {
         var $ = layui.jquery;
@@ -127,14 +127,16 @@
         /* 渲染表格 */
         var insTb = table.render({
             elem: '#userTable',
-            url: '../../json/user.json',
+            // url: '/iframe/json/user.json',
+            url: '/request/getMysqlData',
             page: true,
             toolbar: ['<p>',
                 '<button lay-event="add" class="layui-btn layui-btn-sm icon-btn"><i class="layui-icon">&#xe654;</i>添加</button>&nbsp;',
                 '<button lay-event="del" class="layui-btn layui-btn-sm layui-btn-danger icon-btn"><i class="layui-icon">&#xe640;</i>删除</button>',
                 '</p>'].join(''),
             cellMinWidth: 100,
-            cols: [[
+            cols: [
+                [
                 {type: 'checkbox'},
                 {type: 'numbers'},
                 {field: 'username', title: '账号', sort: true},
@@ -155,7 +157,8 @@
                 },
                 {field: 'state', title: '状态', templet: '#userTbState', sort: true, width: 100},
                 {title: '操作', toolbar: '#userTbBar', align: 'center', minWidth: 200}
-            ]]
+            ]
+            ]
         });
 
         /* 表格搜索 */
@@ -207,17 +210,31 @@
                     // 表单提交事件
                     form.on('submit(userEditSubmit)', function (data) {
                         data.field.roleIds = insRoleSel.getValue('valueStr');
+                        console.log(data)
                         var loadIndex = layer.load(2);
-                        $.get(mData ? '../../json/ok.json' : '../../json/ok.json', data.field, function (res) {  // 实际项目这里url可以是mData?'user/update':'user/add'
-                            layer.close(loadIndex);
-                            if (res.code === 200) {
+                        $.ajax({
+                            url:'request/changeMysqlData',
+                            type:'POST',
+                            async: false,
+                            // traditional: true,
+                            data:{"userId": data.field.userId, "username": data.field.username},
+                            success:function(response) {
                                 layer.close(dIndex);
-                                layer.msg(res.msg, {icon: 1});
+                                layer.close(loadIndex)
+                                layer.msg("修改成功", {icon: 1});
                                 insTb.reload({page: {curr: 1}});
-                            } else {
-                                layer.msg(res.msg, {icon: 2});
                             }
-                        }, 'json');
+                        })
+                        // $.get(mData ? '/iframe/json/ok.json' : '/iframe/json/ok.json', data.field, function (res) {  // 实际项目这里url可以是mData?'user/update':'user/add'
+                        //     layer.close(loadIndex);
+                        //     if (res.code === 200) {
+                        //         layer.close(dIndex);
+                        //         layer.msg(res.msg, {icon: 1});
+                        //         insTb.reload({page: {curr: 1}});
+                        //     } else {
+                        //         layer.msg(res.msg, {icon: 2});
+                        //     }
+                        // }, 'json');
                         return false;
                     });
                     // 渲染多选下拉框
@@ -258,7 +275,7 @@
             }, function (i) {
                 layer.close(i);
                 var loadIndex = layer.load(2);
-                $.get('../../json/ok.json', {
+                $.get('/iframe/json/ok.json', {
                     id: obj.data ? obj.data.userId : '',
                     ids: obj.ids ? obj.ids.join(',') : ''
                 }, function (res) {
@@ -276,7 +293,7 @@
         /* 修改用户状态 */
         form.on('switch(userTbStateCk)', function (obj) {
             var loadIndex = layer.load(2);
-            $.get('../../json/ok.json', {
+            $.get('/iframe/json/ok.json', {
                 userId: obj.elem.value,
                 state: obj.elem.checked ? 0 : 1
             }, function (res) {

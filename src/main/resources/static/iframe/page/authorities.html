@@ -150,7 +150,8 @@
                 arrowType: 'arrow2',
                 getIcon: 'ew-tree-icon-style2'
             },
-            cols: [[
+            cols: [
+                [
                 // {type: 'checkbox'},
                 {type: 'numbers'},
                 {
@@ -168,7 +169,8 @@
 
                 {title: '创建时间', templet: '<p>{{layui.util.toDateString(d.createTime)}}</p>', align: 'center'},
                 {title: '操作', toolbar: '#authoritiesTbBar', align: 'center', width: 190}
-            ]],
+            ]
+            ],
             done: function (data) {
                 tbDataList = data;
             }
