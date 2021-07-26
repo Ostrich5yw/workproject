@@ -1,0 +1,161 @@
+2021-04-23 17:18:45  [ restartedMain:195 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 71456 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-23 17:18:45  [ restartedMain:204 ] - [ INFO ]  The following profiles are active: dev
+2021-04-23 17:18:45  [ restartedMain:257 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 17:18:45  [ restartedMain:259 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 17:18:46  [ restartedMain:1242 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-23 17:18:46  [ restartedMain:1267 ] - [ INFO ]  Finished Spring Data repository scanning in 16 ms. Found 0 MongoDB repository interfaces.
+2021-04-23 17:18:46  [ restartedMain:1427 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-23 17:18:46  [ restartedMain:1588 ] - [ INFO ]  Bean 'shiroConfig' of type [com.example.workproject.config.ShiroConfig$$EnhancerBySpringCGLIB$$ebf8c793] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:46  [ restartedMain:1691 ] - [ INFO ]  Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1695 ] - [ INFO ]  Bean 'mybatisPlusConfig' of type [com.example.workproject.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$158c25ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1712 ] - [ INFO ]  Bean 'mybatisPlusInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1720 ] - [ INFO ]  Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$ddb9e06a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1723 ] - [ INFO ]  Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$b99d6942] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1725 ] - [ INFO ]  Init DruidDataSource
+2021-04-23 17:18:47  [ restartedMain:1791 ] - [ INFO ]  Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1794 ] - [ INFO ]  Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1823 ] - [ INFO ]  Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1927 ] - [ INFO ]  {dataSource-1} inited
+2021-04-23 17:18:47  [ restartedMain:1927 ] - [ INFO ]  Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:1940 ] - [ INFO ]  Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:2255 ] - [ INFO ]  Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:2260 ] - [ INFO ]  Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:2294 ] - [ INFO ]  Bean 'mysqlMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:2296 ] - [ INFO ]  Bean 'mysqlMapper' of type [com.sun.proxy.$Proxy60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:2302 ] - [ INFO ]  Bean 'indexRealm' of type [com.example.workproject.config.ShiroRealm.IndexRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:47  [ restartedMain:2592 ] - [ INFO ]  Bean 'WebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:18:48  [ restartedMain:2991 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-23 17:18:48  [ restartedMain:3124 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2864 ms
+2021-04-23 17:18:48  [ restartedMain:3237 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-23 17:18:48  [ restartedMain:3546 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-23 17:18:48  [ cluster-ClusterId{value='608290f8e100bf4ee148791d', description='null'}-127.0.0.1:27017:3603 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:132}] to 127.0.0.1:27017
+2021-04-23 17:18:48  [ cluster-rtt-ClusterId{value='608290f8e100bf4ee148791d', description='null'}-127.0.0.1:27017:3603 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:131}] to 127.0.0.1:27017
+2021-04-23 17:18:48  [ cluster-ClusterId{value='608290f8e100bf4ee148791d', description='null'}-127.0.0.1:27017:3603 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20477200}
+2021-04-23 17:18:49  [ restartedMain:3934 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:18:49  [ restartedMain:4209 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-23 17:18:49  [ restartedMain:4254 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-23 17:18:49  [ restartedMain:4270 ] - [ INFO ]  Started WorkprojectApplication in 4.687 seconds (JVM running for 5.549)
+2021-04-23 17:18:56  [ Thread-15:10859 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:18:56  [ Thread-15:10862 ] - [ INFO ]  {dataSource-1} closed
+2021-04-23 17:18:56  [ restartedMain:11012 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 17:18:56  [ restartedMain:11013 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 17:18:56  [ restartedMain:11018 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 71456 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-23 17:18:56  [ restartedMain:11019 ] - [ INFO ]  The following profiles are active: dev
+2021-04-23 17:18:56  [ restartedMain:11332 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-23 17:18:56  [ restartedMain:11333 ] - [ INFO ]  Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2021-04-23 17:18:56  [ restartedMain:11385 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.workproject.entity.Mapper]' package. Please check your configuration.
+2021-04-23 17:18:57  [ restartedMain:11744 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-23 17:18:57  [ restartedMain:11927 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 904 ms
+2021-04-23 17:18:58  [ restartedMain:12813 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:18:58  [ restartedMain:12898 ] - [ INFO ]  Init DruidDataSource
+2021-04-23 17:18:58  [ restartedMain:12947 ] - [ INFO ]  {dataSource-2} inited
+2021-04-23 17:18:58  [ restartedMain:13148 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-23 17:18:58  [ cluster-ClusterId{value='60829102e100bf4ee148791e', description='null'}-127.0.0.1:27017:13153 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:133}] to 127.0.0.1:27017
+2021-04-23 17:18:58  [ cluster-ClusterId{value='60829102e100bf4ee148791e', description='null'}-127.0.0.1:27017:13153 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1357100}
+2021-04-23 17:18:58  [ cluster-rtt-ClusterId{value='60829102e100bf4ee148791e', description='null'}-127.0.0.1:27017:13154 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:134}] to 127.0.0.1:27017
+2021-04-23 17:18:58  [ restartedMain:13187 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-23 17:18:58  [ restartedMain:13215 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-23 17:18:58  [ restartedMain:13227 ] - [ INFO ]  Started WorkprojectApplication in 2.24 seconds (JVM running for 14.505)
+2021-04-23 17:18:58  [ restartedMain:13229 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-23 17:19:02  [ Thread-22:17045 ] - [ INFO ]  {dataSource-2} closed
+2021-04-23 17:19:02  [ Thread-22:17046 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:19:02  [ restartedMain:17207 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 17:19:02  [ restartedMain:17207 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 17:19:02  [ restartedMain:17213 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 71456 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-23 17:19:02  [ restartedMain:17213 ] - [ INFO ]  The following profiles are active: dev
+2021-04-23 17:19:02  [ restartedMain:17387 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-23 17:19:02  [ restartedMain:17394 ] - [ INFO ]  Finished Spring Data repository scanning in 5 ms. Found 0 MongoDB repository interfaces.
+2021-04-23 17:19:02  [ restartedMain:17433 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-23 17:19:02  [ restartedMain:17459 ] - [ INFO ]  Bean 'shiroConfig' of type [com.example.workproject.config.ShiroConfig$$EnhancerBySpringCGLIB$$ebf8c793] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17491 ] - [ INFO ]  Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17493 ] - [ INFO ]  Bean 'mybatisPlusConfig' of type [com.example.workproject.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$158c25ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17496 ] - [ INFO ]  Bean 'mybatisPlusInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17499 ] - [ INFO ]  Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$ddb9e06a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17499 ] - [ INFO ]  Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$b99d6942] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17500 ] - [ INFO ]  Init DruidDataSource
+2021-04-23 17:19:02  [ restartedMain:17505 ] - [ INFO ]  Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17508 ] - [ INFO ]  Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17513 ] - [ INFO ]  Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17674 ] - [ INFO ]  {dataSource-3} inited
+2021-04-23 17:19:02  [ restartedMain:17674 ] - [ INFO ]  Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:02  [ restartedMain:17681 ] - [ INFO ]  Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17786 ] - [ INFO ]  Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17787 ] - [ INFO ]  Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17791 ] - [ INFO ]  Bean 'mysqlMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17792 ] - [ INFO ]  Bean 'mysqlMapper' of type [com.sun.proxy.$Proxy93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17796 ] - [ INFO ]  Bean 'indexRealm' of type [com.example.workproject.config.ShiroRealm.IndexRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17797 ] - [ INFO ]  Bean 'WebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:03  [ restartedMain:17841 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-23 17:19:03  [ restartedMain:17859 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 641 ms
+2021-04-23 17:19:03  [ restartedMain:17876 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-23 17:19:03  [ restartedMain:17971 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-23 17:19:03  [ cluster-rtt-ClusterId{value='60829107e100bf4ee148791f', description='null'}-127.0.0.1:27017:17991 ] - [ INFO ]  Opened connection [connectionId{localValue:5, serverValue:135}] to 127.0.0.1:27017
+2021-04-23 17:19:03  [ cluster-ClusterId{value='60829107e100bf4ee148791f', description='null'}-127.0.0.1:27017:17999 ] - [ INFO ]  Opened connection [connectionId{localValue:6, serverValue:136}] to 127.0.0.1:27017
+2021-04-23 17:19:03  [ cluster-ClusterId{value='60829107e100bf4ee148791f', description='null'}-127.0.0.1:27017:17999 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19805900}
+2021-04-23 17:19:03  [ restartedMain:18109 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:19:03  [ restartedMain:18251 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-23 17:19:03  [ restartedMain:18385 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-23 17:19:03  [ restartedMain:18447 ] - [ INFO ]  Started WorkprojectApplication in 1.273 seconds (JVM running for 19.724)
+2021-04-23 17:19:03  [ restartedMain:18448 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-23 17:19:10  [ Thread-27:25619 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:19:10  [ Thread-27:25621 ] - [ INFO ]  {dataSource-3} closed
+2021-04-23 17:19:11  [ restartedMain:25744 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 17:19:11  [ restartedMain:25744 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 17:19:11  [ restartedMain:25750 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 71456 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-23 17:19:11  [ restartedMain:25750 ] - [ INFO ]  The following profiles are active: dev
+2021-04-23 17:19:11  [ restartedMain:25883 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-23 17:19:11  [ restartedMain:25884 ] - [ INFO ]  Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2021-04-23 17:19:11  [ restartedMain:25908 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.workproject.entity.Mapper]' package. Please check your configuration.
+2021-04-23 17:19:11  [ restartedMain:25959 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-23 17:19:11  [ restartedMain:25995 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 243 ms
+2021-04-23 17:19:11  [ restartedMain:26033 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:19:11  [ restartedMain:26072 ] - [ INFO ]  Init DruidDataSource
+2021-04-23 17:19:11  [ restartedMain:26096 ] - [ INFO ]  {dataSource-4} inited
+2021-04-23 17:19:11  [ restartedMain:26233 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-23 17:19:11  [ cluster-ClusterId{value='6082910fe100bf4ee1487920', description='null'}-127.0.0.1:27017:26240 ] - [ INFO ]  Opened connection [connectionId{localValue:7, serverValue:137}] to 127.0.0.1:27017
+2021-04-23 17:19:11  [ cluster-ClusterId{value='6082910fe100bf4ee1487920', description='null'}-127.0.0.1:27017:26240 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4143900}
+2021-04-23 17:19:11  [ cluster-rtt-ClusterId{value='6082910fe100bf4ee1487920', description='null'}-127.0.0.1:27017:26244 ] - [ INFO ]  Opened connection [connectionId{localValue:8, serverValue:138}] to 127.0.0.1:27017
+2021-04-23 17:19:11  [ restartedMain:26267 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-23 17:19:11  [ restartedMain:26293 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-23 17:19:11  [ restartedMain:26317 ] - [ INFO ]  Started WorkprojectApplication in 0.587 seconds (JVM running for 27.595)
+2021-04-23 17:19:11  [ restartedMain:26319 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-23 17:19:14  [ Thread-32:29001 ] - [ INFO ]  {dataSource-4} closed
+2021-04-23 17:19:14  [ Thread-32:29002 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:19:14  [ restartedMain:29099 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 17:19:14  [ restartedMain:29100 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 17:19:14  [ restartedMain:29104 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 71456 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-23 17:19:14  [ restartedMain:29104 ] - [ INFO ]  The following profiles are active: dev
+2021-04-23 17:19:14  [ restartedMain:29274 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-23 17:19:14  [ restartedMain:29285 ] - [ INFO ]  Finished Spring Data repository scanning in 10 ms. Found 0 MongoDB repository interfaces.
+2021-04-23 17:19:14  [ restartedMain:29335 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-23 17:19:14  [ restartedMain:29350 ] - [ INFO ]  Bean 'shiroConfig' of type [com.example.workproject.config.ShiroConfig$$EnhancerBySpringCGLIB$$ebf8c793] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29360 ] - [ INFO ]  Bean 'mybatis-plus-com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29361 ] - [ INFO ]  Bean 'mybatisPlusConfig' of type [com.example.workproject.config.MybatisPlusConfig$$EnhancerBySpringCGLIB$$158c25ef] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29366 ] - [ INFO ]  Bean 'mybatisPlusInterceptor' of type [com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29370 ] - [ INFO ]  Bean 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration' of type [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$ddb9e06a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29371 ] - [ INFO ]  Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$b99d6942] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29372 ] - [ INFO ]  Init DruidDataSource
+2021-04-23 17:19:14  [ restartedMain:29378 ] - [ INFO ]  Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29380 ] - [ INFO ]  Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29383 ] - [ INFO ]  Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29412 ] - [ INFO ]  {dataSource-5} inited
+2021-04-23 17:19:14  [ restartedMain:29413 ] - [ INFO ]  Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29420 ] - [ INFO ]  Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29529 ] - [ INFO ]  Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29530 ] - [ INFO ]  Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29534 ] - [ INFO ]  Bean 'mysqlMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29535 ] - [ INFO ]  Bean 'mysqlMapper' of type [com.sun.proxy.$Proxy96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29536 ] - [ INFO ]  Bean 'indexRealm' of type [com.example.workproject.config.ShiroRealm.IndexRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29538 ] - [ INFO ]  Bean 'WebSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-23 17:19:14  [ restartedMain:29578 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-23 17:19:14  [ restartedMain:29600 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 494 ms
+2021-04-23 17:19:14  [ restartedMain:29618 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-23 17:19:14  [ restartedMain:29644 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-23 17:19:14  [ cluster-ClusterId{value='60829112e100bf4ee1487921', description='null'}-127.0.0.1:27017:29647 ] - [ INFO ]  Opened connection [connectionId{localValue:9, serverValue:139}] to 127.0.0.1:27017
+2021-04-23 17:19:14  [ cluster-ClusterId{value='60829112e100bf4ee1487921', description='null'}-127.0.0.1:27017:29648 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=989700}
+2021-04-23 17:19:14  [ cluster-rtt-ClusterId{value='60829112e100bf4ee1487921', description='null'}-127.0.0.1:27017:29648 ] - [ INFO ]  Opened connection [connectionId{localValue:10, serverValue:140}] to 127.0.0.1:27017
+2021-04-23 17:19:15  [ restartedMain:29702 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 17:19:15  [ restartedMain:29763 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-23 17:19:15  [ restartedMain:29787 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-23 17:19:15  [ restartedMain:29795 ] - [ INFO ]  Started WorkprojectApplication in 0.71 seconds (JVM running for 31.073)
+2021-04-23 17:19:15  [ restartedMain:29796 ] - [ INFO ]  Condition evaluation unchanged

@@ -1,0 +1,644 @@
+2021-05-27 19:46:00  [ Druid-ConnectionPool-Create-1120176192:0 ] - [ DEBUG ]  {conn-2610001} connected
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:6 ] - [ DEBUG ]  {conn-2610001} pool-connect
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:24 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000} created. select * from userData where username = ?
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:29 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000} Parameters : [武允文]
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:29 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000} Types : [VARCHAR]
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:57 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000} executed. 29.8045 millis. select * from userData where username = ?
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:59 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000, rs-2650000} open
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:61 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000, rs-2650000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:66 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000, rs-2650000} Result: [14, 武允文, 123, 管理员, null, 18049685597, 0, 2021-04-25 12:22:37.0, 2021-04-25 12:22:37.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}], 男]
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:71 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000, rs-2650000} closed
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:73 ] - [ DEBUG ]  {conn-2610001, pstmt-2620000} closed
+2021-05-27 19:46:00  [ http-nio-8010-exec-3:74 ] - [ DEBUG ]  {conn-2610001} pool-recycle
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2084 ] - [ DEBUG ]  {conn-2610001} pool-connect
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2084 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001} created. select count(*) from userData
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2084 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001} Parameters : []
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2084 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001} Types : []
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2086 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001} executed. 1.5085 millis. select count(*) from userData
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2086 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001, rs-2650001} open
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2086 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001, rs-2650001} Header: [count(*)]
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2086 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001, rs-2650001} Result: [14]
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2086 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001, rs-2650001} closed
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2086 ] - [ DEBUG ]  {conn-2610001, pstmt-2620001} closed
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2087 ] - [ DEBUG ]  {conn-2610001} pool-recycle
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2136 ] - [ DEBUG ]  {conn-2610001} pool-connect
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2136 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002} created. SELECT COUNT(*) FROM userData
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2136 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002} Parameters : []
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2136 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002} Types : []
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2138 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002} executed. 1.6812 millis. SELECT COUNT(*) FROM userData
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2138 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002, rs-2650002} open
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2138 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002, rs-2650002} Header: [COUNT(*)]
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2139 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002, rs-2650002} Result: [14]
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2139 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002, rs-2650002} closed
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2139 ] - [ DEBUG ]  {conn-2610001, pstmt-2620002} closed
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2144 ] - [ DEBUG ]  {conn-2610001, pstmt-2620003} created. SELECT  user_id,username,password,nickName,avatar,phone,state,createTime,updateTime,roleId,roleName,roles,sex  FROM userData LIMIT ?
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2145 ] - [ DEBUG ]  {conn-2610001, pstmt-2620003} Parameters : [10]
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2145 ] - [ DEBUG ]  {conn-2610001, pstmt-2620003} Types : [BIGINT]
+2021-05-27 19:46:02  [ http-nio-8010-exec-7:2159 ] - [ ERROR ]  {conn-2610001, pstmt-2620003} execute error. SELECT  user_id,username,password,nickName,avatar,phone,state,createTime,updateTime,roleId,roleName,roles,sex  FROM userData LIMIT ?
+java.sql.SQLSyntaxErrorException: Unknown column 'user_id' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy221.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy220.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy53.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:122)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy219.selectPage(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.UserServiceImpl.getData(UserServiceImpl.java:27)
+	at com.example.workproject.controller.UserController.getData(UserController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-05-27 19:46:03  [ http-nio-8010-exec-7:2208 ] - [ DEBUG ]  {conn-2610001, pstmt-2620003} closed
+2021-05-27 19:46:03  [ http-nio-8010-exec-7:2210 ] - [ DEBUG ]  {conn-2610001} pool-recycle
+2021-05-27 19:46:03  [ http-nio-8010-exec-7:2249 ] - [ DEBUG ]  {conn-2610001} pool-connect
+2021-05-27 19:46:03  [ http-nio-8010-exec-7:2249 ] - [ DEBUG ]  {conn-2610001} pool-recycle
+2021-05-27 19:47:31  [ Thread-145:90296 ] - [ DEBUG ]  {conn-2610001} closed
+2021-05-27 19:47:32  [ Druid-ConnectionPool-Create-683034727:91809 ] - [ DEBUG ]  {conn-2710001} connected
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91811 ] - [ DEBUG ]  {conn-2710001} pool-connect
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91811 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000} created. select count(*) from dwxxb
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91811 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000} Parameters : []
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91811 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000} Types : []
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91814 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000} executed. 3.3851 millis. select count(*) from dwxxb
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91815 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000, rs-2750000} open
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91815 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000, rs-2750000} Header: [count(*)]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91815 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000, rs-2750000} Result: [12]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91815 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000, rs-2750000} closed
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91816 ] - [ DEBUG ]  {conn-2710001, pstmt-2720000} closed
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91816 ] - [ DEBUG ]  {conn-2710001} pool-recycle
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91818 ] - [ DEBUG ]  {conn-2710001} pool-connect
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91818 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91818 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001} Parameters : []
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91818 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001} Types : []
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91820 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001} executed. 1.8275 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91820 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001, rs-2750001} open
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91820 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001, rs-2750001} Header: [COUNT(*)]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91820 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001, rs-2750001} Result: [12]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91821 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001, rs-2750001} closed
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91821 ] - [ DEBUG ]  {conn-2710001, pstmt-2720001} closed
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91821 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91822 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002} Parameters : [10]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91822 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002} Types : [BIGINT]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91823 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002} executed. 1.1447 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91823 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} open
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91823 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91823 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91823 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91823 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91824 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91824 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91824 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91824 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91824 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91825 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91825 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91825 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002, rs-2750002} closed
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91825 ] - [ DEBUG ]  {conn-2710001, pstmt-2720002} closed
+2021-05-27 19:47:32  [ http-nio-8010-exec-1:91825 ] - [ DEBUG ]  {conn-2710001} pool-recycle
+2021-05-27 19:47:34  [ Thread-150:93241 ] - [ DEBUG ]  {conn-2710001} closed
+2021-05-27 19:48:32  [ Druid-ConnectionPool-Create-1365605225:0 ] - [ DEBUG ]  {conn-10001} connected
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:4 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:20 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from userData where username = ?
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:26 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [武允文]
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:26 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:37 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 12.7012 millis. select * from userData where username = ?
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:41 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:42 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:48 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [14, 武允文, 123, 管理员, null, 18049685597, 0, 2021-04-25 12:22:37.0, 2021-04-25 12:22:37.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}], 男]
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:53 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:57 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-05-27 19:48:32  [ http-nio-8010-exec-6:58 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:399 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:399 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select count(*) from dwxxb
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:399 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : []
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:400 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : []
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:408 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 8.622 millis. select count(*) from dwxxb
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:408 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:408 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [count(*)]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:409 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [12]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:409 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:409 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:409 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:458 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:458 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:458 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : []
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:458 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : []
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:460 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 1.4954 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:460 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:460 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [COUNT(*)]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:460 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [12]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:461 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:461 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:467 ] - [ DEBUG ]  {conn-10001, pstmt-20003} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:468 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Parameters : [10]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:468 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Types : [BIGINT]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:469 ] - [ DEBUG ]  {conn-10001, pstmt-20003} executed. 1.309 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:469 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} open
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:469 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:469 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:470 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:470 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:470 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:471 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:471 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:471 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:471 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:472 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:472 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:472 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} closed
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:472 ] - [ DEBUG ]  {conn-10001, pstmt-20003} closed
+2021-05-27 19:48:33  [ http-nio-8010-exec-9:472 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-05-27 19:51:38  [ Thread-15:185487 ] - [ DEBUG ]  {conn-10001} closed
+2021-05-27 19:53:59  [ Druid-ConnectionPool-Create-1081454298:326694 ] - [ DEBUG ]  {conn-410001} connected
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326697 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326697 ] - [ DEBUG ]  {conn-410001, pstmt-420000} created. select count(*) from dwxxb
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326698 ] - [ DEBUG ]  {conn-410001, pstmt-420000} Parameters : []
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326698 ] - [ DEBUG ]  {conn-410001, pstmt-420000} Types : []
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326711 ] - [ DEBUG ]  {conn-410001, pstmt-420000} executed. 13.2724 millis. select count(*) from dwxxb
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326711 ] - [ DEBUG ]  {conn-410001, pstmt-420000, rs-450000} open
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326711 ] - [ DEBUG ]  {conn-410001, pstmt-420000, rs-450000} Header: [count(*)]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326711 ] - [ DEBUG ]  {conn-410001, pstmt-420000, rs-450000} Result: [12]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326712 ] - [ DEBUG ]  {conn-410001, pstmt-420000, rs-450000} closed
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326712 ] - [ DEBUG ]  {conn-410001, pstmt-420000} closed
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326712 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326713 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326714 ] - [ DEBUG ]  {conn-410001, pstmt-420001} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326714 ] - [ DEBUG ]  {conn-410001, pstmt-420001} Parameters : []
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326714 ] - [ DEBUG ]  {conn-410001, pstmt-420001} Types : []
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326717 ] - [ DEBUG ]  {conn-410001, pstmt-420001} executed. 3.2312 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326717 ] - [ DEBUG ]  {conn-410001, pstmt-420001, rs-450001} open
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326717 ] - [ DEBUG ]  {conn-410001, pstmt-420001, rs-450001} Header: [COUNT(*)]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326717 ] - [ DEBUG ]  {conn-410001, pstmt-420001, rs-450001} Result: [12]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326717 ] - [ DEBUG ]  {conn-410001, pstmt-420001, rs-450001} closed
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326717 ] - [ DEBUG ]  {conn-410001, pstmt-420001} closed
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326718 ] - [ DEBUG ]  {conn-410001, pstmt-420002} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326718 ] - [ DEBUG ]  {conn-410001, pstmt-420002} Parameters : [10]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326718 ] - [ DEBUG ]  {conn-410001, pstmt-420002} Types : [BIGINT]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326719 ] - [ DEBUG ]  {conn-410001, pstmt-420002} executed. 1.2272 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326719 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} open
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326719 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326720 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326720 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326720 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326721 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326721 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326721 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326721 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326721 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326722 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326722 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326722 ] - [ DEBUG ]  {conn-410001, pstmt-420002, rs-450002} closed
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326722 ] - [ DEBUG ]  {conn-410001, pstmt-420002} closed
+2021-05-27 19:53:59  [ http-nio-8010-exec-3:326722 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332766 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332767 ] - [ DEBUG ]  {conn-410001, pstmt-420003} created. select count(*) from dwxxb
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332767 ] - [ DEBUG ]  {conn-410001, pstmt-420003} Parameters : []
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332767 ] - [ DEBUG ]  {conn-410001, pstmt-420003} Types : []
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332768 ] - [ DEBUG ]  {conn-410001, pstmt-420003} executed. 1.221 millis. select count(*) from dwxxb
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332768 ] - [ DEBUG ]  {conn-410001, pstmt-420003, rs-450003} open
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332768 ] - [ DEBUG ]  {conn-410001, pstmt-420003, rs-450003} Header: [count(*)]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332768 ] - [ DEBUG ]  {conn-410001, pstmt-420003, rs-450003} Result: [12]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332768 ] - [ DEBUG ]  {conn-410001, pstmt-420003, rs-450003} closed
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332768 ] - [ DEBUG ]  {conn-410001, pstmt-420003} closed
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332769 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332770 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332770 ] - [ DEBUG ]  {conn-410001, pstmt-420004} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332770 ] - [ DEBUG ]  {conn-410001, pstmt-420004} Parameters : []
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332770 ] - [ DEBUG ]  {conn-410001, pstmt-420004} Types : []
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332774 ] - [ DEBUG ]  {conn-410001, pstmt-420004} executed. 4.0564 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332775 ] - [ DEBUG ]  {conn-410001, pstmt-420004, rs-450004} open
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332775 ] - [ DEBUG ]  {conn-410001, pstmt-420004, rs-450004} Header: [COUNT(*)]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332775 ] - [ DEBUG ]  {conn-410001, pstmt-420004, rs-450004} Result: [12]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332775 ] - [ DEBUG ]  {conn-410001, pstmt-420004, rs-450004} closed
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332775 ] - [ DEBUG ]  {conn-410001, pstmt-420004} closed
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332775 ] - [ DEBUG ]  {conn-410001, pstmt-420005} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332776 ] - [ DEBUG ]  {conn-410001, pstmt-420005} Parameters : [10]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332776 ] - [ DEBUG ]  {conn-410001, pstmt-420005} Types : [BIGINT]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332777 ] - [ DEBUG ]  {conn-410001, pstmt-420005} executed. 0.9843 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332777 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} open
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332777 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332777 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332778 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332778 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332778 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332778 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332778 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332781 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332781 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332781 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332781 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332781 ] - [ DEBUG ]  {conn-410001, pstmt-420005, rs-450005} closed
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332782 ] - [ DEBUG ]  {conn-410001, pstmt-420005} closed
+2021-05-27 19:54:05  [ http-nio-8010-exec-7:332782 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378723 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378723 ] - [ DEBUG ]  {conn-410001, pstmt-420006} created. select count(*) from dwxxb
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378724 ] - [ DEBUG ]  {conn-410001, pstmt-420006} Parameters : []
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378724 ] - [ DEBUG ]  {conn-410001, pstmt-420006} Types : []
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378780 ] - [ DEBUG ]  {conn-410001, pstmt-420006} executed. 56.5279 millis. select count(*) from dwxxb
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378780 ] - [ DEBUG ]  {conn-410001, pstmt-420006, rs-450006} open
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378780 ] - [ DEBUG ]  {conn-410001, pstmt-420006, rs-450006} Header: [count(*)]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378780 ] - [ DEBUG ]  {conn-410001, pstmt-420006, rs-450006} Result: [12]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378781 ] - [ DEBUG ]  {conn-410001, pstmt-420006, rs-450006} closed
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378781 ] - [ DEBUG ]  {conn-410001, pstmt-420006} closed
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378781 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378782 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378782 ] - [ DEBUG ]  {conn-410001, pstmt-420007} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378782 ] - [ DEBUG ]  {conn-410001, pstmt-420007} Parameters : []
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378782 ] - [ DEBUG ]  {conn-410001, pstmt-420007} Types : []
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378784 ] - [ DEBUG ]  {conn-410001, pstmt-420007} executed. 1.2809 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378784 ] - [ DEBUG ]  {conn-410001, pstmt-420007, rs-450007} open
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378784 ] - [ DEBUG ]  {conn-410001, pstmt-420007, rs-450007} Header: [COUNT(*)]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378784 ] - [ DEBUG ]  {conn-410001, pstmt-420007, rs-450007} Result: [12]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378784 ] - [ DEBUG ]  {conn-410001, pstmt-420007, rs-450007} closed
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378784 ] - [ DEBUG ]  {conn-410001, pstmt-420007} closed
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378785 ] - [ DEBUG ]  {conn-410001, pstmt-420008} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378785 ] - [ DEBUG ]  {conn-410001, pstmt-420008} Parameters : [10]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378785 ] - [ DEBUG ]  {conn-410001, pstmt-420008} Types : [BIGINT]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378786 ] - [ DEBUG ]  {conn-410001, pstmt-420008} executed. 0.9195 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378786 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} open
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378786 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378787 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378787 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378787 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378787 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008, rs-450008} closed
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378788 ] - [ DEBUG ]  {conn-410001, pstmt-420008} closed
+2021-05-27 19:54:51  [ http-nio-8010-exec-1:378789 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379856 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379856 ] - [ DEBUG ]  {conn-410001, pstmt-420009} created. select count(*) from dwxxb
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379856 ] - [ DEBUG ]  {conn-410001, pstmt-420009} Parameters : []
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379856 ] - [ DEBUG ]  {conn-410001, pstmt-420009} Types : []
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379866 ] - [ DEBUG ]  {conn-410001, pstmt-420009} executed. 9.761 millis. select count(*) from dwxxb
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379866 ] - [ DEBUG ]  {conn-410001, pstmt-420009, rs-450009} open
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379866 ] - [ DEBUG ]  {conn-410001, pstmt-420009, rs-450009} Header: [count(*)]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379866 ] - [ DEBUG ]  {conn-410001, pstmt-420009, rs-450009} Result: [12]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379867 ] - [ DEBUG ]  {conn-410001, pstmt-420009, rs-450009} closed
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379867 ] - [ DEBUG ]  {conn-410001, pstmt-420009} closed
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379867 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379868 ] - [ DEBUG ]  {conn-410001} pool-connect
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379868 ] - [ DEBUG ]  {conn-410001, pstmt-420010} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379868 ] - [ DEBUG ]  {conn-410001, pstmt-420010} Parameters : []
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379868 ] - [ DEBUG ]  {conn-410001, pstmt-420010} Types : []
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379869 ] - [ DEBUG ]  {conn-410001, pstmt-420010} executed. 1.1186 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379869 ] - [ DEBUG ]  {conn-410001, pstmt-420010, rs-450010} open
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379869 ] - [ DEBUG ]  {conn-410001, pstmt-420010, rs-450010} Header: [COUNT(*)]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379870 ] - [ DEBUG ]  {conn-410001, pstmt-420010, rs-450010} Result: [12]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379870 ] - [ DEBUG ]  {conn-410001, pstmt-420010, rs-450010} closed
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379870 ] - [ DEBUG ]  {conn-410001, pstmt-420010} closed
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379871 ] - [ DEBUG ]  {conn-410001, pstmt-420011} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379872 ] - [ DEBUG ]  {conn-410001, pstmt-420011} Parameters : [10]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379872 ] - [ DEBUG ]  {conn-410001, pstmt-420011} Types : [BIGINT]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379873 ] - [ DEBUG ]  {conn-410001, pstmt-420011} executed. 1.1764 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379873 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} open
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379874 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379875 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379875 ] - [ DEBUG ]  {conn-410001, pstmt-420011, rs-450011} closed
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379875 ] - [ DEBUG ]  {conn-410001, pstmt-420011} closed
+2021-05-27 19:54:52  [ http-nio-8010-exec-3:379875 ] - [ DEBUG ]  {conn-410001} pool-recycle
+2021-05-27 19:54:52  [ Thread-37:379995 ] - [ DEBUG ]  {conn-410001} closed
+2021-05-27 19:55:31  [ Druid-ConnectionPool-Create-848090178:0 ] - [ DEBUG ]  {conn-10001} connected
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:3 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:19 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from userData where username = ?
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:24 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [武允文]
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:24 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:34 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 10.4983 millis. select * from userData where username = ?
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:36 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:38 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:44 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [14, 武允文, 123, 管理员, null, 18049685597, 0, 2021-04-25 12:22:37.0, 2021-04-25 12:22:37.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}], 男]
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:48 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:51 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-3:52 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:500 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:501 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select count(*) from dwxxb
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:501 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : []
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:501 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : []
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:507 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 6.0619 millis. select count(*) from dwxxb
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:507 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:507 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [count(*)]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:507 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [12]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:508 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:508 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:508 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:573 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:573 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:573 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : []
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:573 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : []
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:597 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 24.0899 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:597 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:597 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [COUNT(*)]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:598 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [12]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:599 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:599 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:605 ] - [ DEBUG ]  {conn-10001, pstmt-20003} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:606 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Parameters : [10]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:607 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Types : [BIGINT]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:608 ] - [ DEBUG ]  {conn-10001, pstmt-20003} executed. 1.6909 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:608 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} open
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:608 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:608 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:609 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:609 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:609 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:610 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:610 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:610 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:610 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:611 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:611 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:611 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:611 ] - [ DEBUG ]  {conn-10001, pstmt-20003} closed
+2021-05-27 19:55:31  [ http-nio-8010-exec-7:611 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-05-27 19:56:18  [ Thread-13:47077 ] - [ DEBUG ]  {conn-10001} closed
+2021-05-27 19:56:23  [ Druid-ConnectionPool-Create-863916751:52340 ] - [ DEBUG ]  {conn-210001} connected
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52342 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52342 ] - [ DEBUG ]  {conn-210001, pstmt-220000} created. select count(*) from dwxxb
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52342 ] - [ DEBUG ]  {conn-210001, pstmt-220000} Parameters : []
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52342 ] - [ DEBUG ]  {conn-210001, pstmt-220000} Types : []
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52344 ] - [ DEBUG ]  {conn-210001, pstmt-220000} executed. 1.917 millis. select count(*) from dwxxb
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52344 ] - [ DEBUG ]  {conn-210001, pstmt-220000, rs-250000} open
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52344 ] - [ DEBUG ]  {conn-210001, pstmt-220000, rs-250000} Header: [count(*)]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52344 ] - [ DEBUG ]  {conn-210001, pstmt-220000, rs-250000} Result: [12]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52345 ] - [ DEBUG ]  {conn-210001, pstmt-220000, rs-250000} closed
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52345 ] - [ DEBUG ]  {conn-210001, pstmt-220000} closed
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52345 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52346 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52347 ] - [ DEBUG ]  {conn-210001, pstmt-220001} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52347 ] - [ DEBUG ]  {conn-210001, pstmt-220001} Parameters : []
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52347 ] - [ DEBUG ]  {conn-210001, pstmt-220001} Types : []
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52348 ] - [ DEBUG ]  {conn-210001, pstmt-220001} executed. 1.4012 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52348 ] - [ DEBUG ]  {conn-210001, pstmt-220001, rs-250001} open
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52348 ] - [ DEBUG ]  {conn-210001, pstmt-220001, rs-250001} Header: [COUNT(*)]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52348 ] - [ DEBUG ]  {conn-210001, pstmt-220001, rs-250001} Result: [12]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52349 ] - [ DEBUG ]  {conn-210001, pstmt-220001, rs-250001} closed
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52349 ] - [ DEBUG ]  {conn-210001, pstmt-220001} closed
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52349 ] - [ DEBUG ]  {conn-210001, pstmt-220002} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52349 ] - [ DEBUG ]  {conn-210001, pstmt-220002} Parameters : [10]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52349 ] - [ DEBUG ]  {conn-210001, pstmt-220002} Types : [BIGINT]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52351 ] - [ DEBUG ]  {conn-210001, pstmt-220002} executed. 1.2769 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52351 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} open
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52351 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52351 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52352 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52352 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52352 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52352 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52353 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52353 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52354 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52355 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52356 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52356 ] - [ DEBUG ]  {conn-210001, pstmt-220002, rs-250002} closed
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52356 ] - [ DEBUG ]  {conn-210001, pstmt-220002} closed
+2021-05-27 19:56:23  [ http-nio-8010-exec-2:52356 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54392 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54393 ] - [ DEBUG ]  {conn-210001, pstmt-220003} created. select count(*) from dwxxb
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54393 ] - [ DEBUG ]  {conn-210001, pstmt-220003} Parameters : []
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54393 ] - [ DEBUG ]  {conn-210001, pstmt-220003} Types : []
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54395 ] - [ DEBUG ]  {conn-210001, pstmt-220003} executed. 2.3088 millis. select count(*) from dwxxb
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54395 ] - [ DEBUG ]  {conn-210001, pstmt-220003, rs-250003} open
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54395 ] - [ DEBUG ]  {conn-210001, pstmt-220003, rs-250003} Header: [count(*)]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54395 ] - [ DEBUG ]  {conn-210001, pstmt-220003, rs-250003} Result: [12]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54396 ] - [ DEBUG ]  {conn-210001, pstmt-220003, rs-250003} closed
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54396 ] - [ DEBUG ]  {conn-210001, pstmt-220003} closed
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54396 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54397 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54398 ] - [ DEBUG ]  {conn-210001, pstmt-220004} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54398 ] - [ DEBUG ]  {conn-210001, pstmt-220004} Parameters : []
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54398 ] - [ DEBUG ]  {conn-210001, pstmt-220004} Types : []
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54400 ] - [ DEBUG ]  {conn-210001, pstmt-220004} executed. 2.3302 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54400 ] - [ DEBUG ]  {conn-210001, pstmt-220004, rs-250004} open
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54400 ] - [ DEBUG ]  {conn-210001, pstmt-220004, rs-250004} Header: [COUNT(*)]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54400 ] - [ DEBUG ]  {conn-210001, pstmt-220004, rs-250004} Result: [12]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54401 ] - [ DEBUG ]  {conn-210001, pstmt-220004, rs-250004} closed
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54401 ] - [ DEBUG ]  {conn-210001, pstmt-220004} closed
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54402 ] - [ DEBUG ]  {conn-210001, pstmt-220005} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ? OFFSET ?
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54402 ] - [ DEBUG ]  {conn-210001, pstmt-220005} Parameters : [10, 10]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54402 ] - [ DEBUG ]  {conn-210001, pstmt-220005} Types : [BIGINT, BIGINT]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54403 ] - [ DEBUG ]  {conn-210001, pstmt-220005} executed. 1.3215 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ? OFFSET ?
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54403 ] - [ DEBUG ]  {conn-210001, pstmt-220005, rs-250005} open
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54403 ] - [ DEBUG ]  {conn-210001, pstmt-220005, rs-250005} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54403 ] - [ DEBUG ]  {conn-210001, pstmt-220005, rs-250005} Result: [西安理工大学, 10020, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54404 ] - [ DEBUG ]  {conn-210001, pstmt-220005, rs-250005} Result: [西安理工大学, 10021, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54404 ] - [ DEBUG ]  {conn-210001, pstmt-220005, rs-250005} closed
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54404 ] - [ DEBUG ]  {conn-210001, pstmt-220005} closed
+2021-05-27 19:56:25  [ http-nio-8010-exec-4:54404 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56929 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56929 ] - [ DEBUG ]  {conn-210001, pstmt-220006} created. select count(*) from dwxxb
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56929 ] - [ DEBUG ]  {conn-210001, pstmt-220006} Parameters : []
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56929 ] - [ DEBUG ]  {conn-210001, pstmt-220006} Types : []
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56931 ] - [ DEBUG ]  {conn-210001, pstmt-220006} executed. 1.8151 millis. select count(*) from dwxxb
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56931 ] - [ DEBUG ]  {conn-210001, pstmt-220006, rs-250006} open
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56931 ] - [ DEBUG ]  {conn-210001, pstmt-220006, rs-250006} Header: [count(*)]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56931 ] - [ DEBUG ]  {conn-210001, pstmt-220006, rs-250006} Result: [12]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56931 ] - [ DEBUG ]  {conn-210001, pstmt-220006, rs-250006} closed
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56932 ] - [ DEBUG ]  {conn-210001, pstmt-220006} closed
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56932 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56933 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56934 ] - [ DEBUG ]  {conn-210001, pstmt-220007} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56934 ] - [ DEBUG ]  {conn-210001, pstmt-220007} Parameters : []
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56934 ] - [ DEBUG ]  {conn-210001, pstmt-220007} Types : []
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56935 ] - [ DEBUG ]  {conn-210001, pstmt-220007} executed. 1.8047 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220007, rs-250007} open
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220007, rs-250007} Header: [COUNT(*)]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220007, rs-250007} Result: [12]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220007, rs-250007} closed
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220007} closed
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220008} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220008} Parameters : [10]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56936 ] - [ DEBUG ]  {conn-210001, pstmt-220008} Types : [BIGINT]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56937 ] - [ DEBUG ]  {conn-210001, pstmt-220008} executed. 0.8903 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56937 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} open
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56937 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56938 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56938 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56938 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56938 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56940 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56940 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56941 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56941 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56941 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56941 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56941 ] - [ DEBUG ]  {conn-210001, pstmt-220008, rs-250008} closed
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56941 ] - [ DEBUG ]  {conn-210001, pstmt-220008} closed
+2021-05-27 19:56:28  [ http-nio-8010-exec-3:56942 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58904 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58904 ] - [ DEBUG ]  {conn-210001, pstmt-220009} created. select count(*) from dwxxb
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58904 ] - [ DEBUG ]  {conn-210001, pstmt-220009} Parameters : []
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58904 ] - [ DEBUG ]  {conn-210001, pstmt-220009} Types : []
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58906 ] - [ DEBUG ]  {conn-210001, pstmt-220009} executed. 1.6653 millis. select count(*) from dwxxb
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58906 ] - [ DEBUG ]  {conn-210001, pstmt-220009, rs-250009} open
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58906 ] - [ DEBUG ]  {conn-210001, pstmt-220009, rs-250009} Header: [count(*)]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58906 ] - [ DEBUG ]  {conn-210001, pstmt-220009, rs-250009} Result: [12]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58906 ] - [ DEBUG ]  {conn-210001, pstmt-220009, rs-250009} closed
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58906 ] - [ DEBUG ]  {conn-210001, pstmt-220009} closed
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58907 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58908 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58908 ] - [ DEBUG ]  {conn-210001, pstmt-220010} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58909 ] - [ DEBUG ]  {conn-210001, pstmt-220010} Parameters : []
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58909 ] - [ DEBUG ]  {conn-210001, pstmt-220010} Types : []
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58911 ] - [ DEBUG ]  {conn-210001, pstmt-220010} executed. 2.4516 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58911 ] - [ DEBUG ]  {conn-210001, pstmt-220010, rs-250010} open
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58911 ] - [ DEBUG ]  {conn-210001, pstmt-220010, rs-250010} Header: [COUNT(*)]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58911 ] - [ DEBUG ]  {conn-210001, pstmt-220010, rs-250010} Result: [12]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58912 ] - [ DEBUG ]  {conn-210001, pstmt-220010, rs-250010} closed
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58912 ] - [ DEBUG ]  {conn-210001, pstmt-220010} closed
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58913 ] - [ DEBUG ]  {conn-210001, pstmt-220011} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ? OFFSET ?
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58913 ] - [ DEBUG ]  {conn-210001, pstmt-220011} Parameters : [10, 10]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58913 ] - [ DEBUG ]  {conn-210001, pstmt-220011} Types : [BIGINT, BIGINT]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58914 ] - [ DEBUG ]  {conn-210001, pstmt-220011} executed. 0.9344 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ? OFFSET ?
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58914 ] - [ DEBUG ]  {conn-210001, pstmt-220011, rs-250011} open
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58914 ] - [ DEBUG ]  {conn-210001, pstmt-220011, rs-250011} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58914 ] - [ DEBUG ]  {conn-210001, pstmt-220011, rs-250011} Result: [西安理工大学, 10020, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58915 ] - [ DEBUG ]  {conn-210001, pstmt-220011, rs-250011} Result: [西安理工大学, 10021, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58915 ] - [ DEBUG ]  {conn-210001, pstmt-220011, rs-250011} closed
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58915 ] - [ DEBUG ]  {conn-210001, pstmt-220011} closed
+2021-05-27 19:56:30  [ http-nio-8010-exec-5:58915 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60514 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60514 ] - [ DEBUG ]  {conn-210001, pstmt-220012} created. select count(*) from dwxxb
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60514 ] - [ DEBUG ]  {conn-210001, pstmt-220012} Parameters : []
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60514 ] - [ DEBUG ]  {conn-210001, pstmt-220012} Types : []
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60516 ] - [ DEBUG ]  {conn-210001, pstmt-220012} executed. 1.9861 millis. select count(*) from dwxxb
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60516 ] - [ DEBUG ]  {conn-210001, pstmt-220012, rs-250012} open
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60516 ] - [ DEBUG ]  {conn-210001, pstmt-220012, rs-250012} Header: [count(*)]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60516 ] - [ DEBUG ]  {conn-210001, pstmt-220012, rs-250012} Result: [12]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60517 ] - [ DEBUG ]  {conn-210001, pstmt-220012, rs-250012} closed
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60517 ] - [ DEBUG ]  {conn-210001, pstmt-220012} closed
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60517 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60519 ] - [ DEBUG ]  {conn-210001} pool-connect
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60519 ] - [ DEBUG ]  {conn-210001, pstmt-220013} created. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60519 ] - [ DEBUG ]  {conn-210001, pstmt-220013} Parameters : []
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60519 ] - [ DEBUG ]  {conn-210001, pstmt-220013} Types : []
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60521 ] - [ DEBUG ]  {conn-210001, pstmt-220013} executed. 1.9989 millis. SELECT COUNT(*) FROM dwxxb
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60521 ] - [ DEBUG ]  {conn-210001, pstmt-220013, rs-250013} open
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60521 ] - [ DEBUG ]  {conn-210001, pstmt-220013, rs-250013} Header: [COUNT(*)]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60521 ] - [ DEBUG ]  {conn-210001, pstmt-220013, rs-250013} Result: [12]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60521 ] - [ DEBUG ]  {conn-210001, pstmt-220013, rs-250013} closed
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60522 ] - [ DEBUG ]  {conn-210001, pstmt-220013} closed
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60522 ] - [ DEBUG ]  {conn-210001, pstmt-220014} created. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60522 ] - [ DEBUG ]  {conn-210001, pstmt-220014} Parameters : [10]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60522 ] - [ DEBUG ]  {conn-210001, pstmt-220014} Types : [BIGINT]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60523 ] - [ DEBUG ]  {conn-210001, pstmt-220014} executed. 0.8464 millis. SELECT  dwmc,dwdm,dwxzid,dwszsf,dwszcs,dwszqx,dwszdz,dwfr,dwlxr,lxryddh,lxrmail,lxrgddh,dwyzbm  FROM dwxxb LIMIT ?
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60523 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} open
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60523 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Header: [dwmc, dwdm, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwfr, dwlxr, lxryddh, lxrmail, lxrgddh, dwyzbm]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60523 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10010, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60523 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10011, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60523 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10012, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60524 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10013, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60524 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10014, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60524 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10015, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60524 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10016, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60524 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10017, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60524 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10018, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60525 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} Result: [西安理工大学, 10019, N, 陕西省, 西安市, 碑林区, 金花南路5号, 李孝廉, 武允文, 18049685597, 1596253661@qq.com, 8008208820, 810038]
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60525 ] - [ DEBUG ]  {conn-210001, pstmt-220014, rs-250014} closed
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60525 ] - [ DEBUG ]  {conn-210001, pstmt-220014} closed
+2021-05-27 19:56:31  [ http-nio-8010-exec-6:60525 ] - [ DEBUG ]  {conn-210001} pool-recycle
+2021-05-27 20:12:29  [ Thread-25:1018330 ] - [ DEBUG ]  {conn-210001} closed

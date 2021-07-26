@@ -1,0 +1,2 @@
+2021-04-23 17:12:43.793 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-23 17:12:46.398 [restartedMain] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".

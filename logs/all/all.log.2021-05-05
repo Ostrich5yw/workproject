@@ -1,0 +1,12 @@
+2021-05-05 16:41:34  [ Druid-ConnectionPool-Create-1602540360:0 ] - [ DEBUG ]  {conn-10001} connected
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:8 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:141 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from userData where username = ?
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:146 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [武允文]
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:146 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:157 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 11.8432 millis. select * from userData where username = ?
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:160 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:161 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:168 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [14, 武允文, 123, 管理员, null, 18049685597, 0, 2021-04-25 12:22:37.0, 2021-04-25 12:22:37.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}], 男]
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:172 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:173 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-05-05 16:41:34  [ http-nio-8010-exec-2:174 ] - [ DEBUG ]  {conn-10001} pool-recycle

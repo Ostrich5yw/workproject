@@ -191,6 +191,7 @@
             a.contentType && 0 == a.contentType.indexOf("application/json") && (d = JSON.stringify(d)), i.loading(), t.ajax({
                 type: a.method || "get",
                 url: a.url,
+                async: false,
                 contentType: a.contentType,
                 data: d,
                 dataType: "json",
@@ -199,7 +200,8 @@
                     "function" == typeof a.parseData && (t = a.parseData(t) || t), t[n.statusName] != n.statusCode ? (i.renderForm(), i.errorView(t[n.msgName] || '返回的数据不符合规范，正确的成功状态码应为："' + n.statusName + '": ' + n.statusCode)) : (i.renderData(t, e, t[n.countName]), o(), a.time = (new Date).getTime() - i.startTime + " ms"), i.setColsWidth(), "function" == typeof a.done && a.done(t, e, t[n.countName])
                 },
                 error: function (e, t) {
-                    i.errorView("数据接口请求异常：" + t), i.renderForm(), i.setColsWidth()
+                    i.errorView("无数据"), i.renderForm(), i.setColsWidth()
+                    //i.errorView("数据接口请求异常：" + t), i.renderForm(), i.setColsWidth()
                 }
             })
         } else if (a.data && a.data.constructor === Array) {

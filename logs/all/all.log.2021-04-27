@@ -1,0 +1,43 @@
+2021-04-27 17:51:36  [ Druid-ConnectionPool-Create-1372667624:0 ] - [ DEBUG ]  {conn-10001} connected
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:6 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:25 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from userData where username = ?
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:30 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [admin]
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:30 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:41 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 11.502099 millis. select * from userData where username = ?
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:43 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:45 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:49 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:51 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-04-27 17:51:36  [ http-nio-8010-exec-7:52 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36653 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36653 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select * from userData where username = ?
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36653 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : [admin]
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36654 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : [VARCHAR]
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36667 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 13.845199 millis. select * from userData where username = ?
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36667 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36668 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36668 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36668 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2021-04-27 17:52:13  [ http-nio-8010-exec-1:36668 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44289 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44289 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. select * from userData where username = ?
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44289 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : [admin]
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44289 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : [VARCHAR]
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44290 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 1.2064 millis. select * from userData where username = ?
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44291 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44291 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44291 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44291 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2021-04-27 17:52:20  [ http-nio-8010-exec-8:44291 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84302 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84302 ] - [ DEBUG ]  {conn-10001, pstmt-20003} created. select * from userData where username = ?
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84302 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Parameters : [张凤华]
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84302 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Types : [VARCHAR]
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84304 ] - [ DEBUG ]  {conn-10001, pstmt-20003} executed. 2.5944 millis. select * from userData where username = ?
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84304 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} open
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84305 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84307 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [15, 张凤华, 822f69df5fff8f8983e69a515744a9df, 客户, null, 17729010248, 0, 2021-03-19 16:29:10.0, 2021-03-19 16:29:10.0, 1, usr:1, [{"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84311 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} closed
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84312 ] - [ DEBUG ]  {conn-10001, pstmt-20003} closed
+2021-04-27 17:53:00  [ http-nio-8010-exec-2:84312 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-27 18:23:51  [ Druid-ConnectionPool-Destroy-1372667624:1935292 ] - [ DEBUG ]  {conn-10001} closed

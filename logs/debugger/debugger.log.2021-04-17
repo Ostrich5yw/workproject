@@ -1,0 +1,123 @@
+2021-04-17 16:09:19  [ Druid-ConnectionPool-Create-305356022:0 ] - [ DEBUG ]  {conn-10001} connected
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:9 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:24 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from userData where username = ?
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:29 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [test3]
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:29 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:39 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 11.0848 millis. select * from userData where username = ?
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:42 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:45 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:49 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [14, test3, 822f69df5fff8f8983e69a515744a9df, 123, null, 18049685597, 0, 2021-03-11 17:05:21.0, 2021-03-11 17:05:21.0, 1, usr:3, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:54 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:57 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-04-17 16:09:19  [ http-nio-8010-exec-6:58 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144005 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144006 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select * from userData where username = ?
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144006 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : [admin]
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144006 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : [VARCHAR]
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144008 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 1.7527 millis. select * from userData where username = ?
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144008 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144008 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144008 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [16, admin, 822f69df5fff8f8983e69a515744a9df, 123, null, 18049685597, 0, 2021-03-19 16:29:10.0, 2021-03-19 16:29:10.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144009 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144010 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2021-04-17 16:11:43  [ http-nio-8010-exec-10:144010 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146287 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146287 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. select count(*) from userData
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146287 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : []
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146287 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : []
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146290 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 3.1393 millis. select count(*) from userData
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146290 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146291 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [count(*)]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146291 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [16]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146291 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146291 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146291 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146343 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146343 ] - [ DEBUG ]  {conn-10001, pstmt-20003} created. SELECT COUNT(*) FROM userData
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146343 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Parameters : []
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146343 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Types : []
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146345 ] - [ DEBUG ]  {conn-10001, pstmt-20003} executed. 1.7622 millis. SELECT COUNT(*) FROM userData
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146345 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} open
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146345 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Header: [COUNT(*)]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146345 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [16]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146346 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} closed
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146346 ] - [ DEBUG ]  {conn-10001, pstmt-20003} closed
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146352 ] - [ DEBUG ]  {conn-10001, pstmt-20004} created. SELECT  userId,username,password,nickName,avatar,phone,state,createTime,updateTime,roleId,roleName,roles,sex  FROM userData LIMIT ?
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146353 ] - [ DEBUG ]  {conn-10001, pstmt-20004} Parameters : [10]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146353 ] - [ DEBUG ]  {conn-10001, pstmt-20004} Types : [BIGINT]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146354 ] - [ DEBUG ]  {conn-10001, pstmt-20004} executed. 1.5878 millis. SELECT  userId,username,password,nickName,avatar,phone,state,createTime,updateTime,roleId,roleName,roles,sex  FROM userData LIMIT ?
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146354 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} open
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146355 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146355 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [1, admin1, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146356 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [2, admin2, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146357 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [3, admin3, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:3, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146357 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [4, admin4, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146358 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [5, admin5, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146358 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [6, admin6, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146360 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [7, admin7, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146360 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [8, admin8, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:3, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146361 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [9, admin9, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146362 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [10, admin10, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146362 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} closed
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146363 ] - [ DEBUG ]  {conn-10001, pstmt-20004} closed
+2021-04-17 16:11:45  [ http-nio-8010-exec-2:146363 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147318 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147318 ] - [ DEBUG ]  {conn-10001, pstmt-20005} created. select * from organizationData
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147318 ] - [ DEBUG ]  {conn-10001, pstmt-20005} Parameters : []
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147318 ] - [ DEBUG ]  {conn-10001, pstmt-20005} Types : []
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147320 ] - [ DEBUG ]  {conn-10001, pstmt-20005} executed. 1.8801 millis. select * from organizationData
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147320 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} open
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147320 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Header: [organizationId, parentId, organizationName, organizationFullName, organizationType, sortNumber, comments, createTime, updateTime]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147320 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [1, 0, 某某公司, 某某公司, 1, 1, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147321 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [2, 1, 研发部, 研发部, 3, 2, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147322 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [3, 2, 高教组, 高教组, 4, 3, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147322 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [4, 2, 政务组, 政务组, 4, 4, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147322 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [5, 2, 制造组, 制造组, 4, 5, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147323 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [6, 7, 仿真组, 仿真组, 4, 6, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147323 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [7, 8, 测试组, 测试组, 3, 7, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147323 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [8, 9, 设计组, 设计组, 3, 8, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147323 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [9, 2, 市场部, 市场部, 3, 9, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147324 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Result: [10, 1, 其他, 其他, 4, 10, null, 2020-03-06 09:27:00.0, 2020-03-06 09:27:00.0]
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147324 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147324 ] - [ DEBUG ]  {conn-10001, pstmt-20005} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-1:147324 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147358 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147358 ] - [ DEBUG ]  {conn-10001, pstmt-20006} created. select count(*) from userData
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147358 ] - [ DEBUG ]  {conn-10001, pstmt-20006} Parameters : []
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147358 ] - [ DEBUG ]  {conn-10001, pstmt-20006} Types : []
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147360 ] - [ DEBUG ]  {conn-10001, pstmt-20006} executed. 1.4582 millis. select count(*) from userData
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147360 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} open
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147360 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} Header: [count(*)]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147360 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} Result: [16]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147360 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147361 ] - [ DEBUG ]  {conn-10001, pstmt-20006} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147361 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147362 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147362 ] - [ DEBUG ]  {conn-10001, pstmt-20007} created. SELECT COUNT(*) FROM userData
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147362 ] - [ DEBUG ]  {conn-10001, pstmt-20007} Parameters : []
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147363 ] - [ DEBUG ]  {conn-10001, pstmt-20007} Types : []
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147364 ] - [ DEBUG ]  {conn-10001, pstmt-20007} executed. 1.3832 millis. SELECT COUNT(*) FROM userData
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147364 ] - [ DEBUG ]  {conn-10001, pstmt-20007, rs-50007} open
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147364 ] - [ DEBUG ]  {conn-10001, pstmt-20007, rs-50007} Header: [COUNT(*)]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147364 ] - [ DEBUG ]  {conn-10001, pstmt-20007, rs-50007} Result: [16]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147364 ] - [ DEBUG ]  {conn-10001, pstmt-20007, rs-50007} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147364 ] - [ DEBUG ]  {conn-10001, pstmt-20007} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147365 ] - [ DEBUG ]  {conn-10001, pstmt-20008} created. SELECT  userId,username,password,nickName,avatar,phone,state,createTime,updateTime,roleId,roleName,roles,sex  FROM userData LIMIT ?
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147365 ] - [ DEBUG ]  {conn-10001, pstmt-20008} Parameters : [10]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147365 ] - [ DEBUG ]  {conn-10001, pstmt-20008} Types : [BIGINT]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147366 ] - [ DEBUG ]  {conn-10001, pstmt-20008} executed. 1.3705 millis. SELECT  userId,username,password,nickName,avatar,phone,state,createTime,updateTime,roleId,roleName,roles,sex  FROM userData LIMIT ?
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147367 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} open
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147367 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147367 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [1, admin1, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147368 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [2, admin2, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147369 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [3, admin3, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:3, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147369 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [4, admin4, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147372 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [5, admin5, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147372 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [6, admin6, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147373 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [7, admin7, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147373 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [8, admin8, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:3, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147373 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [9, admin9, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147374 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} Result: [10, admin10, 822f69df5fff8f8983e69a515744a9df, 管理员, null, 12345678901, 0, 2019-03-30 00:38:03.0, 2019-03-30 00:38:03.0, 1, usr:2, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}, {"roleId": 2, "comments": null, "isDelete": null, "roleName": "普通用户", "createTime": null, "updateTime": null}], 男]
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147374 ] - [ DEBUG ]  {conn-10001, pstmt-20008, rs-50008} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147374 ] - [ DEBUG ]  {conn-10001, pstmt-20008} closed
+2021-04-17 16:11:46  [ http-nio-8010-exec-6:147374 ] - [ DEBUG ]  {conn-10001} pool-recycle

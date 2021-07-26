@@ -6,19 +6,18 @@ layui.config({  // common.js是配置layui扩展模块的目录，每个页面�
     steps: 'steps/steps',
     notice: 'notice/notice',
     cascader: 'cascader/cascader',
-    dropdown: 'dropdown/dropdown',
+    // dropdown: 'dropdown/dropdown',
     fileChoose: 'fileChoose/fileChoose',
     Split: 'Split/Split',
     Cropper: 'Cropper/Cropper',
     tagsInput: 'tagsInput/tagsInput',
     citypicker: 'city-picker/city-picker',
     introJs: 'introJs/introJs',
-    zTree: 'zTree/zTree'
+    zTree: 'zTree/zTree',
 }).use(['layer', 'admin'], function () {
     var $ = layui.jquery;
     var layer = layui.layer;
     var admin = layui.admin;
-
 });
 
 /** 获取当前项目的根路径，通过获取layui.js全路径截取assets之前的地址 */

@@ -1,22 +1,44 @@
 package com.example.workproject.controller;
 
+import com.example.workproject.entity.PoJo.operatorBean;
+import com.example.workproject.entity.PoJo.userBean;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("/page")
 public class PageController {
-    @RequestMapping("/")
-    public String MainPage(){
-        return "iframe/index.html";
+    @RequestMapping("/login")
+    public String loginPage(){
+        return "iframe/page/login.html";
     }
-    @RequestMapping("/authorities")
+    @RequestMapping("/Menu")
     public String authoritiesPage(){
-        return "iframe/page/authorities.html";
+        return "iframe/page/Menu.html";
     }
-    @RequestMapping("/new")
-    public String newPage(){
-        return "iframe/page/new.html";
+
+
+    @RequestMapping("/unit")
+    public String unitPage(Model model){
+        model.addAttribute("userData", ((operatorBean)SecurityUtils.getSubject().getPrincipal()));
+        return "iframe/page/Management/Unit.html";
     }
+    @RequestMapping("/institution")
+    public String institutionPage(){
+        return "iframe/page/Management/Institution.html";
+    }
+    @RequestMapping("/menu")
+    public String menuPage(Model model){
+        model.addAttribute("userData", ((operatorBean)SecurityUtils.getSubject().getPrincipal()));
+        return "iframe/page/Management/Menu.html";
+    }
+    @RequestMapping("/operator")
+    public String operatorPage(){
+        return "iframe/page/Management/Operator.html";
+    }
+
     @RequestMapping("/organization")
     public String organizationPage(){
         return "iframe/page/organization.html";
@@ -24,5 +46,19 @@ public class PageController {
     @RequestMapping("/user")
     public String userPage(){
         return "iframe/page/user.html";
+    }
+    @RequestMapping("/areaChoose")
+    public String areaChoosePage(){
+        return "iframe/page/areaChoose.html";
+    }
+    @RequestMapping("/workplace")
+    public String workplace(Model model){
+        model.addAttribute("userData", ((operatorBean)SecurityUtils.getSubject().getPrincipal()).getCzyjs());
+        return "iframe/page/workplace.html";
+    }
+
+    @RequestMapping("/test")
+    public String testPage(){
+        return "iframe/page/test.html";
     }
 }

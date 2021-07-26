@@ -1,0 +1,239 @@
+2021-07-22 11:28:33  [ Druid-ConnectionPool-Create-1232252836:0 ] - [ DEBUG ]  {conn-10001,procId-227} connected
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:6 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:23 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from czyxxb where czydm = ?
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:28 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [1000013]
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:29 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:40 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 13.2241 millis. select * from czyxxb where czydm = ?
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:44 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:46 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:52 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [91370000726229592Y, 1100001, 1000000, 武允文, 123, 1234, 1, 1000013, 123456, 12345, 1, 2021-06-15, 123]
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:56 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:58 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-07-22 11:28:33  [ http-nio-8010-exec-4:59 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7880 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7881 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select menuconfigdir from xtcsb
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7881 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : []
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7881 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : []
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 1.2738 millis. select menuconfigdir from xtcsb
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [menuconfigdir]
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [D:\mapdirconfig]
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7883 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7884 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2021-07-22 11:28:41  [ http-nio-8010-exec-9:7884 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43792 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43793 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. select menuconfigdir from xtcsb
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43793 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : []
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43793 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : []
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 1.083 millis. select menuconfigdir from xtcsb
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [menuconfigdir]
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [D:\mapdirconfig]
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43795 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43795 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2021-07-22 11:29:17  [ http-nio-8010-exec-8:43795 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179276 ] - [ DEBUG ]  {conn-10001} closed
+2021-07-22 11:31:32  [ Druid-ConnectionPool-Create-1232252836:179287 ] - [ DEBUG ]  {conn-10002,procId-228} connected
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179288 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179289 ] - [ DEBUG ]  {conn-10002, pstmt-20003} created. select menuconfigdir from xtcsb
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179289 ] - [ DEBUG ]  {conn-10002, pstmt-20003} Parameters : []
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179289 ] - [ DEBUG ]  {conn-10002, pstmt-20003} Types : []
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003} executed. 1.8621 millis. select menuconfigdir from xtcsb
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} open
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} Header: [menuconfigdir]
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} Result: [D:\mapdirconfig]
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} closed
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003} closed
+2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183115 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183115 ] - [ DEBUG ]  {conn-10002, pstmt-20004} created. select menuconfigdir from xtcsb
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183115 ] - [ DEBUG ]  {conn-10002, pstmt-20004} Parameters : []
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183116 ] - [ DEBUG ]  {conn-10002, pstmt-20004} Types : []
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183116 ] - [ DEBUG ]  {conn-10002, pstmt-20004} executed. 0.874 millis. select menuconfigdir from xtcsb
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183116 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} open
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} Header: [menuconfigdir]
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} Result: [D:\mapdirconfig]
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} closed
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004} closed
+2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186312 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186313 ] - [ DEBUG ]  {conn-10002, pstmt-20005} created. select menuconfigdir from xtcsb
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186313 ] - [ DEBUG ]  {conn-10002, pstmt-20005} Parameters : []
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186313 ] - [ DEBUG ]  {conn-10002, pstmt-20005} Types : []
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005} executed. 0.7062 millis. select menuconfigdir from xtcsb
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} open
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} Header: [menuconfigdir]
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} Result: [D:\mapdirconfig]
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} closed
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005} closed
+2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282700 ] - [ DEBUG ]  {conn-10002} closed
+2021-07-22 11:33:16  [ Druid-ConnectionPool-Create-1232252836:282711 ] - [ DEBUG ]  {conn-10003,procId-229} connected
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282712 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282713 ] - [ DEBUG ]  {conn-10003, pstmt-20006} created. select menuconfigdir from xtcsb
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282713 ] - [ DEBUG ]  {conn-10003, pstmt-20006} Parameters : []
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282713 ] - [ DEBUG ]  {conn-10003, pstmt-20006} Types : []
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006} executed. 2.0287 millis. select menuconfigdir from xtcsb
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} open
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} Header: [menuconfigdir]
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} Result: [D:\mapdirconfig]
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282716 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} closed
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282716 ] - [ DEBUG ]  {conn-10003, pstmt-20006} closed
+2021-07-22 11:33:16  [ http-nio-8010-exec-4:282716 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285314 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285314 ] - [ DEBUG ]  {conn-10003, pstmt-20007} created. select menuconfigdir from xtcsb
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285314 ] - [ DEBUG ]  {conn-10003, pstmt-20007} Parameters : []
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007} Types : []
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007} executed. 0.7137 millis. select menuconfigdir from xtcsb
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} open
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} Header: [menuconfigdir]
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} Result: [D:\mapdirconfig]
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285316 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} closed
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285316 ] - [ DEBUG ]  {conn-10003, pstmt-20007} closed
+2021-07-22 11:33:18  [ http-nio-8010-exec-9:285316 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003, pstmt-20008} created. select menuconfigdir from xtcsb
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003, pstmt-20008} Parameters : []
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003, pstmt-20008} Types : []
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008} executed. 0.6726 millis. select menuconfigdir from xtcsb
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} open
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} Header: [menuconfigdir]
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} Result: [D:\mapdirconfig]
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} closed
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008} closed
+2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003, pstmt-20009} created. select menuconfigdir from xtcsb
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003, pstmt-20009} Parameters : []
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003, pstmt-20009} Types : []
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009} executed. 0.7975 millis. select menuconfigdir from xtcsb
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} open
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} Header: [menuconfigdir]
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} Result: [D:\mapdirconfig]
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323074 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} closed
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323074 ] - [ DEBUG ]  {conn-10003, pstmt-20009} closed
+2021-07-22 11:33:56  [ http-nio-8010-exec-9:323074 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003, pstmt-20010} created. select menuconfigdir from xtcsb
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003, pstmt-20010} Parameters : []
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003, pstmt-20010} Types : []
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010} executed. 0.7215 millis. select menuconfigdir from xtcsb
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} open
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} Header: [menuconfigdir]
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} Result: [D:\mapdirconfig]
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327403 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} closed
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327403 ] - [ DEBUG ]  {conn-10003, pstmt-20010} closed
+2021-07-22 11:34:01  [ http-nio-8010-exec-5:327403 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329878 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329878 ] - [ DEBUG ]  {conn-10003, pstmt-20011} created. select menuconfigdir from xtcsb
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329878 ] - [ DEBUG ]  {conn-10003, pstmt-20011} Parameters : []
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011} Types : []
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011} executed. 0.6412 millis. select menuconfigdir from xtcsb
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} open
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} Header: [menuconfigdir]
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} Result: [D:\mapdirconfig]
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329880 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} closed
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329880 ] - [ DEBUG ]  {conn-10003, pstmt-20011} closed
+2021-07-22 11:34:03  [ http-nio-8010-exec-1:329880 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003, pstmt-20012} created. select menuconfigdir from xtcsb
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003, pstmt-20012} Parameters : []
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003, pstmt-20012} Types : []
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012} executed. 0.7482 millis. select menuconfigdir from xtcsb
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} open
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} Header: [menuconfigdir]
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} Result: [D:\mapdirconfig]
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332186 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} closed
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332186 ] - [ DEBUG ]  {conn-10003, pstmt-20012} closed
+2021-07-22 11:34:05  [ http-nio-8010-exec-2:332186 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003, pstmt-20013} created. select * from czyxxb where czydm = ?
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003, pstmt-20013} Parameters : [1000013]
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003, pstmt-20013} Types : [VARCHAR]
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377850 ] - [ DEBUG ]  {conn-10003, pstmt-20013} executed. 1.7095 millis. select * from czyxxb where czydm = ?
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377850 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} open
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377850 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377851 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} Result: [91370000726229592Y, 1100001, 1000000, 武允文, 123, 1234, 1, 1000013, 123456, 12345, 1, 2021-06-15, 123]
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377852 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} closed
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377852 ] - [ DEBUG ]  {conn-10003, pstmt-20013} closed
+2021-07-22 11:34:51  [ http-nio-8010-exec-8:377852 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003, pstmt-20014} created. select menuconfigdir from xtcsb
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003, pstmt-20014} Parameters : []
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003, pstmt-20014} Types : []
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382721 ] - [ DEBUG ]  {conn-10003, pstmt-20014} executed. 0.9547 millis. select menuconfigdir from xtcsb
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382721 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} open
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} Header: [menuconfigdir]
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} Result: [D:\mapdirconfig]
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} closed
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014} closed
+2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386565 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386565 ] - [ DEBUG ]  {conn-10003, pstmt-20015} created. select menuconfigdir from xtcsb
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015} Parameters : []
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015} Types : []
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015} executed. 0.6802 millis. select menuconfigdir from xtcsb
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} open
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} Header: [menuconfigdir]
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} Result: [D:\mapdirconfig]
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} closed
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003, pstmt-20015} closed
+2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003, pstmt-20016} created. select menuconfigdir from xtcsb
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003, pstmt-20016} Parameters : []
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003, pstmt-20016} Types : []
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016} executed. 0.694 millis. select menuconfigdir from xtcsb
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} open
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} Header: [menuconfigdir]
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} Result: [D:\mapdirconfig]
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} closed
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016} closed
+2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003, pstmt-20017} created. select menuconfigdir from xtcsb
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003, pstmt-20017} Parameters : []
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003, pstmt-20017} Types : []
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017} executed. 0.6768 millis. select menuconfigdir from xtcsb
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} open
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} Header: [menuconfigdir]
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} Result: [D:\mapdirconfig]
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} closed
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392695 ] - [ DEBUG ]  {conn-10003, pstmt-20017} closed
+2021-07-22 11:35:06  [ http-nio-8010-exec-4:392695 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461600 ] - [ DEBUG ]  {conn-10003} closed
+2021-07-22 11:36:15  [ Druid-ConnectionPool-Create-1232252836:461611 ] - [ DEBUG ]  {conn-10004,procId-230} connected
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461612 ] - [ DEBUG ]  {conn-10004} pool-connect
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461612 ] - [ DEBUG ]  {conn-10004, pstmt-20018} created. select menuconfigdir from xtcsb
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461613 ] - [ DEBUG ]  {conn-10004, pstmt-20018} Parameters : []
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461613 ] - [ DEBUG ]  {conn-10004, pstmt-20018} Types : []
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461614 ] - [ DEBUG ]  {conn-10004, pstmt-20018} executed. 1.7441 millis. select menuconfigdir from xtcsb
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461614 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} open
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} Header: [menuconfigdir]
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} Result: [D:\mapdirconfig]
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} closed
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018} closed
+2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004} pool-recycle
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004} pool-connect
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004, pstmt-20019} created. select menuconfigdir from xtcsb
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004, pstmt-20019} Parameters : []
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004, pstmt-20019} Types : []
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019} executed. 0.7147 millis. select menuconfigdir from xtcsb
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} open
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} Header: [menuconfigdir]
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} Result: [D:\mapdirconfig]
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479769 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} closed
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479769 ] - [ DEBUG ]  {conn-10004, pstmt-20019} closed
+2021-07-22 11:36:33  [ http-nio-8010-exec-2:479769 ] - [ DEBUG ]  {conn-10004} pool-recycle
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004} pool-connect
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004, pstmt-20020} created. select menuconfigdir from xtcsb
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004, pstmt-20020} Parameters : []
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004, pstmt-20020} Types : []
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020} executed. 0.6186 millis. select menuconfigdir from xtcsb
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} open
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} Header: [menuconfigdir]
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} Result: [D:\mapdirconfig]
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} closed
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020} closed
+2021-07-22 11:36:35  [ http-nio-8010-exec-10:481987 ] - [ DEBUG ]  {conn-10004} pool-recycle
+2021-07-22 12:07:26  [ Druid-ConnectionPool-Destroy-1232252836:2333101 ] - [ DEBUG ]  {conn-10004} closed

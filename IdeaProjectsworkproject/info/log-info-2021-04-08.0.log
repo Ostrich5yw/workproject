@@ -1,0 +1,116 @@
+2021-04-08 15:17:24.082 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 1832 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 15:17:24.082 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - The following profiles are active: dev
+2021-04-08 15:17:24.291 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 15:17:24.295 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 15:17:24.480 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8010 (http)
+2021-04-08 15:17:24.480 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:17:24.481 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-08 15:17:24.481 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-08 15:17:24.506 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-08 15:17:24.506 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 421 ms
+2021-04-08 15:17:24.548 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-04-08 15:17:24.591 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+2021-04-08 15:17:24.785 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 15:17:24.789 [cluster-ClusterId{value='606eae04d07334448dcda2bd', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:8, serverValue:185}] to 127.0.0.1:27017
+2021-04-08 15:17:24.790 [cluster-ClusterId{value='606eae04d07334448dcda2bd', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=862600}
+2021-04-08 15:17:24.791 [cluster-rtt-ClusterId{value='606eae04d07334448dcda2bd', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:186}] to 127.0.0.1:27017
+2021-04-08 15:17:24.832 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 15:17:24.880 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35730
+2021-04-08 15:17:24.895 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:17:24.898 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 15:17:24.902 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Started WorkprojectApplication in 0.853 seconds (JVM running for 186.505)
+2021-04-08 15:17:24.903 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-04-08 15:19:21.513 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 7520 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 15:19:21.515 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - The following profiles are active: dev
+2021-04-08 15:19:21.593 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 15:19:21.593 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 15:19:22.193 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 15:19:22.205 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 15:19:22.824 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8010 (http)
+2021-04-08 15:19:22.833 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:19:22.834 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-08 15:19:22.834 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-08 15:19:22.938 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-08 15:19:22.938 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1344 ms
+2021-04-08 15:19:23.029 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-04-08 15:19:23.207 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-04-08 15:19:23.795 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 15:19:23.841 [cluster-rtt-ClusterId{value='606eae7bd250f933ad09bbb0', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:187}] to 127.0.0.1:27017
+2021-04-08 15:19:23.841 [cluster-ClusterId{value='606eae7bd250f933ad09bbb0', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:188}] to 127.0.0.1:27017
+2021-04-08 15:19:23.841 [cluster-ClusterId{value='606eae7bd250f933ad09bbb0', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16704700}
+2021-04-08 15:19:24.128 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 15:19:24.419 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35730
+2021-04-08 15:19:24.443 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:19:24.458 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 15:19:24.468 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Started WorkprojectApplication in 3.657 seconds (JVM running for 4.65)
+2021-04-08 15:22:09.283 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 21792 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 15:22:09.287 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - The following profiles are active: dev
+2021-04-08 15:22:09.334 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 15:22:09.334 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 15:22:10.006 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 15:22:10.019 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 15:22:10.859 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8010 (http)
+2021-04-08 15:22:10.872 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:22:10.872 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-08 15:22:10.873 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-08 15:22:10.992 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-08 15:22:10.992 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1657 ms
+2021-04-08 15:22:11.150 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-04-08 15:22:11.329 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-04-08 15:22:11.885 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 15:22:11.931 [cluster-ClusterId{value='606eaf23d49f4127ca419b66', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:189}] to 127.0.0.1:27017
+2021-04-08 15:22:11.931 [cluster-rtt-ClusterId{value='606eaf23d49f4127ca419b66', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:190}] to 127.0.0.1:27017
+2021-04-08 15:22:11.931 [cluster-ClusterId{value='606eaf23d49f4127ca419b66', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15255800}
+2021-04-08 15:22:12.188 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 15:22:12.474 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35730
+2021-04-08 15:22:12.498 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:22:12.512 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 15:22:12.521 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Started WorkprojectApplication in 3.992 seconds (JVM running for 4.836)
+2021-04-08 15:23:00.857 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 3904 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 15:23:00.864 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - The following profiles are active: dev
+2021-04-08 15:23:00.925 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 15:23:00.925 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 15:23:01.624 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 15:23:01.637 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 15:23:02.321 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8010 (http)
+2021-04-08 15:23:02.329 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:23:02.330 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-08 15:23:02.330 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-08 15:23:02.457 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-08 15:23:02.458 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1532 ms
+2021-04-08 15:23:02.553 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-04-08 15:23:02.775 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-04-08 15:23:03.482 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 15:23:03.526 [cluster-rtt-ClusterId{value='606eaf5796bddc3df9a12269', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:191}] to 127.0.0.1:27017
+2021-04-08 15:23:03.526 [cluster-ClusterId{value='606eaf5796bddc3df9a12269', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:192}] to 127.0.0.1:27017
+2021-04-08 15:23:03.527 [cluster-ClusterId{value='606eaf5796bddc3df9a12269', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15524200}
+2021-04-08 15:23:03.785 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 15:23:04.064 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35730
+2021-04-08 15:23:04.089 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:23:04.105 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 15:23:04.113 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Started WorkprojectApplication in 4.008 seconds (JVM running for 4.905)
+2021-04-08 15:23:21.695 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 22756 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 15:23:21.697 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - The following profiles are active: dev
+2021-04-08 15:23:21.782 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 15:23:21.783 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 15:23:22.541 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 15:23:22.554 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 15:23:23.285 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8010 (http)
+2021-04-08 15:23:23.295 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:23:23.296 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-04-08 15:23:23.296 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-08 15:23:23.470 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-04-08 15:23:23.470 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1687 ms
+2021-04-08 15:23:23.611 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2021-04-08 15:23:23.794 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-04-08 15:23:24.397 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 15:23:24.443 [cluster-rtt-ClusterId{value='606eaf6ca1aaa304a57064a6', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:193}] to 127.0.0.1:27017
+2021-04-08 15:23:24.443 [cluster-ClusterId{value='606eaf6ca1aaa304a57064a6', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:194}] to 127.0.0.1:27017
+2021-04-08 15:23:24.444 [cluster-ClusterId{value='606eaf6ca1aaa304a57064a6', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15482900}
+2021-04-08 15:23:24.703 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 15:23:24.965 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35730
+2021-04-08 15:23:24.989 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8010"]
+2021-04-08 15:23:25.005 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 15:23:25.015 [restartedMain] INFO  com.example.workproject.WorkprojectApplication - Started WorkprojectApplication in 4.058 seconds (JVM running for 4.901)
+2021-04-08 15:25:09.846 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 15:25:09.849 [Thread-13] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

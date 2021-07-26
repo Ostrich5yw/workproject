@@ -219,8 +219,7 @@ layui.define(['laytpl', 'form', 'util'], function (exports) {
                 var haveChild = d[this.haveChildName];
                 if (haveChild !== undefined) haveChild = haveChild === true || haveChild === 'true';
                 else if (d[this.childName]) haveChild = d[this.childName].length > 0;
-                if (haveChild) return '<i class="ew-tree-icon ew-tree-icon-folder"></i>';
-                else return '<i class="ew-tree-icon ew-tree-icon-file"></i>';
+                return '<i class="ew-tree-icon ew-tree-icon-folder"></i>';
             }
         }
     };

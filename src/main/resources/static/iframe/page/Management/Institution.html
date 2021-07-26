@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>机构管理</title>
+    <link rel="stylesheet" href="../iframe/assets/libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../iframe/assets/module/admin.css?v=318"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        /* 左树 */
+        #institutionTreeBar {
+            padding: 10px 15px;
+            border: 1px solid #e6e6e6;
+            background-color: #f2f2f2;
+        }
+
+        #institutionTree {
+            border: 1px solid #e6e6e6;
+            border-top: none;
+            padding: 10px 5px;
+            overflow: auto;
+            height: -webkit-calc(100vh - 125px);
+            height: -moz-calc(100vh - 125px);
+            height: calc(100vh - 125px);
+        }
+
+        .layui-tree-entry .layui-tree-txt {
+            padding: 0 5px;
+            border: 1px transparent solid;
+            text-decoration: none !important;
+        }
+
+        .layui-tree-entry.ew-tree-click .layui-tree-txt {
+            background-color: #fff3e0;
+            border: 1px #FFE6B0 solid;
+        }
+
+        /* 右表搜索表单 */
+        #institutionUserTbSearchForm .layui-form-label {
+            box-sizing: border-box !important;
+            width: 90px !important;
+        }
+
+        #institutionUserTbSearchForm .layui-input-block {
+            margin-left: 90px !important;
+        }
+    </style>
+</head>
+<body>
+<!-- 正文开始 -->
+<div class="layui-fluid" style="padding-bottom: 0;">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md3">
+            <div class="layui-card">
+                <div class="layui-card-body" style="padding: 0px;">
+                    <!-- 树工具栏 -->
+                    <div class="layui-form toolbar" id="institutionTreeBar">
+                        <button id="institutionAdd2Btn" class="layui-btn layui-btn-sm layui-btn-warm icon-btn">
+                            添加机构
+                        </button>
+                        <button id="institutionAddBtn" class="layui-btn layui-btn-sm icon-btn">
+                            添加分组
+                        </button>&nbsp;
+
+<!--                        <button id="institutionDelBtn"-->
+<!--                                class="layui-btn layui-btn-sm layui-btn-danger icon-btn">-->
+<!--                            <i class="layui-icon">&#xe640;</i>删除-->
+<!--                        </button>-->
+                        <div class="layui-inline" style="width: 100px;">
+                            <input name="" placeholder="选择单位名称" class="layui-input" id="selectDw" readonly="readonly">
+                        </div>
+                    </div>
+                    <!-- 左树 -->
+                    <div id="institutionTree"></div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md9">
+            <div class="layui-card">
+                <div class="layui-card-body" style="padding: 10px;">
+                    <!-- 数据表格 -->
+                    <table id="operatorTable" lay-filter="operatorTable"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 表单弹窗1 -->
+<script type="text/html" id="institutionEditDialog">
+    <form id="institutionEditForm" lay-filter="institutionEditForm" class="layui-form model-form"
+          style="padding-right: 20px;">
+        <input name="institutionId" type="hidden"/>
+        <div class="layui-row">
+            <div class="layui-col-md7" style="width: 55%">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">上级目录:</label>
+                    <div class="layui-input-block">
+                        <div id="institutionEditParentSel" class="ew-xmselect-tree"></div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">分支名称:</label>
+                    <div class="layui-input-block">
+                        <input name="znjgfzmc" placeholder="请输入分类名称" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">联系人:</label>
+                    <div class="layui-input-block">
+                        <input name="lxrxm" placeholder="请输入联系人姓名" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md5" style="width: 45%">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">手机:</label>
+                    <div class="layui-input-block">
+                        <input name="lxryddh" placeholder="请输入联系人电话" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">固定电话:</label>
+                    <div class="layui-input-block">
+                        <input name="lxrgddh" placeholder="请输入固定电话" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">邮箱:</label>
+                    <div class="layui-input-block">
+                        <input name="lxrmail" placeholder="请输入联系人邮箱" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="institutionEditSubmit" lay-submit>保存</button>
+            <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        </div>
+    </form>
+</script>
+
+<script type="text/html" id="institutionEditDialog2">
+    <form id="institutionEditForm2" lay-filter="institutionEditForm" class="layui-form model-form"
+          style="padding-right: 20px;">
+        <div class="layui-row">
+            <div class="layui-col-md7" style="width: 55%">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">机构名称:</label>
+                    <div class="layui-input-block">
+                        <input name="znjgmc" placeholder="请输入分类名称" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">联系人:</label>
+                    <div class="layui-input-block">
+                        <input name="lxrxm" placeholder="请输入联系人姓名" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">手机:</label>
+                    <div class="layui-input-block">
+                        <input name="lxryddh" placeholder="请输入联系人电话" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md5" style="width: 45%">
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">固定电话:</label>
+                    <div class="layui-input-block">
+                        <input name="lxrgddh" placeholder="请输入固定电话" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">邮箱:</label>
+                    <div class="layui-input-block">
+                        <input name="lxrmail" placeholder="请输入联系人邮箱" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="institutionEditSubmit2" lay-submit>保存</button>
+            <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        </div>
+    </form>
+</script>
+
+<!-- 表格操作列 -->
+<script type="text/html" id="institutionUserTbBar">
+    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="edit">修改</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+<!-- 表格工具列 -->
+<script type="text/html" id="institutionUserTbToolBar">
+        <button lay-event="add" class="layui-btn layui-btn-sm icon-btn">
+            <i class="layui-icon">&#xe654;</i>添加操作员
+        </button>&nbsp;
+</script>
+<!-- 表单弹窗 -->
+<script type="text/html" id="institutionUserEditDialog">
+    <form id="institutionUserEditForm" lay-filter="institutionUserEditForm" class="layui-form model-form">
+        <div class="layui-row">
+            <div class="layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">姓名:</label>
+                    <div class="layui-input-block">
+                        <input name="czyxm" placeholder="请输入账号" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">身份证号:</label>
+                    <div class="layui-input-block">
+                        <input name="czysfzh" placeholder="请输入用户名" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">操作员角色:</label>
+                    <div class="layui-input-block">
+                        <select name="czyjs" lay-verType="tips" lay-verify="required">
+                            <option value="1">普通用户</option>
+                            <option value="2">分支部门职员</option>
+                            <option value="3">职能部门管理员</option>
+                            <option value="4">单位管理员</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">移动电话:</label>
+                    <div class="layui-input-block">
+                        <input name="czyyddh" placeholder="请输入账号" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">固定电话:</label>
+                    <div class="layui-input-block">
+                        <input name="czygddh" placeholder="请输入用户名" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label layui-form-required">邮箱:</label>
+                    <div class="layui-input-block">
+                        <input name="czymail" placeholder="请输入用户名" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="institutionUserEditSubmit" lay-submit>保存</button>
+            <button class="layui-btn layui-btn-primary" type="button" ew-event="closeDialog">取消</button>
+        </div>
+    </form>
+</script>
+
+<!-- js部分 -->
+<script type="text/javascript" src="../iframe/assets/libs/layui/layui.js"></script>
+<script type="text/javascript" src="../iframe/assets/js/common.js?v=318"></script>
+<!-- 表格状态列 -->
+<script type="text/html" id="operatorTbState">
+    <input type="checkbox" lay-filter="operatorTbStateCk" value="{{d.czydm}}" lay-skin="switch"
+           lay-text="正常|停用" {{d.zt==1?'checked':''}} style="display: none;"/>
+    <p style="display: none;" >{{d.zt==1?'正常':'停用'}}</p>
+    <input id="recordZt{{d.czydm}}" value = "{{d.zt}}" hidden>
+</script>
+<script>
+    layui.use(['layer', 'form', 'table', 'util', 'admin', 'tree', 'dropdown', 'xmSelect', 'treeTable'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var form = layui.form;
+        var table = layui.table;
+        var util = layui.util;
+        var admin = layui.admin;
+        var tree = layui.tree;
+        var xmSelect = layui.xmSelect;
+        var dropdown = layui.dropdown;
+        var selObj, treeData, xmlTree;  // 左树选中数据
+        var dwdm4All;
+        var treeTB;
+        var firstdwmc;
+        var firstdwdm;
+        $.get('/institution_request/getUnit_Name_ID', function (res) {
+            // console.log(res)
+            firstdwmc = res[0].title;
+            firstdwdm = res[0].id;
+            document.getElementById("selectDw").value=firstdwmc
+            renderTree(firstdwdm);
+            // console.log(firstdwmc)
+            dropdown.render({
+                elem: '#selectDw' //可绑定在任意元素中，此处以上述按钮为例
+                ,data: res
+                ,id: 'selectDw'
+                //菜单被点击的事件
+                ,click: function(obj){
+                    document.getElementById("selectDw").value=obj.title
+                    renderTree(obj.id);
+                }
+            });
+        });
+
+        /* 渲染树形 */
+        function renderTree(dwdm) {
+            dwdm4All = dwdm;
+            $.get('/institution_request/getInstitutionTree', "dwdm="+dwdm,function (res) {
+                res['data'] = res;
+                res['count'] = res.data.length
+                for (var i = 0; i < res.data.length; i++) {
+                    res.data[i].title = res.data[i].znjgfzmc;
+                    res.data[i].id = res.data[i].znjgfzdm;
+                    res.data[i].spread = true;
+                }
+                treeData = layui.treeTable.pidToChildren(res.data, 'znjgfzdm', 'znjgdm');
+                treeTB = tree.render({
+                    elem: '#institutionTree',
+                    onlyIconControl: true,
+                    data: treeData,
+                    click: function (obj) {
+                        // console.log(obj)
+                        selObj = obj;
+                        $('#institutionTree').find('.ew-tree-click').removeClass('ew-tree-click');
+                        $(obj.elem).children('.layui-tree-entry').addClass('ew-tree-click');
+                        insTb.reload({
+                            page: {curr: 1},
+                            // data: {"institutionId": },
+                            url: '/operator_request/getOperatorByInstitutionDM?institutionId='+selObj.data.znjgfzdm
+                            // + obj.data.institutionId +'.json'
+                        });
+                    }
+                });
+                $('#institutionTree').find('.layui-tree-entry:first>.layui-tree-main>.layui-tree-txt').trigger('click');
+            });
+            $.get('/institution_request/getAllInstitution', "dwdm="+dwdm,function (res) {
+                // console.log(res)
+                res['data'] = res;
+                res['count'] = res.data.length
+                for (var i = 0; i < res.data.length; i++) {
+                    res.data[i].title = res.data[i].znjgmc;
+                    res.data[i].id = res.data[i].znjgdm;
+                    res.data[i].spread = true;
+                }
+                xmlTree = layui.treeTable.pidToChildren(res.data, 'dwdm', 'znjgdm');
+            });
+        }
+
+
+        /* 添加 */
+        $('#institutionAddBtn').click(function () {
+            showEditModel(null, selObj ? selObj.data.parentId : null);
+        });
+
+        /* 修改 */
+        $('#institutionAdd2Btn').click(function () {
+            // if (!selObj) return layer.msg('未选择机构', {icon: 2});
+            Add2();
+        });
+
+        /* 删除 */
+        $('#institutionDelBtn').click(function () {
+            if (!selObj) return layer.msg('未选择机构', {icon: 2});
+            doDel(selObj);
+        });
+
+        /* 显示表单弹窗 */
+        function showEditModel(mData, pid) {
+            admin.open({
+                type: 1,
+                area: '600px',
+                title: (mData ? '修改' : '添加') + '单位分组',
+                content: $('#institutionEditDialog').html(),
+                success: function (layero, dIndex) {
+                    // console.log(pid)
+                    // 回显表单数据
+                    form.val('institutionEditForm', mData);
+                    // 表单提交事件
+                    form.on('submit(institutionEditSubmit)', function (data) {
+                        data.field.znjgdm = insXmSel.getValue('valueStr');
+                        var loadIndex = layer.load(2);
+                            $.ajax({
+                                url: '/institution_request/insertInstitution_fz',
+                                type: 'POST',
+                                async: false,
+                                // traditional: true,
+                                data: {"dwdm": dwdm4All, "znjgdm": data.field.znjgdm, "znjgfzmc": data.field.znjgfzmc
+                                    , "lxrxm": data.field.lxrxm, "lxryddh": data.field.lxryddh
+                                    , "lxrgddh": data.field.lxrgddh, "lxrmail": data.field.lxrmail},
+                                success: function (response) {
+                                    layer.close(dIndex);
+                                    layer.close(loadIndex)
+                                    layer.msg("添加成功", {icon: 1});
+                                    renderTree(dwdm4All)
+                                }
+                            })
+                        return false;
+                    });
+                    // 渲染下拉树
+                    var insXmSel = xmSelect.render({
+                        el: '#institutionEditParentSel',
+                        height: '250px',
+                        width: '250px',
+                        data: xmlTree,
+                        initValue: mData ? [mData.parentId] : (pid ? [pid] : []),
+                        model: {label: {type: 'text'}},
+                        prop: {
+                            name: 'znjgmc',
+                            value: 'znjgdm'
+                        },
+                        radio: true,
+                        clickClose: true,
+                        tree: {
+                            show: true,
+                            indent: 15,
+                            strict: false,
+                            expandedKeys: true
+                        }
+                    });
+                    // 禁止弹窗出现滚动条
+                    $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                }
+            });
+        }
+        function Add2() {
+            admin.open({
+                type: 1,
+                area: '600px',
+                title:'添加机构',
+                content: $('#institutionEditDialog2').html(),
+                success: function (layero, dIndex) {
+                    // 表单提交事件
+                    form.on('submit(institutionEditSubmit2)', function (data) {
+                        var loadIndex = layer.load(2);
+                        $.ajax({
+                            url: '/institution_request/insertInstitution',
+                            type: 'POST',
+                            async: false,
+                            // traditional: true,
+                            data: {"dwdm": dwdm4All, "znjgmc": data.field.znjgmc
+                                , "lxrxm": data.field.lxrxm, "lxryddh": data.field.lxryddh
+                                , "lxrgddh": data.field.lxrgddh, "lxrmail": data.field.lxrmail},
+                            success: function (response) {
+                                layer.close(dIndex);
+                                layer.close(loadIndex)
+                                layer.msg("添加成功", {icon: 1});
+                                renderTree(dwdm4All)
+                            }
+                        })
+                        return false;
+                    });
+                    // 禁止弹窗出现滚动条
+                    $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                }
+            });
+        }
+        /* 删除 */
+        function doDel(obj) {
+            layer.confirm('确定要删除此目录吗？', {
+                skin: 'layui-layer-admin',
+                shade: .1
+            }, function (i) {
+                layer.close(i);
+                var loadIndex = layer.load(2);
+                var treenode = [];
+                treenode.push(treeData[0])
+                var mark2 = 1;
+                while(treenode.length != 0){
+                    var tempnode = treenode.shift();
+                    var temp = tempnode.id
+                    if (tempnode.id == obj.data.id) {
+                        mark2 = 0;
+                    } else if(tempnode.parentId < obj.data.id && mark2 == 0){
+                        temp = temp - 1;
+                        break;
+                    }
+                    if(tempnode.hasOwnProperty('children')) {
+                        for (var i = tempnode.children.length - 1; i >= 0; i--) {
+                            treenode.unshift(tempnode.children[i]);
+                        }
+                    }
+
+                }
+                $.ajax({
+                    url:'/request/deleteinstitutiondata',
+                    type:'POST',
+                    async: false,
+                    // traditional: true,
+                    data:{"start": obj.data.id, "end": temp},
+                    success:function(response) {
+                        layer.close(loadIndex)
+                        layer.msg("删除成功", {icon: 1});
+                        renderTree()
+                        insTb.reload({page: {curr: insTb.config.page.curr}});
+                    }
+                });
+            })
+        }
+
+        /* 渲染表格 */
+        var insTb = table.render({
+            elem: '#operatorTable',
+            data: [],
+            height: '552px',
+            page: true,
+            toolbar: '#institutionUserTbToolBar',
+            cellMinWidth: 100,
+            cols: [
+                [
+                    // {type: 'checkbox'},
+                    // {type: 'numbers'},
+                    {field: 'czyxm', title: '姓名', sort: true},
+                    {field: 'czysfzh', title: '身份证号', width: 250},
+                    {field: 'czyyddh', title: '联系方式'},
+                    {
+                        field: 'czyjs', title: '角色', templet: function (d) {
+                            switch (d.czyjs) {
+                                case '1': return '<span class="layui-badge layui-badge-red">普通用户</span>';
+                                case '2': return '<span class="layui-badge layui-badge-green">分支部门职员</span>';
+                                case '3': return '<span class="layui-badge layui-badge-blue">职能部门管理员</span>';
+                                case '4': return '<span class="layui-badge layui-badge-gray">单位管理员</span>';
+                            }
+
+                        }, width: 150
+                    },
+                    {
+                        field: 'cjrq', title: '创建日期'
+                    },
+                    {field: 'zt', title: '状态', templet: '#operatorTbState', sort: true, width: 100},
+                    // {title: '操作', toolbar: '#institutionUserTbBar', align: 'center', width: 120, minWidth: 120}
+                ]
+            ],
+            done: function () {
+                // 表格搜索
+                form.on('submit(institutionUserTbSearch)', function (data) {
+                    insTb.reload({where: data.field, page: {curr: 1}});
+                    return false;
+                });
+            }
+        });
+        form.on('switch(operatorTbStateCk)', function (obj) {
+            var loadIndex = layer.load(2);
+            var temp  = document.getElementById("recordZt"+obj.value).value == 1 ? 0 : 1
+            $.ajax({
+                url: '/operator_request/updateOperator',
+                type: 'POST',
+                async: false,
+                // traditional: true,
+                data: {"czydm": obj.value, "zt": temp},
+                success: function (response) {
+                    layer.close(loadIndex)
+                    layer.msg("修改成功", {icon: 1});
+                    // insTb.reload({page: {curr: insTb.config.page.curr}});
+                }
+            })
+        });
+        // /* 表格工具条点击事件 */
+        // table.on('tool(operatorTable)', function (obj) {
+        //     if (obj.event === 'edit') { // 修改
+        //         showEditModel2(obj.data);
+        //     } else if (obj.event === 'del') { // 删除
+        //         doDel2(obj);
+        //     }
+        // });
+
+        /* 表格头工具栏点击事件 */
+        table.on('toolbar(operatorTable)', function (obj) {
+            if (obj.event === 'add') { // 添加
+                showEditModel2();
+            } else if (obj.event === 'del') { // 删除
+                var checkRows = table.checkStatus('operatorTable');
+                if (checkRows.data.length === 0) {
+                    layer.msg('请选择要删除的数据', {icon: 2});
+                    return;
+                }
+                var ids = checkRows.data.map(function (d) {
+                    return d.userId;
+                });
+                doDel2({ids: ids});
+            }
+        });
+
+        /* 显示表单弹窗2 */
+        function showEditModel2(mData) {
+            // console.log(selObj)
+            if(selObj.data.znjgdm == 0) {
+                layer.msg("职能机构不允许添加，请向分组中添加操作员", {icon: 2});
+                return;
+            }
+            admin.open({
+                type: 1,
+                title: (mData ? '修改' : '添加') + '操作员',
+                content: $('#institutionUserEditDialog').html(),
+                area: '780px',
+                success: function (layero, dIndex) {
+                    // 回显表单数据
+                    form.val('institutionUserEditForm', mData);
+                    // 表单提交事件
+                    form.on('submit(institutionUserEditSubmit)', function (data) {
+                        // console.log(selObj)
+                        // console.log(data)
+                        var param = new Array()
+                        param[0] = selObj.data.dwdm
+                        param[1] = selObj.data.znjgfzdm
+                        param[2] = selObj.data.znjgdm
+                        param[3] = data.field.czyxm
+                        param[4] = data.field.czysfzh
+                        param[5] = data.field.czyyddh
+                        param[6] = data.field.czyjs
+                        param[7] = data.field.czymail
+                        param[8] = data.field.czygddh
+                        var loadIndex = layer.load(2);
+                        $.ajax({
+                            url: '/operator_request/insertOperator',
+                            type: 'POST',
+                            async: false,
+                            traditional: true,
+                            data: {'param': param},
+                            success: function (response) {
+                                layer.close(dIndex);
+                                layer.close(loadIndex)
+                                layer.msg("添加成功", {icon: 1});
+                                insTb.reload({page: {curr: insTb.config.page.curr}});
+                            }
+                        })
+                        return false;
+                    });
+                    // 禁止弹窗出现滚动条
+                    $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                }
+            });
+        }
+
+        /* 删除2 */
+        function doDel2(obj) {
+            layer.confirm('确定要删除选中产品吗？', {
+                skin: 'layui-layer-admin',
+                shade: .1
+            }, function (i) {
+                layer.close(i);
+                var loadIndex = layer.load(2);
+                $.get('../../json/ok.json', {
+                    id: obj.data ? obj.data.userId : '',
+                    ids: obj.ids ? obj.ids.join(',') : ''
+                }, function (res) {
+                    layer.close(loadIndex);
+                    if (200 === res.code) {
+                        layer.msg(res.msg, {icon: 1});
+                        insTb.reload({page: {curr: 1}});
+                    } else {
+                        layer.msg(res.msg, {icon: 2});
+                    }
+                }, 'json');
+            });
+        }
+
+    });
+</script>
+</body>
+</html>

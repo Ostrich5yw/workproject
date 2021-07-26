@@ -1,0 +1,425 @@
+2021-06-22 21:26:11  [ Druid-ConnectionPool-Create-1328031828:0 ] - [ DEBUG ]  {conn-10001,procId-174} connected
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:7 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:21 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from userData where username = ?
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:26 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [武允文]
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:26 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:39 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 14.4216 millis. select * from userData where username = ?
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:43 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:45 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [userId, username, password, nickName, avatar, phone, state, createTime, updateTime, roleId, roleName, roles, sex]
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:51 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [14, 武允文, 123, 管理员, null, 18049685597, 0, 2021-04-25 12:22:37.0, 2021-04-25 12:22:37.0, 1, usr:1, [{"roleId": 1, "comments": null, "isDelete": null, "roleName": "管理员", "createTime": null, "updateTime": null}], 男]
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:55 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:57 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2021-06-22 21:26:11  [ http-nio-8010-exec-10:58 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4099 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4099 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select dwxxb.dwmc as title, dwxxb.dwdm as id from dwxxb
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4099 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : []
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4099 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : []
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4102 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 2.3125 millis. select dwxxb.dwmc as title, dwxxb.dwdm as id from dwxxb
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4102 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4102 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [dwmc, dwdm]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4102 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安建筑科技大学, 91370000726229592Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4103 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229593Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4104 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229594Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4104 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229595Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4104 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229596Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4104 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229597Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4105 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229598Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4105 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229599Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4105 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229600Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4105 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229601Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4105 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229602Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4106 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229603Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4106 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229604Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4106 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [西安理工大学, 91370000726229605Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4106 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4106 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-3:4106 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4106 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4107 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. select `dwxxb`.`dwdm` AS `dwdm`,`znjgxxb`.`znjgdm` AS `znjgdm`,`znjgxxb`.`znjgmc` AS `znjgmc`,`xtcsb`.`znjgfzdm` AS `znjgfzdm`,`znjgfzb`.`znjgfzmc` AS `znjgfzmc` from (((`dwxxb` join `znjgxxb`) join `xtcsb`) join `znjgfzb`) where ((`znjgxxb`.`dwdm` = `dwxxb`.`dwdm`) and (`znjgxxb`.`znjgdm` = `xtcsb`.`znjgdm`) and (`xtcsb`.`znjgfzdm` = `znjgfzb`.`znjgfzdm`) and (`dwxxb`.`dwdm` = ?))
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4107 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : [91370000726229592Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4107 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : [VARCHAR]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4110 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 2.8047 millis. select `dwxxb`.`dwdm` AS `dwdm`,`znjgxxb`.`znjgdm` AS `znjgdm`,`znjgxxb`.`znjgmc` AS `znjgmc`,`xtcsb`.`znjgfzdm` AS `znjgfzdm`,`znjgfzb`.`znjgfzmc` AS `znjgfzmc` from (((`dwxxb` join `znjgxxb`) join `xtcsb`) join `znjgfzb`) where ((`znjgxxb`.`dwdm` = `dwxxb`.`dwdm`) and (`znjgxxb`.`znjgdm` = `xtcsb`.`znjgdm`) and (`xtcsb`.`znjgfzdm` = `znjgfzb`.`znjgfzdm`) and (`dwxxb`.`dwdm` = ?))
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4110 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4110 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [dwdm, znjgdm, znjgmc, znjgfzdm, znjgfzmc]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4111 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 1100000, 物联网工程系]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4111 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 1100001, 软件工程系]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4111 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 1100002, 网络工程系]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4112 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [91370000726229592Y, 1000001, 土木工程学院, 1100003, 建筑系]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4112 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [91370000726229592Y, 1000001, 土木工程学院, 1100004, 土木系]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4112 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4112 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4112 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4112 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4113 ] - [ DEBUG ]  {conn-10001, pstmt-20003} created. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4113 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Parameters : [91370000726229592Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4113 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Types : [VARCHAR]
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4116 ] - [ DEBUG ]  {conn-10001, pstmt-20003} executed. 3.2138 millis. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4116 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} open
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4116 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Header: [dwdm, znjgdm, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail]
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4117 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4118 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Result: [91370000726229592Y, 1000001, 土木工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4118 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4118 ] - [ DEBUG ]  {conn-10001, pstmt-20003} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-10:4118 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4118 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4119 ] - [ DEBUG ]  {conn-10001, pstmt-20004} created. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4119 ] - [ DEBUG ]  {conn-10001, pstmt-20004} Parameters : [91370000726229592Y]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4119 ] - [ DEBUG ]  {conn-10001, pstmt-20004} Types : [VARCHAR]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4123 ] - [ DEBUG ]  {conn-10001, pstmt-20004} executed. 4.0057 millis. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4123 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} open
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4123 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Header: [dwdm, znjgdm, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4123 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4124 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Result: [91370000726229592Y, 1000001, 土木工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4124 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4124 ] - [ DEBUG ]  {conn-10001, pstmt-20004} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-1:4124 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-06-22 21:26:15  [ Druid-ConnectionPool-Create-1328031828:4134 ] - [ DEBUG ]  {conn-10002,procId-175} connected
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4149 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4149 ] - [ DEBUG ]  {conn-10002, pstmt-20005} created. select count(*) from czyxxb
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4149 ] - [ DEBUG ]  {conn-10002, pstmt-20005} Parameters : []
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4149 ] - [ DEBUG ]  {conn-10002, pstmt-20005} Types : []
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4152 ] - [ DEBUG ]  {conn-10002, pstmt-20005} executed. 3.0193 millis. select count(*) from czyxxb
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4152 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} open
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4153 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} Header: [count(*)]
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4153 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} Result: [14]
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4153 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4153 ] - [ DEBUG ]  {conn-10002, pstmt-20005} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4153 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4154 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4154 ] - [ DEBUG ]  {conn-10002, pstmt-20006} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4154 ] - [ DEBUG ]  {conn-10002, pstmt-20006} Parameters : [1000001, 10, 0]
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4154 ] - [ DEBUG ]  {conn-10002, pstmt-20006} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4155 ] - [ DEBUG ]  {conn-10002, pstmt-20006} executed. 1.5837 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4156 ] - [ DEBUG ]  {conn-10002, pstmt-20006, rs-50006} open
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4156 ] - [ DEBUG ]  {conn-10002, pstmt-20006, rs-50006} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4156 ] - [ DEBUG ]  {conn-10002, pstmt-20006, rs-50006} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4156 ] - [ DEBUG ]  {conn-10002, pstmt-20006} closed
+2021-06-22 21:26:15  [ http-nio-8010-exec-9:4156 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5878 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5878 ] - [ DEBUG ]  {conn-10002, pstmt-20007} created. select count(*) from czyxxb
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5878 ] - [ DEBUG ]  {conn-10002, pstmt-20007} Parameters : []
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5878 ] - [ DEBUG ]  {conn-10002, pstmt-20007} Types : []
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5881 ] - [ DEBUG ]  {conn-10002, pstmt-20007} executed. 2.8095 millis. select count(*) from czyxxb
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5881 ] - [ DEBUG ]  {conn-10002, pstmt-20007, rs-50007} open
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5881 ] - [ DEBUG ]  {conn-10002, pstmt-20007, rs-50007} Header: [count(*)]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5881 ] - [ DEBUG ]  {conn-10002, pstmt-20007, rs-50007} Result: [14]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5881 ] - [ DEBUG ]  {conn-10002, pstmt-20007, rs-50007} closed
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5882 ] - [ DEBUG ]  {conn-10002, pstmt-20007} closed
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5882 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5882 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5882 ] - [ DEBUG ]  {conn-10002, pstmt-20008} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5882 ] - [ DEBUG ]  {conn-10002, pstmt-20008} Parameters : [1100001, 10, 0]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5882 ] - [ DEBUG ]  {conn-10002, pstmt-20008} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5885 ] - [ DEBUG ]  {conn-10002, pstmt-20008} executed. 2.2924 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5885 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} open
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5885 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5885 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 王阳, 710102198311211616, 17289156132, 1, 1000000, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5885 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 刘洋洋, 710102198311211616, 17289156132, 1, 1000001, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5886 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 王蒙, 710102198311211616, 17289156132, 3, 1000002, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5886 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 周天起, 710102198311211616, 17289156132, 2, 1000003, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5886 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 王阳明, 710102198311211616, 17289156132, 2, 1000004, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5886 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 朱祯祯, 710102198311211616, 17289156132, 4, 1000005, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5886 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 陈茜, 710102198311211616, 17289156132, 1, 1000006, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5887 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 王熙然, 710102198311211616, 17289156132, 3, 1000007, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5887 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 孟奇超, 710102198311211616, 17289156132, 4, 1000008, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5887 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} Result: [91370000726229592Y, 1100001, 1000000, 马毅然, 710102198311211616, 17289156132, 2, 1000009, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5888 ] - [ DEBUG ]  {conn-10002, pstmt-20008, rs-50008} closed
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5888 ] - [ DEBUG ]  {conn-10002, pstmt-20008} closed
+2021-06-22 21:26:16  [ http-nio-8010-exec-8:5888 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40539 ] - [ DEBUG ]  {conn-10001} pool-connect
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40539 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40540 ] - [ DEBUG ]  {conn-10001, pstmt-20009} created. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40540 ] - [ DEBUG ]  {conn-10002, pstmt-20010} created. select `dwxxb`.`dwdm` AS `dwdm`,`znjgxxb`.`znjgdm` AS `znjgdm`,`znjgxxb`.`znjgmc` AS `znjgmc`,`xtcsb`.`znjgfzdm` AS `znjgfzdm`,`znjgfzb`.`znjgfzmc` AS `znjgfzmc` from (((`dwxxb` join `znjgxxb`) join `xtcsb`) join `znjgfzb`) where ((`znjgxxb`.`dwdm` = `dwxxb`.`dwdm`) and (`znjgxxb`.`znjgdm` = `xtcsb`.`znjgdm`) and (`xtcsb`.`znjgfzdm` = `znjgfzb`.`znjgfzdm`) and (`dwxxb`.`dwdm` = ?))
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40540 ] - [ DEBUG ]  {conn-10001, pstmt-20009} Parameters : [91370000726229592Y]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40540 ] - [ DEBUG ]  {conn-10002, pstmt-20010} Parameters : [91370000726229592Y]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40540 ] - [ DEBUG ]  {conn-10002, pstmt-20010} Types : [VARCHAR]
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40540 ] - [ DEBUG ]  {conn-10001, pstmt-20009} Types : [VARCHAR]
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40543 ] - [ DEBUG ]  {conn-10001, pstmt-20009} executed. 2.7493 millis. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40543 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50009} open
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40543 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50009} Header: [dwdm, znjgdm, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40543 ] - [ DEBUG ]  {conn-10002, pstmt-20010} executed. 2.9468 millis. select `dwxxb`.`dwdm` AS `dwdm`,`znjgxxb`.`znjgdm` AS `znjgdm`,`znjgxxb`.`znjgmc` AS `znjgmc`,`xtcsb`.`znjgfzdm` AS `znjgfzdm`,`znjgfzb`.`znjgfzmc` AS `znjgfzmc` from (((`dwxxb` join `znjgxxb`) join `xtcsb`) join `znjgfzb`) where ((`znjgxxb`.`dwdm` = `dwxxb`.`dwdm`) and (`znjgxxb`.`znjgdm` = `xtcsb`.`znjgdm`) and (`xtcsb`.`znjgfzdm` = `znjgfzb`.`znjgfzdm`) and (`dwxxb`.`dwdm` = ?))
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40543 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} open
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40543 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} Header: [dwdm, znjgdm, znjgmc, znjgfzdm, znjgfzmc]
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40543 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50009} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40543 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 1100000, 物联网工程系]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40543 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 1100001, 软件工程系]
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40543 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50009} Result: [91370000726229592Y, 1000001, 土木工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40543 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 1100002, 网络工程系]
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40544 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50009} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40544 ] - [ DEBUG ]  {conn-10001, pstmt-20009} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40544 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} Result: [91370000726229592Y, 1000001, 土木工程学院, 1100003, 建筑系]
+2021-06-22 21:26:51  [ http-nio-8010-exec-6:40544 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40544 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} Result: [91370000726229592Y, 1000001, 土木工程学院, 1100004, 土木系]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40544 ] - [ DEBUG ]  {conn-10002, pstmt-20010, rs-50010} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40544 ] - [ DEBUG ]  {conn-10002, pstmt-20010} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40544 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40544 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40545 ] - [ DEBUG ]  {conn-10002, pstmt-20011} created. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40545 ] - [ DEBUG ]  {conn-10002, pstmt-20011} Parameters : [91370000726229592Y]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40545 ] - [ DEBUG ]  {conn-10002, pstmt-20011} Types : [VARCHAR]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40550 ] - [ DEBUG ]  {conn-10002, pstmt-20011} executed. 4.8172 millis. select * from znjgxxb where dwdm=?
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40550 ] - [ DEBUG ]  {conn-10002, pstmt-20011, rs-50011} open
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40550 ] - [ DEBUG ]  {conn-10002, pstmt-20011, rs-50011} Header: [dwdm, znjgdm, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40550 ] - [ DEBUG ]  {conn-10002, pstmt-20011, rs-50011} Result: [91370000726229592Y, 1000000, 计算机科学与工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40550 ] - [ DEBUG ]  {conn-10002, pstmt-20011, rs-50011} Result: [91370000726229592Y, 1000001, 土木工程学院, 2020-03-06, 武允文, 18049685597, 8208008820, 1596253661@qq.com]
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40551 ] - [ DEBUG ]  {conn-10002, pstmt-20011, rs-50011} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40551 ] - [ DEBUG ]  {conn-10002, pstmt-20011} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-2:40551 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40572 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40572 ] - [ DEBUG ]  {conn-10002, pstmt-20012} created. select count(*) from czyxxb
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40572 ] - [ DEBUG ]  {conn-10002, pstmt-20012} Parameters : []
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40572 ] - [ DEBUG ]  {conn-10002, pstmt-20012} Types : []
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002, pstmt-20012} executed. 2.4953 millis. select count(*) from czyxxb
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002, pstmt-20012, rs-50012} open
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002, pstmt-20012, rs-50012} Header: [count(*)]
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002, pstmt-20012, rs-50012} Result: [14]
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002, pstmt-20012, rs-50012} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002, pstmt-20012} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40575 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40576 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40576 ] - [ DEBUG ]  {conn-10002, pstmt-20013} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40576 ] - [ DEBUG ]  {conn-10002, pstmt-20013} Parameters : [1000001, 10, 0]
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40576 ] - [ DEBUG ]  {conn-10002, pstmt-20013} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40578 ] - [ DEBUG ]  {conn-10002, pstmt-20013} executed. 1.681 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40578 ] - [ DEBUG ]  {conn-10002, pstmt-20013, rs-50013} open
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40578 ] - [ DEBUG ]  {conn-10002, pstmt-20013, rs-50013} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40578 ] - [ DEBUG ]  {conn-10002, pstmt-20013, rs-50013} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40579 ] - [ DEBUG ]  {conn-10002, pstmt-20013} closed
+2021-06-22 21:26:51  [ http-nio-8010-exec-4:40579 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48306 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48306 ] - [ DEBUG ]  {conn-10002, pstmt-20014} created. select count(*) from dwxxb
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48306 ] - [ DEBUG ]  {conn-10002, pstmt-20014} Parameters : []
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48306 ] - [ DEBUG ]  {conn-10002, pstmt-20014} Types : []
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48309 ] - [ DEBUG ]  {conn-10002, pstmt-20014} executed. 2.6451 millis. select count(*) from dwxxb
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48309 ] - [ DEBUG ]  {conn-10002, pstmt-20014, rs-50014} open
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48309 ] - [ DEBUG ]  {conn-10002, pstmt-20014, rs-50014} Header: [count(*)]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48309 ] - [ DEBUG ]  {conn-10002, pstmt-20014, rs-50014} Result: [14]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48310 ] - [ DEBUG ]  {conn-10002, pstmt-20014, rs-50014} closed
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48310 ] - [ DEBUG ]  {conn-10002, pstmt-20014} closed
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48310 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48310 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48310 ] - [ DEBUG ]  {conn-10002, pstmt-20015} created. select dwxxb.*, dwxzxxb.dwxzmc from dwxxb JOIN dwxzxxb where dwxxb.dwxzid=dwxzxxb.dwxzid limit ? offset ?
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48311 ] - [ DEBUG ]  {conn-10002, pstmt-20015} Parameters : [10, 0]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48311 ] - [ DEBUG ]  {conn-10002, pstmt-20015} Types : [INTEGER, INTEGER]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48335 ] - [ DEBUG ]  {conn-10002, pstmt-20015} executed. 24.3978 millis. select dwxxb.*, dwxzxxb.dwxzmc from dwxxb JOIN dwxzxxb where dwxxb.dwxzid=dwxzxxb.dwxzid limit ? offset ?
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48336 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} open
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48336 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Header: [dwdm, dwmc, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwyzbm, dwfr, dwlxr, lxryddh, lxrgddh, lxrmail, dwxzmc]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48336 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229592Y, 西安建筑科技大学, 10, 北京市, 北京市, 东城区, 北京市, 710038, 李孝廉, 武允文, 18049596647, 830014278, 1596253661@qq.com, 外资独资]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48337 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229593Y, 西安理工大学, 10, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 外资独资]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48338 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229594Y, 西安理工大学, 11, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 民营企业]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48339 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229595Y, 西安理工大学, 10, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 外资独资]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48339 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229596Y, 西安理工大学, 10, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 外资独资]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48340 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229597Y, 西安理工大学, 13, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 政府机关]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48340 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229598Y, 西安理工大学, 12, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 国有企业]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48341 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229599Y, 西安理工大学, 13, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 政府机关]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48341 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229600Y, 西安理工大学, 10, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 外资独资]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48342 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} Result: [91370000726229601Y, 西安理工大学, 13, 陕西省, 西安市, 碑林区, 金花南路5号, 810038, 李孝廉, 武允文, 18049685597, 8008208820, 1596253661@qq.com, 政府机关]
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48343 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50015} closed
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48343 ] - [ DEBUG ]  {conn-10002, pstmt-20015} closed
+2021-06-22 21:26:59  [ http-nio-8010-exec-6:48344 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69671 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69672 ] - [ DEBUG ]  {conn-10002, pstmt-20016} created. select count(*) from czyxxb
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69672 ] - [ DEBUG ]  {conn-10002, pstmt-20016} Parameters : []
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69672 ] - [ DEBUG ]  {conn-10002, pstmt-20016} Types : []
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002, pstmt-20016} executed. 2.5923 millis. select count(*) from czyxxb
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50016} open
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50016} Header: [count(*)]
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50016} Result: [14]
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50016} closed
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002, pstmt-20016} closed
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69675 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69676 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69676 ] - [ DEBUG ]  {conn-10002, pstmt-20017} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69676 ] - [ DEBUG ]  {conn-10002, pstmt-20017} Parameters : [1100003, 10, 0]
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69676 ] - [ DEBUG ]  {conn-10002, pstmt-20017} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69678 ] - [ DEBUG ]  {conn-10002, pstmt-20017} executed. 1.8895 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69678 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50017} open
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69678 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50017} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69678 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50017} closed
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69678 ] - [ DEBUG ]  {conn-10002, pstmt-20017} closed
+2021-06-22 21:27:20  [ http-nio-8010-exec-2:69678 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70951 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70951 ] - [ DEBUG ]  {conn-10002, pstmt-20018} created. select count(*) from czyxxb
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70951 ] - [ DEBUG ]  {conn-10002, pstmt-20018} Parameters : []
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70951 ] - [ DEBUG ]  {conn-10002, pstmt-20018} Types : []
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002, pstmt-20018} executed. 2.792 millis. select count(*) from czyxxb
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50018} open
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50018} Header: [count(*)]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50018} Result: [14]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50018} closed
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002, pstmt-20018} closed
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70954 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70955 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70955 ] - [ DEBUG ]  {conn-10002, pstmt-20019} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70955 ] - [ DEBUG ]  {conn-10002, pstmt-20019} Parameters : [1100001, 10, 0]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70955 ] - [ DEBUG ]  {conn-10002, pstmt-20019} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70957 ] - [ DEBUG ]  {conn-10002, pstmt-20019} executed. 2.3317 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70957 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} open
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70957 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70958 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 王阳, 710102198311211616, 17289156132, 1, 1000000, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70958 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 刘洋洋, 710102198311211616, 17289156132, 1, 1000001, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70958 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 王蒙, 710102198311211616, 17289156132, 3, 1000002, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70958 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 周天起, 710102198311211616, 17289156132, 2, 1000003, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70958 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 王阳明, 710102198311211616, 17289156132, 2, 1000004, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70958 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 朱祯祯, 710102198311211616, 17289156132, 4, 1000005, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70960 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 陈茜, 710102198311211616, 17289156132, 1, 1000006, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70961 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 王熙然, 710102198311211616, 17289156132, 3, 1000007, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70961 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 孟奇超, 710102198311211616, 17289156132, 4, 1000008, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70961 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} Result: [91370000726229592Y, 1100001, 1000000, 马毅然, 710102198311211616, 17289156132, 2, 1000009, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70962 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50019} closed
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70962 ] - [ DEBUG ]  {conn-10002, pstmt-20019} closed
+2021-06-22 21:27:22  [ http-nio-8010-exec-5:70962 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73395 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73395 ] - [ DEBUG ]  {conn-10002, pstmt-20020} created. select count(*) from czyxxb
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73395 ] - [ DEBUG ]  {conn-10002, pstmt-20020} Parameters : []
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73395 ] - [ DEBUG ]  {conn-10002, pstmt-20020} Types : []
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002, pstmt-20020} executed. 2.2923 millis. select count(*) from czyxxb
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50020} open
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50020} Header: [count(*)]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50020} Result: [14]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50020} closed
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002, pstmt-20020} closed
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73398 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73399 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73399 ] - [ DEBUG ]  {conn-10002, pstmt-20021} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73399 ] - [ DEBUG ]  {conn-10002, pstmt-20021} Parameters : [1100001, 10, 10]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73399 ] - [ DEBUG ]  {conn-10002, pstmt-20021} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021} executed. 1.8436 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} open
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} Result: [91370000726229592Y, 1100001, 1000000, 李天一, 710102198311211616, 17289156132, 1, 1000010, 2322296607@qq.com, 8008208810, 1, 2020-03-06]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} Result: [91370000726229592Y, 1100001, 1000000, 王月明, 710102198311211616, 17289156132, 4, 1000011, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} Result: [91370000726229592Y, 1100001, 1000000, 贾倩倩, 710102198311211616, 17289156132, 1, 1000012, 2322296607@qq.com, 8008208810, 0, 2020-03-06]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} Result: [91370000726229592Y, 1100001, 1000000, 武允文, 123, 1234, 1, 1000013, 123456, 12345, 1, 2021-06-15]
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73401 ] - [ DEBUG ]  {conn-10002, pstmt-20021, rs-50021} closed
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73402 ] - [ DEBUG ]  {conn-10002, pstmt-20021} closed
+2021-06-22 21:27:24  [ http-nio-8010-exec-4:73402 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97688 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97688 ] - [ DEBUG ]  {conn-10002, pstmt-20022} created. select count(*) from czyxxb
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97688 ] - [ DEBUG ]  {conn-10002, pstmt-20022} Parameters : []
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97688 ] - [ DEBUG ]  {conn-10002, pstmt-20022} Types : []
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97691 ] - [ DEBUG ]  {conn-10002, pstmt-20022} executed. 3.1604 millis. select count(*) from czyxxb
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50022} open
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50022} Header: [count(*)]
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50022} Result: [14]
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50022} closed
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20022} closed
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20023} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20023} Parameters : [1000001, 10, 0]
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97692 ] - [ DEBUG ]  {conn-10002, pstmt-20023} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97694 ] - [ DEBUG ]  {conn-10002, pstmt-20023} executed. 1.7332 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97694 ] - [ DEBUG ]  {conn-10002, pstmt-20023, rs-50023} open
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97694 ] - [ DEBUG ]  {conn-10002, pstmt-20023, rs-50023} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97694 ] - [ DEBUG ]  {conn-10002, pstmt-20023, rs-50023} closed
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97695 ] - [ DEBUG ]  {conn-10002, pstmt-20023} closed
+2021-06-22 21:27:48  [ http-nio-8010-exec-10:97695 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103983 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103983 ] - [ DEBUG ]  {conn-10002, pstmt-20024} created. select count(*) from czyxxb
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103983 ] - [ DEBUG ]  {conn-10002, pstmt-20024} Parameters : []
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103983 ] - [ DEBUG ]  {conn-10002, pstmt-20024} Types : []
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103985 ] - [ DEBUG ]  {conn-10002, pstmt-20024} executed. 2.5622 millis. select count(*) from czyxxb
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103985 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50024} open
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103985 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50024} Header: [count(*)]
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103985 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50024} Result: [14]
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50024} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002, pstmt-20024} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002, pstmt-20025} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002, pstmt-20025} Parameters : [1100004, 10, 0]
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103986 ] - [ DEBUG ]  {conn-10002, pstmt-20025} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103988 ] - [ DEBUG ]  {conn-10002, pstmt-20025} executed. 1.5606 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103988 ] - [ DEBUG ]  {conn-10002, pstmt-20025, rs-50025} open
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103988 ] - [ DEBUG ]  {conn-10002, pstmt-20025, rs-50025} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103988 ] - [ DEBUG ]  {conn-10002, pstmt-20025, rs-50025} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103988 ] - [ DEBUG ]  {conn-10002, pstmt-20025} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-1:103988 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104632 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104632 ] - [ DEBUG ]  {conn-10002, pstmt-20026} created. select count(*) from czyxxb
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104632 ] - [ DEBUG ]  {conn-10002, pstmt-20026} Parameters : []
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104632 ] - [ DEBUG ]  {conn-10002, pstmt-20026} Types : []
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104634 ] - [ DEBUG ]  {conn-10002, pstmt-20026} executed. 2.5207 millis. select count(*) from czyxxb
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104634 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50026} open
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104634 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50026} Header: [count(*)]
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104634 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50026} Result: [14]
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50026} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002, pstmt-20026} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002, pstmt-20027} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002, pstmt-20027} Parameters : [1000000, 10, 0]
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104635 ] - [ DEBUG ]  {conn-10002, pstmt-20027} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104638 ] - [ DEBUG ]  {conn-10002, pstmt-20027} executed. 2.5081 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104638 ] - [ DEBUG ]  {conn-10002, pstmt-20027, rs-50027} open
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104638 ] - [ DEBUG ]  {conn-10002, pstmt-20027, rs-50027} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104638 ] - [ DEBUG ]  {conn-10002, pstmt-20027, rs-50027} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104638 ] - [ DEBUG ]  {conn-10002, pstmt-20027} closed
+2021-06-22 21:27:55  [ http-nio-8010-exec-7:104638 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113208 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113208 ] - [ DEBUG ]  {conn-10002, pstmt-20028} created. select count(*) from czyxxb
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113208 ] - [ DEBUG ]  {conn-10002, pstmt-20028} Parameters : []
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113208 ] - [ DEBUG ]  {conn-10002, pstmt-20028} Types : []
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113215 ] - [ DEBUG ]  {conn-10002, pstmt-20028} executed. 6.8381 millis. select count(*) from czyxxb
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113215 ] - [ DEBUG ]  {conn-10002, pstmt-20028, rs-50028} open
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113215 ] - [ DEBUG ]  {conn-10002, pstmt-20028, rs-50028} Header: [count(*)]
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113215 ] - [ DEBUG ]  {conn-10002, pstmt-20028, rs-50028} Result: [14]
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002, pstmt-20028, rs-50028} closed
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002, pstmt-20028} closed
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002, pstmt-20029} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002, pstmt-20029} Parameters : [1000001, 10, 0]
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113216 ] - [ DEBUG ]  {conn-10002, pstmt-20029} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113222 ] - [ DEBUG ]  {conn-10002, pstmt-20029} executed. 5.8481 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113222 ] - [ DEBUG ]  {conn-10002, pstmt-20029, rs-50029} open
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113222 ] - [ DEBUG ]  {conn-10002, pstmt-20029, rs-50029} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113222 ] - [ DEBUG ]  {conn-10002, pstmt-20029, rs-50029} closed
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113222 ] - [ DEBUG ]  {conn-10002, pstmt-20029} closed
+2021-06-22 21:28:04  [ http-nio-8010-exec-6:113222 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114727 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114727 ] - [ DEBUG ]  {conn-10002, pstmt-20030} created. select count(*) from czyxxb
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114727 ] - [ DEBUG ]  {conn-10002, pstmt-20030} Parameters : []
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114727 ] - [ DEBUG ]  {conn-10002, pstmt-20030} Types : []
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114733 ] - [ DEBUG ]  {conn-10002, pstmt-20030} executed. 6.0074 millis. select count(*) from czyxxb
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114733 ] - [ DEBUG ]  {conn-10002, pstmt-20030, rs-50030} open
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114733 ] - [ DEBUG ]  {conn-10002, pstmt-20030, rs-50030} Header: [count(*)]
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114733 ] - [ DEBUG ]  {conn-10002, pstmt-20030, rs-50030} Result: [14]
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114733 ] - [ DEBUG ]  {conn-10002, pstmt-20030, rs-50030} closed
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114733 ] - [ DEBUG ]  {conn-10002, pstmt-20030} closed
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114734 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114734 ] - [ DEBUG ]  {conn-10002} pool-connect
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114734 ] - [ DEBUG ]  {conn-10002, pstmt-20031} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114734 ] - [ DEBUG ]  {conn-10002, pstmt-20031} Parameters : [1000001, 10, 0]
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114734 ] - [ DEBUG ]  {conn-10002, pstmt-20031} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114740 ] - [ DEBUG ]  {conn-10002, pstmt-20031} executed. 6.0782 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114740 ] - [ DEBUG ]  {conn-10002, pstmt-20031, rs-50031} open
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114740 ] - [ DEBUG ]  {conn-10002, pstmt-20031, rs-50031} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114740 ] - [ DEBUG ]  {conn-10002, pstmt-20031, rs-50031} closed
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114740 ] - [ DEBUG ]  {conn-10002, pstmt-20031} closed
+2021-06-22 21:28:05  [ http-nio-8010-exec-2:114741 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366072 ] - [ DEBUG ]  {conn-10002} closed
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366075 ] - [ DEBUG ]  {conn-10001} closed
+2021-06-22 21:32:17  [ Druid-ConnectionPool-Create-1328031828:366106 ] - [ DEBUG ]  {conn-10003,procId-176} connected
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366110 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366111 ] - [ DEBUG ]  {conn-10003, pstmt-20032} created. select count(*) from czyxxb
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366111 ] - [ DEBUG ]  {conn-10003, pstmt-20032} Parameters : []
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366111 ] - [ DEBUG ]  {conn-10003, pstmt-20032} Types : []
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003, pstmt-20032} executed. 3.062 millis. select count(*) from czyxxb
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003, pstmt-20032, rs-50032} open
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003, pstmt-20032, rs-50032} Header: [count(*)]
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003, pstmt-20032, rs-50032} Result: [14]
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003, pstmt-20032, rs-50032} closed
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003, pstmt-20032} closed
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366114 ] - [ DEBUG ]  {conn-10003} pool-recycle
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366115 ] - [ DEBUG ]  {conn-10003} pool-connect
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366115 ] - [ DEBUG ]  {conn-10003, pstmt-20033} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366115 ] - [ DEBUG ]  {conn-10003, pstmt-20033} Parameters : [1100002, 10, 0]
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366115 ] - [ DEBUG ]  {conn-10003, pstmt-20033} Types : [INTEGER, INTEGER, INTEGER]
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366117 ] - [ DEBUG ]  {conn-10003, pstmt-20033} executed. 1.9952 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366117 ] - [ DEBUG ]  {conn-10003, pstmt-20033, rs-50033} open
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366117 ] - [ DEBUG ]  {conn-10003, pstmt-20033, rs-50033} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq]
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366117 ] - [ DEBUG ]  {conn-10003, pstmt-20033, rs-50033} closed
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366117 ] - [ DEBUG ]  {conn-10003, pstmt-20033} closed
+2021-06-22 21:32:17  [ http-nio-8010-exec-4:366117 ] - [ DEBUG ]  {conn-10003} pool-recycle

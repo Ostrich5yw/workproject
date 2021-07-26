@@ -1,0 +1,39 @@
+2021-04-08 14:26:34  [ main:2382 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:26:36  [ main:4363 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:29:35  [ main:2539 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:29:37  [ main:4502 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:32:11  [ main:2546 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:32:13  [ main:4011 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:32:26  [ restartedMain:1521 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:32:28  [ restartedMain:3095 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:37:49  [ restartedMain:1406 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:37:51  [ restartedMain:3733 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:38:33  [ restartedMain:1152 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:38:34  [ restartedMain:2402 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:43:48  [ restartedMain:1173 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:43:50  [ restartedMain:2726 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:46:36  [ restartedMain:1100 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:46:37  [ restartedMain:2547 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:47:38  [ restartedMain:63034 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.workproject.entity.Mapper]' package. Please check your configuration.
+2021-04-08 14:47:43  [ restartedMain:68170 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:47:44  [ restartedMain:68907 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:48:16  [ restartedMain:101543 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:48:17  [ restartedMain:101844 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:48:27  [ restartedMain:1371 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:48:28  [ restartedMain:2844 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:50:35  [ restartedMain:129297 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:50:35  [ restartedMain:129600 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:52:02  [ restartedMain:1288 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:52:04  [ restartedMain:2625 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:52:34  [ restartedMain:33163 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:52:35  [ restartedMain:33722 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:54:00  [ restartedMain:118493 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:54:00  [ restartedMain:118826 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:56:25  [ restartedMain:264187 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:56:26  [ restartedMain:264589 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:56:40  [ restartedMain:1199 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:56:42  [ restartedMain:2634 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:57:19  [ restartedMain:40229 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:57:19  [ restartedMain:40530 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:58:06  [ restartedMain:87197 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:58:06  [ restartedMain:87524 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".

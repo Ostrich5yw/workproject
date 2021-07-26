@@ -1,0 +1,440 @@
+2021-04-08 14:24:27  [ main:0 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:24:30  [ SpringContextShutdownHook:3151 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:26:32  [ main:69 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.workproject.WorkprojectApplicationTests], using SpringBootContextLoader
+2021-04-08 14:26:32  [ main:74 ] - [ INFO ]  Could not detect default resource locations for test class [com.example.workproject.WorkprojectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-08 14:26:32  [ main:75 ] - [ INFO ]  Could not detect default configuration classes for test class [com.example.workproject.WorkprojectApplicationTests]: WorkprojectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-08 14:26:32  [ main:397 ] - [ INFO ]  Found @SpringBootConfiguration com.example.workproject.WorkprojectApplication for test class com.example.workproject.WorkprojectApplicationTests
+2021-04-08 14:26:32  [ main:564 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-08 14:26:32  [ main:582 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1530c739, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5b1669c0, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@78e4deb0, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6e9175d8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7d0b7e3c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@15bb5034, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4b741d6d, org.springframework.test.context.event.EventPublishingTestExecutionListener@2eae8e6e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@8f2ef19, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@470734c3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2cf3d63b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7674f035, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@69e153c5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@173ed316]
+2021-04-08 14:26:33  [ main:1188 ] - [ INFO ]  Starting WorkprojectApplicationTests using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 23400 (started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:26:33  [ main:1189 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:26:34  [ main:2220 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:26:34  [ main:2236 ] - [ INFO ]  Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:26:34  [ main:2382 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:26:35  [ main:3054 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:26:35  [ main:3546 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:26:36  [ main:4363 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:26:36  [ main:4794 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:26:36  [ cluster-ClusterId{value='606ea21ca8b59465827491e7', description='null'}-127.0.0.1:27017:4873 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:128}] to 127.0.0.1:27017
+2021-04-08 14:26:36  [ cluster-ClusterId{value='606ea21ca8b59465827491e7', description='null'}-127.0.0.1:27017:4873 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32703200}
+2021-04-08 14:26:36  [ cluster-rtt-ClusterId{value='606ea21ca8b59465827491e7', description='null'}-127.0.0.1:27017:4873 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:127}] to 127.0.0.1:27017
+2021-04-08 14:26:37  [ main:5750 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:26:38  [ main:6441 ] - [ INFO ]  Started WorkprojectApplicationTests in 5.724 seconds (JVM running for 7.414)
+2021-04-08 14:26:38  [ SpringContextShutdownHook:6671 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:26:38  [ SpringContextShutdownHook:6677 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:29:32  [ main:76 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.workproject.WorkprojectApplicationTests], using SpringBootContextLoader
+2021-04-08 14:29:32  [ main:84 ] - [ INFO ]  Could not detect default resource locations for test class [com.example.workproject.WorkprojectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-08 14:29:32  [ main:85 ] - [ INFO ]  Could not detect default configuration classes for test class [com.example.workproject.WorkprojectApplicationTests]: WorkprojectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-08 14:29:32  [ main:250 ] - [ INFO ]  Found @SpringBootConfiguration com.example.workproject.WorkprojectApplication for test class com.example.workproject.WorkprojectApplicationTests
+2021-04-08 14:29:33  [ main:394 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-08 14:29:33  [ main:416 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2cf3d63b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7674f035, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69e153c5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@173ed316, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25ce9dc4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74ea2410, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f62e33, org.springframework.test.context.event.EventPublishingTestExecutionListener@76b1e9b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@27406a17, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2af004b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@248e319b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d0bf09b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@793f29ff, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3e8c3cb]
+2021-04-08 14:29:33  [ main:1096 ] - [ INFO ]  Starting WorkprojectApplicationTests using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 13032 (started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:29:33  [ main:1099 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:29:34  [ main:2253 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:29:34  [ main:2269 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:29:35  [ main:2539 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:29:36  [ main:3603 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:29:36  [ main:3959 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:29:37  [ main:4502 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:29:37  [ main:5198 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:29:37  [ cluster-rtt-ClusterId{value='606ea2d1bb42166b34c64fee', description='null'}-127.0.0.1:27017:5278 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:129}] to 127.0.0.1:27017
+2021-04-08 14:29:37  [ cluster-ClusterId{value='606ea2d1bb42166b34c64fee', description='null'}-127.0.0.1:27017:5279 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:130}] to 127.0.0.1:27017
+2021-04-08 14:29:37  [ cluster-ClusterId{value='606ea2d1bb42166b34c64fee', description='null'}-127.0.0.1:27017:5280 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=34175300}
+2021-04-08 14:29:39  [ main:6554 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:29:40  [ main:7432 ] - [ INFO ]  Started WorkprojectApplicationTests in 6.927 seconds (JVM running for 8.531)
+2021-04-08 14:29:40  [ SpringContextShutdownHook:7927 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:29:40  [ SpringContextShutdownHook:7933 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:32:09  [ main:138 ] - [ INFO ]  Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.workproject.WorkprojectApplicationTests], using SpringBootContextLoader
+2021-04-08 14:32:09  [ main:146 ] - [ INFO ]  Could not detect default resource locations for test class [com.example.workproject.WorkprojectApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-04-08 14:32:09  [ main:147 ] - [ INFO ]  Could not detect default configuration classes for test class [com.example.workproject.WorkprojectApplicationTests]: WorkprojectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-04-08 14:32:09  [ main:454 ] - [ INFO ]  Found @SpringBootConfiguration com.example.workproject.WorkprojectApplication for test class com.example.workproject.WorkprojectApplicationTests
+2021-04-08 14:32:09  [ main:632 ] - [ INFO ]  Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-04-08 14:32:09  [ main:651 ] - [ INFO ]  Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2cf3d63b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7674f035, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@69e153c5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@173ed316, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25ce9dc4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74ea2410, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@17f62e33, org.springframework.test.context.event.EventPublishingTestExecutionListener@76b1e9b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@27406a17, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2af004b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@248e319b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5d0bf09b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@793f29ff, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3e8c3cb]
+2021-04-08 14:32:10  [ main:1410 ] - [ INFO ]  Starting WorkprojectApplicationTests using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 22716 (started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:32:10  [ main:1412 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:32:11  [ main:2313 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:32:11  [ main:2328 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:32:11  [ main:2546 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:32:12  [ main:2880 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:32:12  [ main:3300 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:32:13  [ main:4011 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:32:13  [ main:4490 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:32:13  [ cluster-ClusterId{value='606ea36d707ea75af913c142', description='null'}-127.0.0.1:27017:4571 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:134}] to 127.0.0.1:27017
+2021-04-08 14:32:13  [ cluster-ClusterId{value='606ea36d707ea75af913c142', description='null'}-127.0.0.1:27017:4572 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=33083200}
+2021-04-08 14:32:13  [ cluster-rtt-ClusterId{value='606ea36d707ea75af913c142', description='null'}-127.0.0.1:27017:4577 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:133}] to 127.0.0.1:27017
+2021-04-08 14:32:15  [ main:5786 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:32:15  [ main:6603 ] - [ INFO ]  Started WorkprojectApplicationTests in 5.89 seconds (JVM running for 7.704)
+2021-04-08 14:32:16  [ SpringContextShutdownHook:6979 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:32:16  [ SpringContextShutdownHook:6985 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:32:25  [ restartedMain:297 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 5720 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:32:25  [ restartedMain:298 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:32:25  [ restartedMain:415 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:32:25  [ restartedMain:416 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:32:26  [ restartedMain:1289 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:32:26  [ restartedMain:1327 ] - [ INFO ]  Finished Spring Data repository scanning in 20 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:32:26  [ restartedMain:1521 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:32:27  [ restartedMain:2232 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:32:27  [ restartedMain:2406 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1988 ms
+2021-04-08 14:32:27  [ restartedMain:2544 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:32:27  [ restartedMain:2747 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:32:28  [ restartedMain:3095 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:32:28  [ restartedMain:3366 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:32:28  [ cluster-ClusterId{value='606ea37c77630a06179ba751', description='null'}-127.0.0.1:27017:3413 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:136}] to 127.0.0.1:27017
+2021-04-08 14:32:28  [ cluster-rtt-ClusterId{value='606ea37c77630a06179ba751', description='null'}-127.0.0.1:27017:3413 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:135}] to 127.0.0.1:27017
+2021-04-08 14:32:28  [ cluster-ClusterId{value='606ea37c77630a06179ba751', description='null'}-127.0.0.1:27017:3413 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17986200}
+2021-04-08 14:32:28  [ restartedMain:3728 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:32:29  [ restartedMain:4033 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:32:29  [ restartedMain:4071 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:32:29  [ restartedMain:4087 ] - [ INFO ]  Started WorkprojectApplication in 4.471 seconds (JVM running for 5.339)
+2021-04-08 14:37:48  [ restartedMain:177 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 13248 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:37:48  [ restartedMain:180 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:37:48  [ restartedMain:231 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:37:48  [ restartedMain:231 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:37:49  [ restartedMain:1069 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:37:49  [ restartedMain:1093 ] - [ INFO ]  Finished Spring Data repository scanning in 16 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:37:49  [ restartedMain:1406 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:37:51  [ restartedMain:3071 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:37:51  [ restartedMain:3186 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2954 ms
+2021-04-08 14:37:51  [ restartedMain:3281 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:37:51  [ restartedMain:3411 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:37:51  [ restartedMain:3733 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:37:52  [ restartedMain:4416 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:37:52  [ cluster-rtt-ClusterId{value='606ea4c0c7e8060069ebd41e', description='null'}-127.0.0.1:27017:4814 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:144}] to 127.0.0.1:27017
+2021-04-08 14:37:52  [ cluster-ClusterId{value='606ea4c0c7e8060069ebd41e', description='null'}-127.0.0.1:27017:4814 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:143}] to 127.0.0.1:27017
+2021-04-08 14:37:52  [ cluster-ClusterId{value='606ea4c0c7e8060069ebd41e', description='null'}-127.0.0.1:27017:4814 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=212902700}
+2021-04-08 14:37:57  [ restartedMain:9442 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:38:01  [ restartedMain:13809 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:38:03  [ restartedMain:14984 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:38:04  [ restartedMain:16570 ] - [ INFO ]  Started WorkprojectApplication in 16.835 seconds (JVM running for 17.717)
+2021-04-08 14:38:16  [ Thread-28:27930 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:38:16  [ Thread-28:27934 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:38:16  [ restartedMain:28105 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:38:16  [ restartedMain:28106 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:38:16  [ restartedMain:28117 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 13248 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:38:16  [ restartedMain:28117 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:38:32  [ restartedMain:192 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 9852 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:38:32  [ restartedMain:197 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:38:32  [ restartedMain:310 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:38:32  [ restartedMain:310 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:38:33  [ restartedMain:1022 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:38:33  [ restartedMain:1034 ] - [ INFO ]  Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:38:33  [ restartedMain:1152 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:38:33  [ restartedMain:1685 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:38:33  [ restartedMain:1813 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1501 ms
+2021-04-08 14:38:34  [ restartedMain:1918 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:38:34  [ restartedMain:2064 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:38:34  [ restartedMain:2402 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:38:34  [ restartedMain:2671 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:38:34  [ cluster-rtt-ClusterId{value='606ea4ea162d7b70f5d1b878', description='null'}-127.0.0.1:27017:2714 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:145}] to 127.0.0.1:27017
+2021-04-08 14:38:34  [ cluster-ClusterId{value='606ea4ea162d7b70f5d1b878', description='null'}-127.0.0.1:27017:2714 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:146}] to 127.0.0.1:27017
+2021-04-08 14:38:34  [ cluster-ClusterId{value='606ea4ea162d7b70f5d1b878', description='null'}-127.0.0.1:27017:2715 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14415800}
+2021-04-08 14:38:35  [ restartedMain:3033 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:38:35  [ restartedMain:3333 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:38:35  [ restartedMain:3376 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:38:35  [ restartedMain:3396 ] - [ INFO ]  Started WorkprojectApplication in 3.713 seconds (JVM running for 5.382)
+2021-04-08 14:43:47  [ restartedMain:166 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 20144 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:43:47  [ restartedMain:187 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:43:47  [ restartedMain:236 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:43:47  [ restartedMain:236 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:43:48  [ restartedMain:953 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:43:48  [ restartedMain:981 ] - [ INFO ]  Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:43:48  [ restartedMain:1173 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:43:49  [ restartedMain:2051 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:43:49  [ restartedMain:2156 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1913 ms
+2021-04-08 14:43:49  [ restartedMain:2244 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:43:49  [ restartedMain:2384 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:43:50  [ restartedMain:2726 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:43:50  [ restartedMain:3010 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:43:50  [ cluster-rtt-ClusterId{value='606ea626e3e5e07a58d2935a', description='null'}-127.0.0.1:27017:3054 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:148}] to 127.0.0.1:27017
+2021-04-08 14:43:50  [ cluster-ClusterId{value='606ea626e3e5e07a58d2935a', description='null'}-127.0.0.1:27017:3054 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:147}] to 127.0.0.1:27017
+2021-04-08 14:43:50  [ cluster-ClusterId{value='606ea626e3e5e07a58d2935a', description='null'}-127.0.0.1:27017:3054 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15560500}
+2021-04-08 14:43:50  [ restartedMain:3332 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:43:51  [ restartedMain:3623 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:43:51  [ restartedMain:3664 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:43:51  [ restartedMain:3679 ] - [ INFO ]  Started WorkprojectApplication in 3.923 seconds (JVM running for 4.772)
+2021-04-08 14:46:35  [ restartedMain:208 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 20904 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:46:35  [ restartedMain:210 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:46:35  [ restartedMain:292 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:46:35  [ restartedMain:292 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:46:36  [ restartedMain:981 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:46:36  [ restartedMain:992 ] - [ INFO ]  Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:46:36  [ restartedMain:1100 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:46:36  [ restartedMain:1641 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:46:37  [ restartedMain:1768 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1475 ms
+2021-04-08 14:46:37  [ restartedMain:1897 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:46:37  [ restartedMain:2092 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:46:37  [ restartedMain:2547 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:46:38  [ restartedMain:2930 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:46:38  [ cluster-ClusterId{value='606ea6cec1145e15ac2ae39e', description='null'}-127.0.0.1:27017:2990 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:154}] to 127.0.0.1:27017
+2021-04-08 14:46:38  [ cluster-rtt-ClusterId{value='606ea6cec1145e15ac2ae39e', description='null'}-127.0.0.1:27017:2990 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:153}] to 127.0.0.1:27017
+2021-04-08 14:46:38  [ cluster-ClusterId{value='606ea6cec1145e15ac2ae39e', description='null'}-127.0.0.1:27017:2991 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12996300}
+2021-04-08 14:46:38  [ restartedMain:3342 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:46:38  [ restartedMain:3658 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:46:39  [ restartedMain:3696 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:46:39  [ restartedMain:3711 ] - [ INFO ]  Started WorkprojectApplication in 4.022 seconds (JVM running for 5.12)
+2021-04-08 14:47:37  [ Thread-13:62421 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:47:37  [ Thread-13:62425 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:47:37  [ restartedMain:62616 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:47:37  [ restartedMain:62617 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:47:37  [ restartedMain:62658 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 20904 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:47:37  [ restartedMain:62658 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:47:38  [ restartedMain:62988 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:47:38  [ restartedMain:62989 ] - [ INFO ]  Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:47:38  [ restartedMain:63034 ] - [ WARN ]  No MyBatis mapper was found in '[com.example.workproject.entity.Mapper]' package. Please check your configuration.
+2021-04-08 14:47:38  [ restartedMain:63133 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:47:38  [ restartedMain:63160 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 494 ms
+2021-04-08 14:47:38  [ restartedMain:63216 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:47:38  [ restartedMain:63265 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:47:38  [ restartedMain:63291 ] - [ INFO ]  {dataSource-2} inited
+2021-04-08 14:47:38  [ restartedMain:63415 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:47:38  [ cluster-ClusterId{value='606ea70ac1145e15ac2ae39f', description='null'}-127.0.0.1:27017:63418 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:155}] to 127.0.0.1:27017
+2021-04-08 14:47:38  [ cluster-rtt-ClusterId{value='606ea70ac1145e15ac2ae39f', description='null'}-127.0.0.1:27017:63418 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:156}] to 127.0.0.1:27017
+2021-04-08 14:47:38  [ cluster-ClusterId{value='606ea70ac1145e15ac2ae39f', description='null'}-127.0.0.1:27017:63419 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1675900}
+2021-04-08 14:47:38  [ restartedMain:63449 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:47:38  [ restartedMain:63468 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:47:38  [ restartedMain:63480 ] - [ INFO ]  Started WorkprojectApplication in 0.898 seconds (JVM running for 64.89)
+2021-04-08 14:47:38  [ restartedMain:63483 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:47:42  [ Thread-20:67603 ] - [ INFO ]  {dataSource-2} closed
+2021-04-08 14:47:42  [ Thread-20:67604 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:47:43  [ restartedMain:67791 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:47:43  [ restartedMain:67792 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:47:43  [ restartedMain:67799 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 20904 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:47:43  [ restartedMain:67799 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:47:43  [ restartedMain:68111 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:47:43  [ restartedMain:68119 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:47:43  [ restartedMain:68170 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:47:43  [ restartedMain:68265 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:47:43  [ restartedMain:68644 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 842 ms
+2021-04-08 14:47:44  [ restartedMain:68673 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:47:44  [ restartedMain:68719 ] - [ INFO ]  {dataSource-3} inited
+2021-04-08 14:47:44  [ restartedMain:68907 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:47:44  [ restartedMain:68955 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:47:44  [ cluster-rtt-ClusterId{value='606ea710c1145e15ac2ae3a0', description='null'}-127.0.0.1:27017:68959 ] - [ INFO ]  Opened connection [connectionId{localValue:5, serverValue:157}] to 127.0.0.1:27017
+2021-04-08 14:47:44  [ cluster-ClusterId{value='606ea710c1145e15ac2ae3a0', description='null'}-127.0.0.1:27017:68959 ] - [ INFO ]  Opened connection [connectionId{localValue:6, serverValue:158}] to 127.0.0.1:27017
+2021-04-08 14:47:44  [ cluster-ClusterId{value='606ea710c1145e15ac2ae3a0', description='null'}-127.0.0.1:27017:68960 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1132900}
+2021-04-08 14:47:44  [ restartedMain:69033 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:47:44  [ restartedMain:69117 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:47:44  [ restartedMain:69138 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:47:44  [ restartedMain:69148 ] - [ INFO ]  Started WorkprojectApplication in 1.374 seconds (JVM running for 70.557)
+2021-04-08 14:47:44  [ restartedMain:69149 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:48:16  [ Thread-25:101204 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:48:16  [ Thread-25:101206 ] - [ INFO ]  {dataSource-3} closed
+2021-04-08 14:48:16  [ restartedMain:101331 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:48:16  [ restartedMain:101332 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:48:16  [ restartedMain:101339 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 20904 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:48:16  [ restartedMain:101340 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:48:16  [ restartedMain:101516 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:48:16  [ restartedMain:101520 ] - [ INFO ]  Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:48:16  [ restartedMain:101543 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:48:16  [ restartedMain:101630 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:48:16  [ restartedMain:101651 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 308 ms
+2021-04-08 14:48:17  [ restartedMain:101670 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:48:17  [ restartedMain:101708 ] - [ INFO ]  {dataSource-4} inited
+2021-04-08 14:48:17  [ restartedMain:101844 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:48:17  [ restartedMain:101871 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:48:17  [ cluster-ClusterId{value='606ea731c1145e15ac2ae3a1', description='null'}-127.0.0.1:27017:101879 ] - [ INFO ]  Opened connection [connectionId{localValue:7, serverValue:159}] to 127.0.0.1:27017
+2021-04-08 14:48:17  [ cluster-ClusterId{value='606ea731c1145e15ac2ae3a1', description='null'}-127.0.0.1:27017:101879 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4415700}
+2021-04-08 14:48:17  [ cluster-rtt-ClusterId{value='606ea731c1145e15ac2ae3a1', description='null'}-127.0.0.1:27017:101880 ] - [ INFO ]  Opened connection [connectionId{localValue:8, serverValue:160}] to 127.0.0.1:27017
+2021-04-08 14:48:17  [ restartedMain:101941 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:48:17  [ restartedMain:102101 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:48:17  [ restartedMain:102156 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:48:17  [ restartedMain:102167 ] - [ INFO ]  Started WorkprojectApplication in 0.853 seconds (JVM running for 103.576)
+2021-04-08 14:48:17  [ restartedMain:102170 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:48:26  [ restartedMain:316 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 19332 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:48:26  [ restartedMain:321 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:48:26  [ restartedMain:489 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:48:26  [ restartedMain:489 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:48:26  [ restartedMain:1204 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:48:26  [ restartedMain:1242 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:48:27  [ restartedMain:1371 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:48:27  [ restartedMain:1980 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:48:27  [ restartedMain:2186 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1696 ms
+2021-04-08 14:48:28  [ restartedMain:2346 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:48:28  [ restartedMain:2511 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:48:28  [ restartedMain:2844 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:48:28  [ restartedMain:3084 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:48:28  [ cluster-rtt-ClusterId{value='606ea73c849d0a377f51c025', description='null'}-127.0.0.1:27017:3126 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:161}] to 127.0.0.1:27017
+2021-04-08 14:48:28  [ cluster-ClusterId{value='606ea73c849d0a377f51c025', description='null'}-127.0.0.1:27017:3126 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:162}] to 127.0.0.1:27017
+2021-04-08 14:48:28  [ cluster-ClusterId{value='606ea73c849d0a377f51c025', description='null'}-127.0.0.1:27017:3127 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14782000}
+2021-04-08 14:48:29  [ restartedMain:3396 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:48:29  [ restartedMain:3664 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:48:29  [ restartedMain:3703 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:48:29  [ restartedMain:3719 ] - [ INFO ]  Started WorkprojectApplication in 4.138 seconds (JVM running for 5.07)
+2021-04-08 14:50:34  [ Thread-13:128903 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:50:34  [ Thread-13:128906 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:50:34  [ restartedMain:129066 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:50:34  [ restartedMain:129066 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:50:34  [ restartedMain:129074 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 19332 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:50:34  [ restartedMain:129075 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:50:34  [ restartedMain:129264 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:50:34  [ restartedMain:129269 ] - [ INFO ]  Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:50:35  [ restartedMain:129297 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:50:35  [ restartedMain:129398 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:50:35  [ restartedMain:129425 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 348 ms
+2021-04-08 14:50:35  [ restartedMain:129445 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:50:35  [ restartedMain:129483 ] - [ INFO ]  {dataSource-2} inited
+2021-04-08 14:50:35  [ restartedMain:129600 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:50:35  [ restartedMain:129632 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:50:35  [ cluster-ClusterId{value='606ea7bb849d0a377f51c026', description='null'}-127.0.0.1:27017:129634 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:164}] to 127.0.0.1:27017
+2021-04-08 14:50:35  [ cluster-rtt-ClusterId{value='606ea7bb849d0a377f51c026', description='null'}-127.0.0.1:27017:129634 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:163}] to 127.0.0.1:27017
+2021-04-08 14:50:35  [ cluster-ClusterId{value='606ea7bb849d0a377f51c026', description='null'}-127.0.0.1:27017:129635 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=952600}
+2021-04-08 14:50:35  [ restartedMain:129697 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:50:35  [ restartedMain:129759 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:50:35  [ restartedMain:129777 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:50:35  [ restartedMain:129785 ] - [ INFO ]  Started WorkprojectApplication in 0.739 seconds (JVM running for 131.136)
+2021-04-08 14:50:35  [ restartedMain:129787 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:52:01  [ restartedMain:185 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 10696 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:52:01  [ restartedMain:186 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:52:01  [ restartedMain:234 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:52:01  [ restartedMain:235 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:52:02  [ restartedMain:1159 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:52:02  [ restartedMain:1172 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:52:02  [ restartedMain:1288 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:52:03  [ restartedMain:1902 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:52:03  [ restartedMain:2032 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1797 ms
+2021-04-08 14:52:03  [ restartedMain:2129 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:52:03  [ restartedMain:2267 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:52:04  [ restartedMain:2625 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:52:04  [ restartedMain:2904 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:52:04  [ cluster-ClusterId{value='606ea81461936a65da759347', description='null'}-127.0.0.1:27017:2946 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:166}] to 127.0.0.1:27017
+2021-04-08 14:52:04  [ cluster-rtt-ClusterId{value='606ea81461936a65da759347', description='null'}-127.0.0.1:27017:2946 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:165}] to 127.0.0.1:27017
+2021-04-08 14:52:04  [ cluster-ClusterId{value='606ea81461936a65da759347', description='null'}-127.0.0.1:27017:2947 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14502400}
+2021-04-08 14:52:04  [ restartedMain:3239 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:52:05  [ restartedMain:3707 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:52:05  [ restartedMain:3756 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:52:05  [ restartedMain:3779 ] - [ INFO ]  Started WorkprojectApplication in 4.145 seconds (JVM running for 5.013)
+2021-04-08 14:52:34  [ Thread-14:32612 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:52:34  [ Thread-14:32616 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:52:34  [ restartedMain:32774 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:52:34  [ restartedMain:32775 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:52:34  [ restartedMain:32826 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 10696 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:52:34  [ restartedMain:32827 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:52:34  [ restartedMain:33117 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:52:34  [ restartedMain:33125 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:52:34  [ restartedMain:33163 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:52:34  [ restartedMain:33326 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:52:35  [ restartedMain:33459 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 627 ms
+2021-04-08 14:52:35  [ restartedMain:33540 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:52:35  [ restartedMain:33592 ] - [ INFO ]  {dataSource-2} inited
+2021-04-08 14:52:35  [ restartedMain:33722 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:52:35  [ restartedMain:33759 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:52:35  [ cluster-ClusterId{value='606ea83361936a65da759348', description='null'}-127.0.0.1:27017:33763 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:167}] to 127.0.0.1:27017
+2021-04-08 14:52:35  [ cluster-ClusterId{value='606ea83361936a65da759348', description='null'}-127.0.0.1:27017:33765 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2887600}
+2021-04-08 14:52:35  [ cluster-rtt-ClusterId{value='606ea83361936a65da759348', description='null'}-127.0.0.1:27017:33768 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:168}] to 127.0.0.1:27017
+2021-04-08 14:52:35  [ restartedMain:33827 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:52:35  [ restartedMain:33895 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:52:35  [ restartedMain:33913 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:52:35  [ restartedMain:33920 ] - [ INFO ]  Started WorkprojectApplication in 1.184 seconds (JVM running for 35.154)
+2021-04-08 14:52:35  [ restartedMain:33922 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:53:59  [ Thread-21:118082 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:53:59  [ Thread-21:118084 ] - [ INFO ]  {dataSource-2} closed
+2021-04-08 14:53:59  [ restartedMain:118269 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:53:59  [ restartedMain:118269 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:53:59  [ restartedMain:118277 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 10696 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:53:59  [ restartedMain:118277 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:54:00  [ restartedMain:118460 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:54:00  [ restartedMain:118465 ] - [ INFO ]  Finished Spring Data repository scanning in 4 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:54:00  [ restartedMain:118493 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:54:00  [ restartedMain:118608 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:54:00  [ restartedMain:118637 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 358 ms
+2021-04-08 14:54:00  [ restartedMain:118660 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:54:00  [ restartedMain:118698 ] - [ INFO ]  {dataSource-3} inited
+2021-04-08 14:54:00  [ restartedMain:118826 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:54:00  [ restartedMain:118853 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:54:00  [ cluster-rtt-ClusterId{value='606ea88861936a65da759349', description='null'}-127.0.0.1:27017:118855 ] - [ INFO ]  Opened connection [connectionId{localValue:6, serverValue:170}] to 127.0.0.1:27017
+2021-04-08 14:54:00  [ cluster-ClusterId{value='606ea88861936a65da759349', description='null'}-127.0.0.1:27017:118855 ] - [ INFO ]  Opened connection [connectionId{localValue:5, serverValue:169}] to 127.0.0.1:27017
+2021-04-08 14:54:00  [ cluster-ClusterId{value='606ea88861936a65da759349', description='null'}-127.0.0.1:27017:118857 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=855300}
+2021-04-08 14:54:00  [ restartedMain:118908 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:54:00  [ restartedMain:118969 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:54:00  [ restartedMain:118989 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:54:00  [ restartedMain:118997 ] - [ INFO ]  Started WorkprojectApplication in 0.744 seconds (JVM running for 120.231)
+2021-04-08 14:54:00  [ restartedMain:118998 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:56:25  [ Thread-26:263839 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:56:25  [ Thread-26:263841 ] - [ INFO ]  {dataSource-3} closed
+2021-04-08 14:56:25  [ restartedMain:263983 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:56:25  [ restartedMain:263983 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:56:25  [ restartedMain:263990 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 10696 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:56:25  [ restartedMain:263990 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:56:25  [ restartedMain:264158 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:56:25  [ restartedMain:264161 ] - [ INFO ]  Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:56:25  [ restartedMain:264187 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:56:25  [ restartedMain:264293 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:56:25  [ restartedMain:264325 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 333 ms
+2021-04-08 14:56:26  [ restartedMain:264345 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:56:26  [ restartedMain:264389 ] - [ INFO ]  {dataSource-4} inited
+2021-04-08 14:56:26  [ restartedMain:264589 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:56:26  [ restartedMain:264639 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:56:26  [ cluster-ClusterId{value='606ea91a61936a65da75934a', description='null'}-127.0.0.1:27017:264681 ] - [ INFO ]  Opened connection [connectionId{localValue:7, serverValue:171}] to 127.0.0.1:27017
+2021-04-08 14:56:26  [ cluster-ClusterId{value='606ea91a61936a65da75934a', description='null'}-127.0.0.1:27017:264682 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=23822100}
+2021-04-08 14:56:26  [ cluster-rtt-ClusterId{value='606ea91a61936a65da75934a', description='null'}-127.0.0.1:27017:264683 ] - [ INFO ]  Opened connection [connectionId{localValue:8, serverValue:172}] to 127.0.0.1:27017
+2021-04-08 14:56:26  [ restartedMain:264739 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:56:26  [ restartedMain:264825 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:56:26  [ restartedMain:264867 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:56:26  [ restartedMain:264882 ] - [ INFO ]  Started WorkprojectApplication in 0.913 seconds (JVM running for 266.115)
+2021-04-08 14:56:26  [ restartedMain:264883 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:56:39  [ restartedMain:284 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 11816 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:56:39  [ restartedMain:293 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:56:39  [ restartedMain:378 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:56:39  [ restartedMain:378 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:56:40  [ restartedMain:1072 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:56:40  [ restartedMain:1085 ] - [ INFO ]  Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:56:40  [ restartedMain:1199 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:56:41  [ restartedMain:1891 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:56:41  [ restartedMain:2030 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1650 ms
+2021-04-08 14:56:41  [ restartedMain:2163 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:56:41  [ restartedMain:2304 ] - [ INFO ]  {dataSource-1} inited
+2021-04-08 14:56:42  [ restartedMain:2634 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:56:42  [ restartedMain:2891 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:56:42  [ cluster-ClusterId{value='606ea92ae5d4367498be2083', description='null'}-127.0.0.1:27017:2934 ] - [ INFO ]  Opened connection [connectionId{localValue:2, serverValue:174}] to 127.0.0.1:27017
+2021-04-08 14:56:42  [ cluster-rtt-ClusterId{value='606ea92ae5d4367498be2083', description='null'}-127.0.0.1:27017:2934 ] - [ INFO ]  Opened connection [connectionId{localValue:1, serverValue:173}] to 127.0.0.1:27017
+2021-04-08 14:56:42  [ cluster-ClusterId{value='606ea92ae5d4367498be2083', description='null'}-127.0.0.1:27017:2934 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15994300}
+2021-04-08 14:56:42  [ restartedMain:3193 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:56:42  [ restartedMain:3464 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:56:42  [ restartedMain:3503 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:56:42  [ restartedMain:3518 ] - [ INFO ]  Started WorkprojectApplication in 3.967 seconds (JVM running for 4.897)
+2021-04-08 14:57:19  [ Thread-13:39832 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:57:19  [ Thread-13:39835 ] - [ INFO ]  {dataSource-1} closed
+2021-04-08 14:57:19  [ restartedMain:39994 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:57:19  [ restartedMain:39995 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:57:19  [ restartedMain:40003 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 11816 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:57:19  [ restartedMain:40005 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:57:19  [ restartedMain:40202 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:57:19  [ restartedMain:40206 ] - [ INFO ]  Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:57:19  [ restartedMain:40229 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:57:19  [ restartedMain:40320 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:57:19  [ restartedMain:40350 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 342 ms
+2021-04-08 14:57:19  [ restartedMain:40370 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:57:19  [ restartedMain:40408 ] - [ INFO ]  {dataSource-2} inited
+2021-04-08 14:57:19  [ restartedMain:40530 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:57:19  [ restartedMain:40561 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:57:19  [ cluster-ClusterId{value='606ea94fe5d4367498be2084', description='null'}-127.0.0.1:27017:40564 ] - [ INFO ]  Opened connection [connectionId{localValue:3, serverValue:176}] to 127.0.0.1:27017
+2021-04-08 14:57:19  [ cluster-rtt-ClusterId{value='606ea94fe5d4367498be2084', description='null'}-127.0.0.1:27017:40564 ] - [ INFO ]  Opened connection [connectionId{localValue:4, serverValue:175}] to 127.0.0.1:27017
+2021-04-08 14:57:19  [ cluster-ClusterId{value='606ea94fe5d4367498be2084', description='null'}-127.0.0.1:27017:40565 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1115800}
+2021-04-08 14:57:20  [ restartedMain:40622 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:57:20  [ restartedMain:40703 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:57:20  [ restartedMain:40722 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:57:20  [ restartedMain:40731 ] - [ INFO ]  Started WorkprojectApplication in 0.756 seconds (JVM running for 42.11)
+2021-04-08 14:57:20  [ restartedMain:40733 ] - [ INFO ]  Condition evaluation unchanged
+2021-04-08 14:58:06  [ Thread-20:86781 ] - [ INFO ]  Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:58:06  [ Thread-20:86784 ] - [ INFO ]  {dataSource-2} closed
+2021-04-08 14:58:06  [ restartedMain:86960 ] - [ INFO ]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-08 14:58:06  [ restartedMain:86961 ] - [ INFO ]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-08 14:58:06  [ restartedMain:86967 ] - [ INFO ]  Starting WorkprojectApplication using Java 1.8.0_261 on DESKTOP-UCJ47L6 with PID 11816 (E:\IdeaProjects\workproject\target\classes started by PanGPanG5 in E:\IdeaProjects\workproject)
+2021-04-08 14:58:06  [ restartedMain:86967 ] - [ INFO ]  The following profiles are active: dev
+2021-04-08 14:58:06  [ restartedMain:87168 ] - [ INFO ]  Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-04-08 14:58:06  [ restartedMain:87172 ] - [ INFO ]  Finished Spring Data repository scanning in 3 ms. Found 0 MongoDB repository interfaces.
+2021-04-08 14:58:06  [ restartedMain:87197 ] - [ WARN ]  No MyBatis mapper was found in '[com.baomidou.cloud.service.*.mapper*]' package. Please check your configuration.
+2021-04-08 14:58:06  [ restartedMain:87289 ] - [ INFO ]  Tomcat initialized with port(s): 8010 (http)
+2021-04-08 14:58:06  [ restartedMain:87313 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 343 ms
+2021-04-08 14:58:06  [ restartedMain:87334 ] - [ INFO ]  Init DruidDataSource
+2021-04-08 14:58:06  [ restartedMain:87373 ] - [ INFO ]  {dataSource-3} inited
+2021-04-08 14:58:06  [ restartedMain:87524 ] - [ WARN ]  Can not find table primary key in Class: "com.example.workproject.entity.PoJo.userBean".
+2021-04-08 14:58:06  [ restartedMain:87549 ] - [ INFO ]  Cluster created with settings {hosts=[127.0.0.1:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-04-08 14:58:06  [ cluster-ClusterId{value='606ea97ee5d4367498be2085', description='null'}-127.0.0.1:27017:87551 ] - [ INFO ]  Opened connection [connectionId{localValue:5, serverValue:178}] to 127.0.0.1:27017
+2021-04-08 14:58:06  [ cluster-rtt-ClusterId{value='606ea97ee5d4367498be2085', description='null'}-127.0.0.1:27017:87551 ] - [ INFO ]  Opened connection [connectionId{localValue:6, serverValue:177}] to 127.0.0.1:27017
+2021-04-08 14:58:06  [ cluster-ClusterId{value='606ea97ee5d4367498be2085', description='null'}-127.0.0.1:27017:87552 ] - [ INFO ]  Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=863500}
+2021-04-08 14:58:07  [ restartedMain:87604 ] - [ INFO ]  Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 14:58:07  [ restartedMain:87675 ] - [ INFO ]  LiveReload server is running on port 35730
+2021-04-08 14:58:07  [ restartedMain:87693 ] - [ INFO ]  Tomcat started on port(s): 8010 (http) with context path ''
+2021-04-08 14:58:07  [ restartedMain:87702 ] - [ INFO ]  Started WorkprojectApplication in 0.759 seconds (JVM running for 89.081)
+2021-04-08 14:58:07  [ restartedMain:87703 ] - [ INFO ]  Condition evaluation unchanged
