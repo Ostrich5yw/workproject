@@ -11,7 +11,7 @@ spring:
       name: mywebpage
       url: jdbc:mysql://localhost:3306/mywebpage?serverTimezone=UTC   #纠正mysql8.0可能出现的时区错误
       username: root
-      password: azsx18327946
+      password: xxx
       driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
       type: com.alibaba.druid.pool.DruidDataSource    # 切换数据源
       druid:
@@ -21,7 +21,7 @@ spring:
       port: 35730
   mail:
     username: 1596253661@qq.com
-    password: sjjvxuahzcrrigbh
+    password: xxx
     host: smtp.qq.com
   redis:
     host: 10.102.19.38
@@ -31,7 +31,7 @@ spring:
       host: 127.0.0.1
       port: 27017
       username: root
-      password: Ostrich5yw
+      password: xxx
       authentication-database: admin
       database: workproject
   web:
