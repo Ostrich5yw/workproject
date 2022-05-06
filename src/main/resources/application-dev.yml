@@ -12,9 +12,9 @@ spring:
     url: jdbc:mysql://localhost:3306/datamapapp?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
 #    url: jdbc:mysql://202.200.112.140:3306/UnivBigData?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC   #纠正mysql8.0可能出现的时区错误
 #    username: root
-#    password: DataMap2021???
+#    password: xxx
     username: root
-    password: 183279
+    password: xxx
     driver-class-name: com.mysql.cj.jdbc.Driver  #数据库链接驱动
     type: com.alibaba.druid.pool.DruidDataSource    # 切换数据源
     druid:
@@ -24,7 +24,7 @@ spring:
       port: 35730
   mail:
     username: 1596253661@qq.com
-    password: sjjvxuahzcrrigbh
+    password: xxx
     host: smtp.qq.com
   redis:
     host: 10.102.19.38
@@ -34,7 +34,7 @@ spring:
 #      host: 127.0.0.1
 #      port: 27017
 #      username: root
-#      password: Ostrich5yw
+#      password: xxx
 #      authentication-database: admin
 #      database: workproject
 #  web:
