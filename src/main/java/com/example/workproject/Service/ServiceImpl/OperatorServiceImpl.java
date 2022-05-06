@@ -28,8 +28,8 @@ public class OperatorServiceImpl implements OperatorService {
     }
 
     @Override
-    public String getOperatorByInstitutionDM(int institutionId, int page, int limit){
-        int num = operatorMapper.getOperatorNum();
+    public String getOperatorByInstitutionDM(long institutionId, int page, int limit){
+        int num = operatorMapper.getOperatorNum(institutionId);
 //        List<unitBean> list = unit_mybatisPlus_mapper.selectPage(pagesize, null).getRecords();
         List<operatorBean> list = operatorMapper.getOperatorByInstitutionDM(institutionId, (page - 1) * limit, limit);
         GsonBuilder builder = new GsonBuilder();
@@ -50,6 +50,7 @@ public class OperatorServiceImpl implements OperatorService {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String createTime = simpleDateFormat.format(date);
         long czydm = operatorMapper.getOperatorDm_MAX() + 1;
+        operatorMapper.updateMaxOperatorDm();
 
         operatorBean bean = new operatorBean();
         bean.setDwdm(param[0]);
@@ -64,6 +65,7 @@ public class OperatorServiceImpl implements OperatorService {
         bean.setCjrq(createTime);
         bean.setZt("1");
         bean.setCzydm(czydm);
+        bean.setCzykl("123456");
         operator_mybatisPlus_mapper.insert(bean);
     }
 

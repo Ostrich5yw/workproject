@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
-<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
     <meta http-equiv=Cache-Control content=no-cache />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>文件管理</title>
@@ -26,36 +26,36 @@
                         <input type="checkbox" checked lay-skin="switch" lay-text="私有目录|公有目录" lay-filter="switchTest">
                     </div>
                 </div>
-<!--                <div class="layui-form-item">-->
-<!--                    <div class="layui-inline">-->
-<!--                        <label class="layui-form-label">文件名称:</label>-->
-<!--                        <div class="layui-input-inline">-->
-<!--                            <input name="authorityName" class="layui-input" placeholder="输入文件名称"/>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="layui-inline">-->
-<!--                        <label class="layui-form-label">菜单url:</label>-->
-<!--                        <div class="layui-input-inline">-->
-<!--                            <input name="menuUrl" class="layui-input" placeholder="输入路由地址"/>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="layui-inline">-->
-<!--                        <label class="layui-form-label">权限标识:</label>-->
-<!--                        <div class="layui-input-inline">-->
-<!--                            <input name="authority" class="layui-input" placeholder="输入权限标识"/>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="layui-inline">&emsp;-->
-<!--                        <button class="layui-btn icon-btn" lay-filter="authoritiesTbSearch" lay-submit>-->
-<!--                            <i class="layui-icon">&#xe615;</i>搜索-->
-<!--                        </button>&nbsp;-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="layui-form-item">-->
+                <!--                    <div class="layui-inline">-->
+                <!--                        <label class="layui-form-label">文件名称:</label>-->
+                <!--                        <div class="layui-input-inline">-->
+                <!--                            <input name="authorityName" class="layui-input" placeholder="输入文件名称"/>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <div class="layui-inline">-->
+                <!--                        <label class="layui-form-label">菜单url:</label>-->
+                <!--                        <div class="layui-input-inline">-->
+                <!--                            <input name="menuUrl" class="layui-input" placeholder="输入路由地址"/>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <div class="layui-inline">-->
+                <!--                        <label class="layui-form-label">权限标识:</label>-->
+                <!--                        <div class="layui-input-inline">-->
+                <!--                            <input name="authority" class="layui-input" placeholder="输入权限标识"/>-->
+                <!--                        </div>-->
+                <!--                    </div>-->
+                <!--                    <div class="layui-inline">&emsp;-->
+                <!--                        <button class="layui-btn icon-btn" lay-filter="authoritiesTbSearch" lay-submit>-->
+                <!--                            <i class="layui-icon">&#xe615;</i>搜索-->
+                <!--                        </button>&nbsp;-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </form>
 
             <!-- 数据表格 -->
             <table id="authoritiesTable"></table>
-<!--            <table id="authoritiesTable_3"></table>-->
+            <!--            <table id="authoritiesTable_3"></table>-->
         </div>
     </div>
 </div>
@@ -76,36 +76,26 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">上级菜单</label>
                     <div class="layui-input-block">
-                        <div id="authoritiesEditParentSel" class="ew-xmselect-tree"></div>
+                        <input name="parentName" id="parentName" class="layui-input"
+                               lay-verType="tips" readonly/>
                     </div>
                 </div>
-                <div class="layui-form-item">
-                    <label class="layui-form-label layui-form-required">文件名称:</label>
-                    <div class="layui-input-block">
-                        <input name="authorityName" placeholder="请输入文件名称" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
-                    </div>
-                </div>
-<!--                <div class="layui-form-item">-->
-<!--                    <label class="layui-form-label layui-form-required">文件类型:</label>-->
-<!--                    <div class="layui-input-block">-->
-<!--                        <input name="isMenu" type="radio" value="0" title="菜单" checked/>-->
-<!--                        <input name="isMenu" type="radio" value="1" title="文件"/>-->
-<!--                    </div>-->
-<!--                </div>-->
+
+                <!--                <div class="layui-form-item">-->
+                <!--                    <label class="layui-form-label layui-form-required">文件类型:</label>-->
+                <!--                    <div class="layui-input-block">-->
+                <!--                        <input name="isMenu" type="radio" value="0" title="菜单" checked/>-->
+                <!--                        <input name="isMenu" type="radio" value="1" title="文件"/>-->
+                <!--                    </div>-->
+                <!--                </div>-->
 
             </div>
             <div class="layui-col-md6">
                 <div class="layui-form-item">
-                    <label class="layui-form-label">文件标识:</label>
+                    <label class="layui-form-label layui-form-required">文件名称:</label>
                     <div class="layui-input-block">
-                        <input name="authority" placeholder="请输入权限标识" class="layui-input"/>
-                    </div>
-                </div>
-                <div class="layui-form-item">
-                    <label class="layui-form-label">菜单url:</label>
-                    <div class="layui-input-block">
-                        <input name="menuUrl" placeholder="请输入菜单url" class="layui-input"/>
+                        <input name="authorityName" id="authorityName" placeholder="请输入文件名称" class="layui-input"
+                               lay-verType="tips" lay-verify="required" required/>
                     </div>
                 </div>
             </div>
@@ -146,22 +136,22 @@
                 insTb.reload({
                     page: {curr: 1},
                     // data: {"institutionId": },
-                    url: '/D/privateMenu' + recordid + '.json'
+                    url: '/menu_request/getMenu?znjgfzdm=' + recordid + '&menubz='+ 0,
                     // + obj.data.institutionId +'.json'
                 });
             else
                 insTb.reload({
                     page: {curr: 1},
                     // data: {"institutionId": },
-                    url: '/D/publicMenu' + recordid + '.json'
+                    url: '/menu_request/getMenu?znjgfzdm=' + recordid + '&menubz='+ 1,
                     // + obj.data.institutionId +'.json'
                 });
         })
         // 渲染表格
         var insTb = treeTable.render({
             elem: '#authoritiesTable',
-            // url: '/iframe/test.json',
-            url: '/D/privateMenu' + recordid + '.json',
+            // url: '/D/privateMenu' + recordid + '.json',
+            url: '/menu_request/getMenu?znjgfzdm=' + recordid + '&menubz='+ 0,
             // toolbar: '#switch',
             tree: {
                 iconIndex: 2,
@@ -173,20 +163,20 @@
             },
             cols: [
                 [
-                // {type: 'checkbox'},
-                {type: 'numbers'},
-                {
-                    title: '类型', templet: function (d) {
-                        return [
-                            '<span class="layui-badge layui-badge-green">菜单</span>',
-                            '<span class="layui-badge layui-badge-gray">文件</span>'
-                        ][d.isMenu];
-                    }, align: 'center', width: 80
-                },
-                {field: 'authorityName', title: '文件名称<i class=\"layui-icon\">&#xe642;</i>', minWidth: 150,edit:'text'},
-                {field: 'menuUrl', title: '菜单url'},
-                {title: '操作', toolbar: '#authoritiesTbBar', align: 'center', width: 190}
-            ]
+                    // {type: 'checkbox'},
+                    {type: 'numbers'},
+                    {
+                        title: '类型', templet: function (d) {
+                            return [
+                                '<span class="layui-badge layui-badge-green">菜单</span>',
+                                '<span class="layui-badge layui-badge-gray">文件</span>'
+                            ][d.isMenu];
+                        }, align: 'center', width: 80
+                    },
+                    {field: 'authorityName', title: '文件名称<i class=\"layui-icon\">&#xe642;</i>', minWidth: 150,edit:'text'},
+                    {field: 'menuId', title: '菜单唯一标识'},
+                    {title: '操作', toolbar: '#authoritiesTbBar', align: 'center', width: 190}
+                ]
             ],
             done: function (data) {
                 tbDataList = data;
@@ -210,30 +200,6 @@
             doTbSearch(data.field, 'authorityId');
             return false;
         });
-
-
-        function privateMenu()
-        {
-
-                    insTb.reload({
-                        page: {curr: 1},
-                        // data: {"institutionId": },
-                        url: '/D/privateMenu' + recordid + '.json'
-                        // + obj.data.institutionId +'.json'
-                    });
-
-        }
-        function publicMenu()
-        {
-
-                    insTb.reload({
-                        page: {curr: 1},
-                        // data: {"institutionId": },
-                        url: '/D/publicMenu' + recordid + '.json'
-                        // + obj.data.institutionId +'.json'
-                    });
-
-        }
         // /* 添加 */
         // $('#authoritiesAddBtn').click(function () {
         //     showEditModel();
@@ -241,84 +207,82 @@
 
         /* 显示表单弹窗 */
         function showEditModel(obj) {
-            // console.log(checked)
-            var tree = $.extend(true, {}, insTb.options.data[0])             //tt.options.data中存放着整个树
-            var updateNode = obj.data.authorityId              //delNode记录待删除的节点号
-            let node = []
-            let res = []
-            node.push(tree)
-            while (node.length != 0) {                        //使用一个队列实现遍历整棵树
-                var temp = node.shift()
-                if (temp.authorityId == updateNode) {
+            if(obj.data.authorityId != 1){
+                // console.log(checked)
+                var tree = $.extend(true, {}, insTb.options.data[0])             //tt.options.data中存放着整个树
+                var updateNode = obj.data.authorityId              //delNode记录待删除的节点号
+                let node = []
+                let res = []
+                node.push(tree)
+                while (node.length != 0) {                        //使用一个队列实现遍历整棵树
+                    var temp = node.shift()
+                    if (temp.authorityId == updateNode) {
+                        // console.log(temp)
+                        // console.log(obj.data)
+                        // temp = obj.data;
+
+                    }
                     // console.log(temp)
-                    // console.log(obj.data)
-                    // temp = obj.data;
+                    res.push(temp)
+                    if (temp.children != undefined)                  //继续向后遍历
+                        for (var i = temp.children.length - 1; i >= 0; i--) {
+                            node.unshift(temp.children[i])
+                        }
+                }
+                for (var i = 0; i < res.length; i++) {
+                    delete res[i].children
+                    delete res[i].LAY_INDEX
+                    delete res[i].open
+                    if (i == 0)
+                        res[i]['open'] = true
+                    else
+                        res[i]['open'] = false
+                    res[i] = JSON.stringify(res[i])
+                }
+                // console.log(res)
+                if (checked)
+                    $.ajax({
+                        url: '/menu_request/updateMenu',
+                        type: 'POST',
+                        async: false,
+                        traditional: true,
+                        data: {"res": res, "znjgfzdm": recordid, "menubz": 0},
+                        success: function (response) {
+                            res = []
+                            node = []
+                            layer.msg("私有目录更新成功", {icon: 1});
+                            // $.get("/D/privateMenu1100001.json",function(resp){
+                            //    console.log(resp)
+                            // },"json");
+                            // insTb.reload({
+                            //     page: {curr: 1},
+                            //     // data: {"institutionId": },
+                            //     url: '/D/privateMenu' + recordid + '.json'
+                            //     // + obj.data.institutionId +'.json'
+                            // });
+                            insTb.refresh()
+                        }
+                    })
+                else {
+                    $.ajax({
+                        url: '/menu_request/updateMenu',
+                        type: 'POST',
+                        async: false,
+                        traditional: true,
+                        data: {"res": res, "znjgfzdm": recordid, "menubz": 1},
+                        success: function (response) {
+                            res = []
+                            node = []
+                            layer.msg("公有目录更新成功", {icon: 1});
+                            insTb.refresh()
+                        }
+                    })
 
                 }
-                // console.log(temp)
-                res.push(temp)
-                if (temp.children != undefined)                  //继续向后遍历
-                    for (var i = temp.children.length - 1; i >= 0; i--) {
-                        node.unshift(temp.children[i])
-                    }
             }
-            for (var i = 0; i < res.length; i++) {
-                delete res[i].children
-                delete res[i].LAY_INDEX
-                delete res[i].open
-                if (i == 0)
-                    res[i]['open'] = true
-                else
-                    res[i]['open'] = false
-                res[i] = JSON.stringify(res[i])
-            }
-            // console.log(res)
-            if (checked)
-                $.ajax({
-                    url: '/menu_request/updateJson',
-                    type: 'POST',
-                    async: false,
-                    traditional: true,
-                    data: {"res": res, "name": "privateMenu" + recordid},
-                    success: function (response) {
-                        res = []
-                        node = []
-                        layer.msg("私有目录更新成功", {icon: 1});
-                        $.get("/D/privateMenu1100001.json",function(resp){
-                           console.log(resp)
-                        },"json");
-                        insTb.reload({
-                            page: {curr: 1},
-                            // data: {"institutionId": },
-                            url: '/D/privateMenu' + recordid + '.json'
-                            // + obj.data.institutionId +'.json'
-                        });
-                    }
-                })
-            else {
-                $.ajax({
-                    url: '/menu_request/updateJson',
-                    type: 'POST',
-                    async: false,
-                    traditional: true,
-                    data: {"res": res, "name": "publicMenu" + recordid},
-                    success: function (response) {
-                        res = []
-                        node = []
-                        layer.msg("公有目录更新成功", {icon: 1});
-                        $.get("/D/publicMenu1100001.json",function(resp){
-                            console.log(resp)
-                        },"json");
-                        insTb.reload({
-                            page: {curr: 1},
-                            // data: {"institutionId": },
-                            url: '/D/publicMenu' + recordid + '.json'
-                            // + obj.data.institutionId +'.json'
-                        });
-                    }
-                })
+            else
+                layer.msg("无法修改根目录", {icon: 2});
 
-            }
         }
 
         /* 删除 */
@@ -386,11 +350,11 @@
                     // console.log(res)
                     if(checked)
                         $.ajax({
-                            url:'/menu_request/updateJson',
+                            url:'/menu_request/updateMenu',
                             type: 'POST',
                             async: false,
                             traditional: true,
-                            data: {"res": res, "name": "privateMenu"+recordid},
+                            data: {"res": res, "znjgfzdm": recordid, "menubz": 0},
                             success: function (response) {
                                 //请求成功后执行的代码
                                 // insTb.options.data = optiondata
@@ -398,27 +362,18 @@
                                 res = []
                                 node = []
                                 insTb.options.data = optiondata
-                                    layer.close(loadIndex);
-                                    layer.msg("私有目录删除成功", {icon: 1});
+                                layer.close(loadIndex);
+                                layer.msg("私有目录删除成功", {icon: 1});
                                 insTb.refresh()
-
-
-                            },
-                            error: function (status) {
-                                //失败后执行的代码
-                                // alert("fail")
-                                // layer.close(loadIndex);
-                                // layer.msg("无法删除根目录", {icon: 2});
-                                // insTb.refresh();
                             }
                         })
                     else
                         $.ajax({
-                            url:'/menu_request/updateJson',
+                            url:'/menu_request/updateMenu',
                             type: 'POST',
                             async: false,
                             traditional: true,
-                            data: {"res": res, "name": "publicMenu" + recordid},
+                            data: {"res": res, "znjgfzdm": recordid, "menubz": 1},
                             success: function (response) {
                                 //请求成功后执行的代码
                                 // insTb.options.data = optiondata
@@ -431,16 +386,9 @@
                                 layer.msg("公有目录删除成功", {icon: 1});
                                 insTb.refresh()
 
-                            },
-                            error: function (status) {
-                                //失败后执行的代码
-                                // alert("fail")
-                                // layer.close(loadIndex);
-                                // layer.msg("无法删除根目录", {icon: 2});
-                                // insTb.refresh();
                             }
                         })
-                 });
+                });
             }
             else
                 layer.msg("无法删除根目录", {icon: 2});
@@ -456,19 +404,27 @@
                     content: $('#authoritiesEditDialog').html(),
                     success: function (layero, dIndex) {
                         // 回显表单数据
-                        form.val('authoritiesEditForm', mData);
+                        // console.log(mData)
+
+                        // console.log(mData)
+                        // form.val('authoritiesEditForm', mData);
+                        $("#parentName").val(mData.authorityName)
                         // 表单提交事件
                         form.on('submit(authoritiesEditSubmit)', function (data) {
-                            data.field.parentId = insXmSel.getValue('valueStr');
+                            // data.field.parentId = insXmSel.getValue('valueStr');
+                            data.field.parentId = mData.authorityId
+                            data.field.authorityId = mData.authorityId
+                            // console.log(data)
                             var newNode = new Object();
                             newNode["authorityId"] = parseInt(data.field.authorityId) + 1
                             newNode["orderNumber"] = parseInt(data.field.authorityId) + 1
                             newNode["authorityName"] = data.field.authorityName
-                            newNode["authority"] = data.field.authority
+                            newNode["authority"] = null
                             newNode["isMenu"] = 0
-                            newNode["menuUrl"] = data.field.menuUrl
+                            newNode["menuUrl"] = null
                             newNode["parentId"] = parseInt(data.field.parentId)
                             newNode["menuIcon"] = null
+
                             Date.prototype.Format = function (fmt) { // author: meizz
                                 var o = {
                                     "M+": this.getMonth() + 1, // 月份
@@ -487,6 +443,7 @@
                             }
                             newNode["createTime"] = new Date().Format("yyyy-MM-dd hh:mm:ss")
                             newNode["updateTime"] = new Date().Format("yyyy-MM-dd hh:mm:ss")
+                            newNode["menuId"] = new Date().Format("yyyy-MM-dd hh:mm:ss")
                             newNode["open"] = false
                             // console.log(newNode)
                             var tree = insTb.options.data[0]            //tt.options.data中存放着整个树
@@ -521,6 +478,7 @@
                                 tempcopy["menuIcon"] = null
                                 tempcopy["createTime"] = temp.createTime
                                 tempcopy["updateTime"] = temp.updateTime
+                                tempcopy["menuId"] = temp.menuId
                                 if(temp.authorityId == 1)
                                     tempcopy["open"] = true
                                 else
@@ -534,20 +492,20 @@
                             }
                             if(nodeNum < addNode)
                                 res.push(newNode)
-                           //  console.log(tree)
-                           // console.log(res)
+                            //  console.log(tree)
+                            // console.log(res)
                             for(var i = 0; i < res.length;i ++){
                                 res[i] = JSON.stringify(res[i])
                             }
-                            // console.log(res)
+                            console.log(res)
                             var loadIndex = layer.load(2);
                             if(checked)
                                 $.ajax({
-                                    url:'/menu_request/updateJson',
+                                    url:'/menu_request/updateMenu',
                                     type:'POST',
                                     async: false,
                                     traditional: true,
-                                    data:{"res": res, "name": "privateMenu"+recordid},
+                                    data: {"res": res, "znjgfzdm": recordid, "menubz": 0},
                                     success:function(response){
                                         res = []
                                         node = []
@@ -563,11 +521,11 @@
                                 })
                             else
                                 $.ajax({
-                                    url:'/menu_request/updateJson',
+                                    url:'/menu_request/updateMenu',
                                     type:'POST',
                                     async: false,
                                     traditional: true,
-                                    data:{"res": res, "name": "publicMenu"+recordid},
+                                    data: {"res": res, "znjgfzdm": recordid, "menubz": 1},
                                     success:function(response){
                                         res = []
                                         node = []
@@ -585,25 +543,25 @@
                             return false;
                         });
                         // 渲染下拉树
-                        var insXmSel = xmSelect.render({
-                            el: '#authoritiesEditParentSel',
-                            height: '0px',
-                            data: insTb.options.data,
-                            initValue: mData ? [mData.authorityId] : [],
-                            model: {label: {type: 'text'}},
-                            prop: {
-                                name: 'authorityName',
-                                value: 'authorityId'
-                            },
-                            radio: true,
-                            clickClose: true,
-                            tree: {
-                                show: true,
-                                indent: 15,
-                                strict: false,
-                                expandedKeys: true
-                            }
-                        });
+                        // var insXmSel = xmSelect.render({
+                        //     el: '#authoritiesEditParentSel',
+                        //     height: '0px',
+                        //     data: insTb.options.data,
+                        //     initValue: mData ? [mData.authorityId] : [],
+                        //     model: {label: {type: 'text'}},
+                        //     prop: {
+                        //         name: 'authorityName',
+                        //         value: 'authorityId'
+                        //     },
+                        //     radio: true,
+                        //     clickClose: true,
+                        //     tree: {
+                        //         show: true,
+                        //         indent: 15,
+                        //         strict: false,
+                        //         expandedKeys: true
+                        //     }
+                        // });
                         // 弹窗不出现滚动条
                         $(layero).children('.layui-layer-content').css('overflow', 'visible');
                     }

@@ -61,21 +61,21 @@
 <!-- 表单弹窗 -->
 <script type="text/html" id="unitEditDialog" style="width: 600px">
     <form id="unitEditForm" lay-filter="unitEditForm" class="layui-form model-form" style="padding-right: 20px;">
-<!--        <input name="userId" type="hidden"/>-->
+        <!--        <input name="userId" type="hidden"/>-->
         <div class="layui-row">
             <div class="layui-col-md6">
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">单位代码:</label>
                     <div class="layui-input-block">
                         <input name="dwdm" placeholder="请输入单位代码" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="dwdm" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">单位名称:</label>
                     <div class="layui-input-block">
                         <input name="dwmc" placeholder="请输入单位名称" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="otherlong" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -106,14 +106,14 @@
                     <label class="layui-form-label layui-form-required">具体地址:</label>
                     <div class="layui-input-block">
                         <input name="dwszdz" placeholder="请输入具体地址" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="otherlong" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">单位邮编:</label>
                     <div class="layui-input-block">
                         <input name="dwyzbm" placeholder="请输入单位邮编" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="other" required/>
                     </div>
                 </div>
             </div>
@@ -122,35 +122,35 @@
                     <label class="layui-form-label layui-form-required">单位法人:</label>
                     <div class="layui-input-block">
                         <input name="dwfr" placeholder="请输入单位法人" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="other" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">联系人:</label>
                     <div class="layui-input-block">
                         <input name="dwlxr" placeholder="请输入联系人" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="other" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">移动电话:</label>
                     <div class="layui-input-block">
                         <input name="lxryddh" placeholder="请输入移动电话" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="phone" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">固定电话:</label>
                     <div class="layui-input-block">
                         <input name="lxrgddh" placeholder="请输入固定电话" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="gddh" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">邮箱:</label>
                     <div class="layui-input-block">
                         <input name="lxrmail" placeholder="请输入邮箱" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="email" required/>
                     </div>
                 </div>
             </div>
@@ -175,6 +175,33 @@
         var admin = layui.admin;
         var xmSelect = layui.xmSelect;
         var layarea = layui.layarea;
+        form.verify({
+            dwdm: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length!=18)
+                {
+                    return "单位代码必须为18位";
+                }
+            },
+            gddh: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length!=8)
+                {
+                    return "固定电话必须为8位";
+                }
+            },
+            other: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length>10)
+                {
+                    return "输入内容过长";
+                }
+            },
+            otherlong: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length>25)
+                {
+                    return "输入内容过长";
+                }
+            }
+        });
+
         /* 渲染表格 */
         var insTb = table.render({
             elem: '#unitTable',
@@ -189,15 +216,15 @@
             cellMinWidth: 100,
             cols: [
                 [
-                {type: 'numbers'},
-                {field: 'dwdm', title: '单位代码', sort: true, minWidth: 200},
-                {field: 'dwmc', title: '单位名称'},
-                {field: 'dwxzmc', title: '单位类型'},
-                {field: 'dwszdz', title: '单位地址'},
-                {field: 'dwlxr', title: '联系人'},
-                {field: 'lxryddh', title: '联系方式'},
-                {title: '操作', toolbar: '#unitTbBar', align: 'center', minWidth: 200}
-            ]
+                    {type: 'numbers'},
+                    {field: 'dwdm', title: '单位代码', sort: true, minWidth: 200},
+                    {field: 'dwmc', title: '单位名称'},
+                    {field: 'dwxzmc', title: '单位类型'},
+                    {field: 'dwszdz', title: '单位地址'},
+                    {field: 'dwlxr', title: '联系人'},
+                    {field: 'lxryddh', title: '联系方式'},
+                    {title: '操作', toolbar: '#unitTbBar', align: 'center', minWidth: 200}
+                ]
             ],
             where: {data:{dwmc: "理工大"}}
         });
@@ -216,19 +243,19 @@
                         mark = 1
                         if (res.msg == 'find')
                             layer.msg('查询成功', {icon: 1});
-                }
+                    }
                 })
                 if (mark == 0)
                     layer.msg('查询失败', {icon: 2});
             }
-        /*
-        *   这里做如下说明
-        * 1. 使用/unit_request/getAllUnit进行没有输入时的查询，使用/unit_request/findUnit接参数的方式进行有参数时的查询
-        * 2. 使用parseData区分查询成功与失败，成功时会走parseData（本来是做返回数据格式处理的），失败则因为mark==0，弹出’查询失败‘
-        * 3. 我这里修改了table.js源码（E:\IdeaProjects\workproject\src\main\resources\static\iframe\assets\libs\layui\lay\modules\table.js）
-        *    （1）修改了error（203行）的打印内容
-        *    （2）修改为async:false
-        * */
+            /*
+            *   这里做如下说明
+            * 1. 使用/unit_request/getAllUnit进行没有输入时的查询，使用/unit_request/findUnit接参数的方式进行有参数时的查询
+            * 2. 使用parseData区分查询成功与失败，成功时会走parseData（本来是做返回数据格式处理的），失败则因为mark==0，弹出’查询失败‘
+            * 3. 我这里修改了table.js源码（E:\IdeaProjects\workproject\src\main\resources\static\iframe\assets\libs\layui\lay\modules\table.js）
+            *    （1）修改了error（203行）的打印内容
+            *    （2）修改为async:false
+            * */
             return false
         });
 
@@ -326,6 +353,7 @@
                     var insRoleSel = xmSelect.render({
                         el: '#dwxzmc',
                         name: 'dwxzmc',
+                        radio: true,
                         layVerify: 'required',
                         layVerType: 'tips',
                         data: [{

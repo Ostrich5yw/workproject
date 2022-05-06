@@ -6,6 +6,7 @@ import com.example.workproject.entity.PoJo.unitBean_Name_ID;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import java.util.LinkedList;
@@ -14,11 +15,17 @@ import java.util.List;
 @Mapper
 @Repository
 public interface InstitutionMapper {
-    @Select("select MAX(znjgfzb.znjgfzdm) from znjgfzb")                     //查询目前最大分组机构编号
+    @Select("select xtcsb.znjgfzdm from xtcsb")                     //查询目前最大分组机构编号
     int getMaxIndexInstitution_fz();
 
-    @Select("select MAX(znjgxxb.znjgdm) from znjgxxb")                     //查询目前最大分组机构编号
+    @Update("update xtcsb set znjgfzdm = znjgfzdm + 1")
+    void updateMaxIndexInstitution_fz();
+
+    @Select("select xtcsb.znjgdm from xtcsb")                     //查询目前最大机构编号
     int getMaxIndexInstitution();
+
+    @Update("update xtcsb set znjgdm = znjgdm + 1")
+    void updateMaxIndexInstitution();
 
     @Select("select menuconfigdir from xtcsb")                     //查询分组树存放目录
     String getPath();
@@ -36,7 +43,7 @@ public interface InstitutionMapper {
     @Select("select dwxxb.dwmc as title, dwxxb.dwdm as id from dwxxb")           //查询所有单位的名称和代码
     List<unitBean_Name_ID> getUnit_Name_ID();
 
-//    @Insert("INSERT INTO `xtcsb`(`znjgdm`, `znjgfzdm`, `klcs`) VALUES (#{znjgdm}, #{znjgfzdm}, #{klcs})")
+    //    @Insert("INSERT INTO `xtcsb`(`znjgdm`, `znjgfzdm`, `klcs`) VALUES (#{znjgdm}, #{znjgfzdm}, #{klcs})")
 //    public void insertInstitution(int znjgdm, int znjgfzdm, int klcs);    //插入新的分支机构
     @Insert("INSERT INTO `znjgxxb`(`dwdm`, `znjgdm`, `znjgmc`, `cjrq`, `lxrxm`, `lxryddh`, `lxrgddh`, `lxrmail`) VALUES (#{dwdm}, #{znjgdm}, #{znjgmc}, #{cjrq}, #{lxrxm}, #{lxryddh}, #{lxrgddh}, #{lxrmail})")
     public void insertInstitution(String dwdm, int znjgdm, String znjgmc ,String cjrq, String lxrxm, String lxryddh, String lxrgddh, String lxrmail);    //插入新的分支机构

@@ -10,8 +10,8 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //registry.addResourceHandler(mappingUrl + "/**").addResourceLocations("file:" + uploadUrl + File.separator);
         //阿里云(映射路径去除盘符)
-        registry.addResourceHandler("/D/**").addResourceLocations("file:///D:/mapdirconfig/");
-        registry.addResourceHandler("/**").addResourceLocations("file:///E:/IdeaProjects/workproject/src/main/resources/static/");
+        registry.addResourceHandler("/D/**").addResourceLocations("file:///D:/");
+        registry.addResourceHandler("/**").addResourceLocations("file:///D:/AllProject/JavaProjects/workproject/src/main/resources/static/");
         super.addResourceHandlers(registry);
     }
 }

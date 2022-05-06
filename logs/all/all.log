@@ -1,239 +1,892 @@
-2021-07-22 11:28:33  [ Druid-ConnectionPool-Create-1232252836:0 ] - [ DEBUG ]  {conn-10001,procId-227} connected
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:6 ] - [ DEBUG ]  {conn-10001} pool-connect
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:23 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from czyxxb where czydm = ?
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:28 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [1000013]
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:29 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:40 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 13.2241 millis. select * from czyxxb where czydm = ?
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:44 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:46 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:52 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Result: [91370000726229592Y, 1100001, 1000000, 武允文, 123, 1234, 1, 1000013, 123456, 12345, 1, 2021-06-15, 123]
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:56 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:58 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
-2021-07-22 11:28:33  [ http-nio-8010-exec-4:59 ] - [ DEBUG ]  {conn-10001} pool-recycle
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7880 ] - [ DEBUG ]  {conn-10001} pool-connect
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7881 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select menuconfigdir from xtcsb
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7881 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : []
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7881 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : []
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 1.2738 millis. select menuconfigdir from xtcsb
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [menuconfigdir]
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7882 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Result: [D:\mapdirconfig]
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7883 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7884 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
-2021-07-22 11:28:41  [ http-nio-8010-exec-9:7884 ] - [ DEBUG ]  {conn-10001} pool-recycle
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43792 ] - [ DEBUG ]  {conn-10001} pool-connect
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43793 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. select menuconfigdir from xtcsb
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43793 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : []
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43793 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : []
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 1.083 millis. select menuconfigdir from xtcsb
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [menuconfigdir]
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43794 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Result: [D:\mapdirconfig]
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43795 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43795 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
-2021-07-22 11:29:17  [ http-nio-8010-exec-8:43795 ] - [ DEBUG ]  {conn-10001} pool-recycle
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179276 ] - [ DEBUG ]  {conn-10001} closed
-2021-07-22 11:31:32  [ Druid-ConnectionPool-Create-1232252836:179287 ] - [ DEBUG ]  {conn-10002,procId-228} connected
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179288 ] - [ DEBUG ]  {conn-10002} pool-connect
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179289 ] - [ DEBUG ]  {conn-10002, pstmt-20003} created. select menuconfigdir from xtcsb
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179289 ] - [ DEBUG ]  {conn-10002, pstmt-20003} Parameters : []
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179289 ] - [ DEBUG ]  {conn-10002, pstmt-20003} Types : []
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003} executed. 1.8621 millis. select menuconfigdir from xtcsb
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} open
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} Header: [menuconfigdir]
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} Result: [D:\mapdirconfig]
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003, rs-50003} closed
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002, pstmt-20003} closed
-2021-07-22 11:31:32  [ http-nio-8010-exec-2:179291 ] - [ DEBUG ]  {conn-10002} pool-recycle
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183115 ] - [ DEBUG ]  {conn-10002} pool-connect
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183115 ] - [ DEBUG ]  {conn-10002, pstmt-20004} created. select menuconfigdir from xtcsb
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183115 ] - [ DEBUG ]  {conn-10002, pstmt-20004} Parameters : []
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183116 ] - [ DEBUG ]  {conn-10002, pstmt-20004} Types : []
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183116 ] - [ DEBUG ]  {conn-10002, pstmt-20004} executed. 0.874 millis. select menuconfigdir from xtcsb
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183116 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} open
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} Header: [menuconfigdir]
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} Result: [D:\mapdirconfig]
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004, rs-50004} closed
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002, pstmt-20004} closed
-2021-07-22 11:31:36  [ http-nio-8010-exec-8:183117 ] - [ DEBUG ]  {conn-10002} pool-recycle
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186312 ] - [ DEBUG ]  {conn-10002} pool-connect
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186313 ] - [ DEBUG ]  {conn-10002, pstmt-20005} created. select menuconfigdir from xtcsb
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186313 ] - [ DEBUG ]  {conn-10002, pstmt-20005} Parameters : []
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186313 ] - [ DEBUG ]  {conn-10002, pstmt-20005} Types : []
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005} executed. 0.7062 millis. select menuconfigdir from xtcsb
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} open
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} Header: [menuconfigdir]
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} Result: [D:\mapdirconfig]
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005, rs-50005} closed
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002, pstmt-20005} closed
-2021-07-22 11:31:39  [ http-nio-8010-exec-6:186314 ] - [ DEBUG ]  {conn-10002} pool-recycle
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282700 ] - [ DEBUG ]  {conn-10002} closed
-2021-07-22 11:33:16  [ Druid-ConnectionPool-Create-1232252836:282711 ] - [ DEBUG ]  {conn-10003,procId-229} connected
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282712 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282713 ] - [ DEBUG ]  {conn-10003, pstmt-20006} created. select menuconfigdir from xtcsb
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282713 ] - [ DEBUG ]  {conn-10003, pstmt-20006} Parameters : []
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282713 ] - [ DEBUG ]  {conn-10003, pstmt-20006} Types : []
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006} executed. 2.0287 millis. select menuconfigdir from xtcsb
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} open
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} Header: [menuconfigdir]
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282715 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} Result: [D:\mapdirconfig]
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282716 ] - [ DEBUG ]  {conn-10003, pstmt-20006, rs-50006} closed
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282716 ] - [ DEBUG ]  {conn-10003, pstmt-20006} closed
-2021-07-22 11:33:16  [ http-nio-8010-exec-4:282716 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285314 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285314 ] - [ DEBUG ]  {conn-10003, pstmt-20007} created. select menuconfigdir from xtcsb
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285314 ] - [ DEBUG ]  {conn-10003, pstmt-20007} Parameters : []
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007} Types : []
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007} executed. 0.7137 millis. select menuconfigdir from xtcsb
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} open
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} Header: [menuconfigdir]
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285315 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} Result: [D:\mapdirconfig]
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285316 ] - [ DEBUG ]  {conn-10003, pstmt-20007, rs-50007} closed
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285316 ] - [ DEBUG ]  {conn-10003, pstmt-20007} closed
-2021-07-22 11:33:18  [ http-nio-8010-exec-9:285316 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003, pstmt-20008} created. select menuconfigdir from xtcsb
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003, pstmt-20008} Parameters : []
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289625 ] - [ DEBUG ]  {conn-10003, pstmt-20008} Types : []
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008} executed. 0.6726 millis. select menuconfigdir from xtcsb
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} open
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} Header: [menuconfigdir]
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} Result: [D:\mapdirconfig]
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008, rs-50008} closed
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003, pstmt-20008} closed
-2021-07-22 11:33:23  [ http-nio-8010-exec-3:289626 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003, pstmt-20009} created. select menuconfigdir from xtcsb
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003, pstmt-20009} Parameters : []
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323072 ] - [ DEBUG ]  {conn-10003, pstmt-20009} Types : []
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009} executed. 0.7975 millis. select menuconfigdir from xtcsb
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} open
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} Header: [menuconfigdir]
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323073 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} Result: [D:\mapdirconfig]
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323074 ] - [ DEBUG ]  {conn-10003, pstmt-20009, rs-50009} closed
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323074 ] - [ DEBUG ]  {conn-10003, pstmt-20009} closed
-2021-07-22 11:33:56  [ http-nio-8010-exec-9:323074 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003, pstmt-20010} created. select menuconfigdir from xtcsb
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003, pstmt-20010} Parameters : []
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327401 ] - [ DEBUG ]  {conn-10003, pstmt-20010} Types : []
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010} executed. 0.7215 millis. select menuconfigdir from xtcsb
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} open
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} Header: [menuconfigdir]
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327402 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} Result: [D:\mapdirconfig]
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327403 ] - [ DEBUG ]  {conn-10003, pstmt-20010, rs-50010} closed
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327403 ] - [ DEBUG ]  {conn-10003, pstmt-20010} closed
-2021-07-22 11:34:01  [ http-nio-8010-exec-5:327403 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329878 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329878 ] - [ DEBUG ]  {conn-10003, pstmt-20011} created. select menuconfigdir from xtcsb
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329878 ] - [ DEBUG ]  {conn-10003, pstmt-20011} Parameters : []
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011} Types : []
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011} executed. 0.6412 millis. select menuconfigdir from xtcsb
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} open
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} Header: [menuconfigdir]
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329879 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} Result: [D:\mapdirconfig]
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329880 ] - [ DEBUG ]  {conn-10003, pstmt-20011, rs-50011} closed
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329880 ] - [ DEBUG ]  {conn-10003, pstmt-20011} closed
-2021-07-22 11:34:03  [ http-nio-8010-exec-1:329880 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003, pstmt-20012} created. select menuconfigdir from xtcsb
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003, pstmt-20012} Parameters : []
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332184 ] - [ DEBUG ]  {conn-10003, pstmt-20012} Types : []
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012} executed. 0.7482 millis. select menuconfigdir from xtcsb
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} open
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} Header: [menuconfigdir]
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332185 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} Result: [D:\mapdirconfig]
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332186 ] - [ DEBUG ]  {conn-10003, pstmt-20012, rs-50012} closed
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332186 ] - [ DEBUG ]  {conn-10003, pstmt-20012} closed
-2021-07-22 11:34:05  [ http-nio-8010-exec-2:332186 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003, pstmt-20013} created. select * from czyxxb where czydm = ?
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003, pstmt-20013} Parameters : [1000013]
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377848 ] - [ DEBUG ]  {conn-10003, pstmt-20013} Types : [VARCHAR]
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377850 ] - [ DEBUG ]  {conn-10003, pstmt-20013} executed. 1.7095 millis. select * from czyxxb where czydm = ?
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377850 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} open
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377850 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377851 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} Result: [91370000726229592Y, 1100001, 1000000, 武允文, 123, 1234, 1, 1000013, 123456, 12345, 1, 2021-06-15, 123]
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377852 ] - [ DEBUG ]  {conn-10003, pstmt-20013, rs-50013} closed
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377852 ] - [ DEBUG ]  {conn-10003, pstmt-20013} closed
-2021-07-22 11:34:51  [ http-nio-8010-exec-8:377852 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003, pstmt-20014} created. select menuconfigdir from xtcsb
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003, pstmt-20014} Parameters : []
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382720 ] - [ DEBUG ]  {conn-10003, pstmt-20014} Types : []
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382721 ] - [ DEBUG ]  {conn-10003, pstmt-20014} executed. 0.9547 millis. select menuconfigdir from xtcsb
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382721 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} open
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} Header: [menuconfigdir]
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} Result: [D:\mapdirconfig]
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014, rs-50014} closed
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003, pstmt-20014} closed
-2021-07-22 11:34:56  [ http-nio-8010-exec-7:382722 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386565 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386565 ] - [ DEBUG ]  {conn-10003, pstmt-20015} created. select menuconfigdir from xtcsb
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015} Parameters : []
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015} Types : []
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015} executed. 0.6802 millis. select menuconfigdir from xtcsb
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} open
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386566 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} Header: [menuconfigdir]
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} Result: [D:\mapdirconfig]
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003, pstmt-20015, rs-50015} closed
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003, pstmt-20015} closed
-2021-07-22 11:35:00  [ http-nio-8010-exec-9:386567 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003, pstmt-20016} created. select menuconfigdir from xtcsb
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003, pstmt-20016} Parameters : []
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389265 ] - [ DEBUG ]  {conn-10003, pstmt-20016} Types : []
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016} executed. 0.694 millis. select menuconfigdir from xtcsb
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} open
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} Header: [menuconfigdir]
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} Result: [D:\mapdirconfig]
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016, rs-50016} closed
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003, pstmt-20016} closed
-2021-07-22 11:35:02  [ http-nio-8010-exec-3:389266 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003} pool-connect
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003, pstmt-20017} created. select menuconfigdir from xtcsb
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003, pstmt-20017} Parameters : []
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392693 ] - [ DEBUG ]  {conn-10003, pstmt-20017} Types : []
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017} executed. 0.6768 millis. select menuconfigdir from xtcsb
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} open
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} Header: [menuconfigdir]
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} Result: [D:\mapdirconfig]
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392694 ] - [ DEBUG ]  {conn-10003, pstmt-20017, rs-50017} closed
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392695 ] - [ DEBUG ]  {conn-10003, pstmt-20017} closed
-2021-07-22 11:35:06  [ http-nio-8010-exec-4:392695 ] - [ DEBUG ]  {conn-10003} pool-recycle
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461600 ] - [ DEBUG ]  {conn-10003} closed
-2021-07-22 11:36:15  [ Druid-ConnectionPool-Create-1232252836:461611 ] - [ DEBUG ]  {conn-10004,procId-230} connected
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461612 ] - [ DEBUG ]  {conn-10004} pool-connect
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461612 ] - [ DEBUG ]  {conn-10004, pstmt-20018} created. select menuconfigdir from xtcsb
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461613 ] - [ DEBUG ]  {conn-10004, pstmt-20018} Parameters : []
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461613 ] - [ DEBUG ]  {conn-10004, pstmt-20018} Types : []
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461614 ] - [ DEBUG ]  {conn-10004, pstmt-20018} executed. 1.7441 millis. select menuconfigdir from xtcsb
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461614 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} open
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} Header: [menuconfigdir]
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} Result: [D:\mapdirconfig]
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018, rs-50018} closed
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004, pstmt-20018} closed
-2021-07-22 11:36:15  [ http-nio-8010-exec-2:461615 ] - [ DEBUG ]  {conn-10004} pool-recycle
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004} pool-connect
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004, pstmt-20019} created. select menuconfigdir from xtcsb
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004, pstmt-20019} Parameters : []
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479767 ] - [ DEBUG ]  {conn-10004, pstmt-20019} Types : []
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019} executed. 0.7147 millis. select menuconfigdir from xtcsb
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} open
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} Header: [menuconfigdir]
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479768 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} Result: [D:\mapdirconfig]
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479769 ] - [ DEBUG ]  {conn-10004, pstmt-20019, rs-50019} closed
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479769 ] - [ DEBUG ]  {conn-10004, pstmt-20019} closed
-2021-07-22 11:36:33  [ http-nio-8010-exec-2:479769 ] - [ DEBUG ]  {conn-10004} pool-recycle
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004} pool-connect
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004, pstmt-20020} created. select menuconfigdir from xtcsb
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004, pstmt-20020} Parameters : []
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481985 ] - [ DEBUG ]  {conn-10004, pstmt-20020} Types : []
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020} executed. 0.6186 millis. select menuconfigdir from xtcsb
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} open
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} Header: [menuconfigdir]
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} Result: [D:\mapdirconfig]
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020, rs-50020} closed
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481986 ] - [ DEBUG ]  {conn-10004, pstmt-20020} closed
-2021-07-22 11:36:35  [ http-nio-8010-exec-10:481987 ] - [ DEBUG ]  {conn-10004} pool-recycle
-2021-07-22 12:07:26  [ Druid-ConnectionPool-Destroy-1232252836:2333101 ] - [ DEBUG ]  {conn-10004} closed
+2022-05-06 17:02:28  [ Druid-ConnectionPool-Create-1368556473:0 ] - [ DEBUG ]  {conn-10001,procId-14} connected
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:4 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:11 ] - [ DEBUG ]  {conn-10001, pstmt-20000} created. select * from czyxxb where czydm = ?
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:14 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Parameters : [武允文]
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:14 ] - [ DEBUG ]  {conn-10001, pstmt-20000} Types : [VARCHAR]
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:32 ] - [ DEBUG ]  {conn-10001, pstmt-20000} executed. 19.569 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:34 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} open
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:36 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:38 ] - [ DEBUG ]  {conn-10001, pstmt-20000, rs-50000} closed
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:39 ] - [ DEBUG ]  {conn-10001, pstmt-20000} closed
+2022-05-06 17:02:28  [ http-nio-8010-exec-2:39 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1318 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1319 ] - [ DEBUG ]  {conn-10001, pstmt-20001} created. select * from czyxxb where czydm = ?
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1319 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Parameters : [武允文]
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1319 ] - [ DEBUG ]  {conn-10001, pstmt-20001} Types : [VARCHAR]
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1319 ] - [ DEBUG ]  {conn-10001, pstmt-20001} executed. 0.6828 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1320 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} open
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1320 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1320 ] - [ DEBUG ]  {conn-10001, pstmt-20001, rs-50001} closed
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1320 ] - [ DEBUG ]  {conn-10001, pstmt-20001} closed
+2022-05-06 17:02:29  [ http-nio-8010-exec-6:1320 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1794 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1794 ] - [ DEBUG ]  {conn-10001, pstmt-20002} created. select * from czyxxb where czydm = ?
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1794 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Parameters : [武允文]
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1794 ] - [ DEBUG ]  {conn-10001, pstmt-20002} Types : [VARCHAR]
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1795 ] - [ DEBUG ]  {conn-10001, pstmt-20002} executed. 1.177 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1795 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} open
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1796 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1796 ] - [ DEBUG ]  {conn-10001, pstmt-20002, rs-50002} closed
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1796 ] - [ DEBUG ]  {conn-10001, pstmt-20002} closed
+2022-05-06 17:02:29  [ http-nio-8010-exec-7:1796 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3637 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3637 ] - [ DEBUG ]  {conn-10001, pstmt-20003} created. select * from czyxxb where czydm = ?
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3637 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Parameters : [武允文]
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3637 ] - [ DEBUG ]  {conn-10001, pstmt-20003} Types : [VARCHAR]
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3638 ] - [ DEBUG ]  {conn-10001, pstmt-20003} executed. 0.6952 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3638 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} open
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3638 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3638 ] - [ DEBUG ]  {conn-10001, pstmt-20003, rs-50003} closed
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3638 ] - [ DEBUG ]  {conn-10001, pstmt-20003} closed
+2022-05-06 17:02:31  [ http-nio-8010-exec-9:3639 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4301 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4301 ] - [ DEBUG ]  {conn-10001, pstmt-20004} created. select * from czyxxb where czydm = ?
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4301 ] - [ DEBUG ]  {conn-10001, pstmt-20004} Parameters : [武允文]
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4301 ] - [ DEBUG ]  {conn-10001, pstmt-20004} Types : [VARCHAR]
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4302 ] - [ DEBUG ]  {conn-10001, pstmt-20004} executed. 0.6291 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4302 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} open
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4302 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4302 ] - [ DEBUG ]  {conn-10001, pstmt-20004, rs-50004} closed
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4302 ] - [ DEBUG ]  {conn-10001, pstmt-20004} closed
+2022-05-06 17:02:32  [ http-nio-8010-exec-8:4302 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4881 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4881 ] - [ DEBUG ]  {conn-10001, pstmt-20005} created. select * from czyxxb where czydm = ?
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4881 ] - [ DEBUG ]  {conn-10001, pstmt-20005} Parameters : [武允文]
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4881 ] - [ DEBUG ]  {conn-10001, pstmt-20005} Types : [VARCHAR]
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4882 ] - [ DEBUG ]  {conn-10001, pstmt-20005} executed. 0.9372 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4882 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} open
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4882 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4882 ] - [ DEBUG ]  {conn-10001, pstmt-20005, rs-50005} closed
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4883 ] - [ DEBUG ]  {conn-10001, pstmt-20005} closed
+2022-05-06 17:02:33  [ http-nio-8010-exec-10:4883 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43458 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43458 ] - [ DEBUG ]  {conn-10001, pstmt-20006} created. select * from czyxxb where czydm = ?
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43458 ] - [ DEBUG ]  {conn-10001, pstmt-20006} Parameters : [10002]
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43458 ] - [ DEBUG ]  {conn-10001, pstmt-20006} Types : [VARCHAR]
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43459 ] - [ DEBUG ]  {conn-10001, pstmt-20006} executed. 0.6953 millis. select * from czyxxb where czydm = ?
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43459 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} open
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43459 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43460 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} Result: [91370000726229593Y, 1100002, 1000002, 武允文, 123123109090900291, 13809090908, 1, 10002, zhndsfssdfsdfsdf@xaut.edu.cn, 87651234, 1, 2021-08-05, 123456]
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43462 ] - [ DEBUG ]  {conn-10001, pstmt-20006, rs-50006} closed
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43462 ] - [ DEBUG ]  {conn-10001, pstmt-20006} closed
+2022-05-06 17:03:11  [ http-nio-8010-exec-5:43463 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54490 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54490 ] - [ DEBUG ]  {conn-10001, pstmt-20007} created. select count(*) from userData
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54491 ] - [ DEBUG ]  {conn-10001, pstmt-20007} Parameters : []
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54491 ] - [ DEBUG ]  {conn-10001, pstmt-20007} Types : []
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54497 ] - [ ERROR ]  {conn-10001, pstmt-20007} execute error. select count(*) from userData
+java.sql.SQLSyntaxErrorException: Table 'datamapapp.userdata' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy106.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy105.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy62.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:90)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy87.getDataNum(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy88.getDataNum(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.UserServiceImpl.getData(UserServiceImpl.java:30)
+	at com.example.workproject.controller.UserController.getData(UserController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54520 ] - [ DEBUG ]  {conn-10001, pstmt-20007} closed
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54520 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54542 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:22  [ http-nio-8010-exec-4:54542 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56216 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56217 ] - [ DEBUG ]  {conn-10001, pstmt-20008} created. select * from organizationData
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56217 ] - [ DEBUG ]  {conn-10001, pstmt-20008} Parameters : []
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56217 ] - [ DEBUG ]  {conn-10001, pstmt-20008} Types : []
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56217 ] - [ ERROR ]  {conn-10001, pstmt-20008} execute error. select * from organizationData
+java.sql.SQLSyntaxErrorException: Table 'datamapapp.organizationdata' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy106.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy105.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:173)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:78)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy87.getOrganizationdata(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy88.getOrganizationdata(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.OrganizationServiceImpl.getOrganizationdata(OrganizationServiceImpl.java:20)
+	at com.example.workproject.controller.OrganizationController.getOrganizationdata(OrganizationController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56218 ] - [ DEBUG ]  {conn-10001, pstmt-20008} closed
+2022-05-06 17:03:24  [ http-nio-8010-exec-10:56218 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58051 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58052 ] - [ DEBUG ]  {conn-10001, pstmt-20009} created. select count(*) from dwxxb
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58052 ] - [ DEBUG ]  {conn-10001, pstmt-20009} Parameters : []
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58052 ] - [ DEBUG ]  {conn-10001, pstmt-20009} Types : []
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58057 ] - [ DEBUG ]  {conn-10001, pstmt-20009} executed. 5.3758 millis. select count(*) from dwxxb
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58057 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50007} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58057 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50007} Header: [count(*)]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58057 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50007} Result: [2]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58057 ] - [ DEBUG ]  {conn-10001, pstmt-20009, rs-50007} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58057 ] - [ DEBUG ]  {conn-10001, pstmt-20009} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58058 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58058 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58058 ] - [ DEBUG ]  {conn-10001, pstmt-20010} created. select dwxxb.*, dwxzxxb.dwxzmc from dwxxb JOIN dwxzxxb where dwxxb.dwxzid=dwxzxxb.dwxzid limit ? offset ?
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58059 ] - [ DEBUG ]  {conn-10001, pstmt-20010} Parameters : [10, 0]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58059 ] - [ DEBUG ]  {conn-10001, pstmt-20010} Types : [INTEGER, INTEGER]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58061 ] - [ DEBUG ]  {conn-10001, pstmt-20010} executed. 2.391599 millis. select dwxxb.*, dwxzxxb.dwxzmc from dwxxb JOIN dwxzxxb where dwxxb.dwxzid=dwxzxxb.dwxzid limit ? offset ?
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58061 ] - [ DEBUG ]  {conn-10001, pstmt-20010, rs-50008} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58061 ] - [ DEBUG ]  {conn-10001, pstmt-20010, rs-50008} Header: [dwdm, dwmc, dwxzid, dwszsf, dwszcs, dwszqx, dwszdz, dwyzbm, dwfr, dwlxr, lxryddh, lxrgddh, lxrmail, dwxzmc]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58061 ] - [ DEBUG ]  {conn-10001, pstmt-20010, rs-50008} Result: [91370000726229593Y, 西安理工大学, 14, 陕西省, 西安市, 碑林区, 陕西省西安市碑林区, 710048, 刘云贺, 陈明亮, 13809123456, 82311923, mssdfdt@xaut.edu.cn, 事业单位]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58062 ] - [ DEBUG ]  {conn-10001, pstmt-20010, rs-50008} Result: [91370000726229594Y, 中国重型研究院, 12, 陕西省, 西安市, 未央区, 未央区南大明宫, 710047, 张渴望, 张博, 13908756789, 82312234, dsfsdf@sdfsd.com, 国有企业]
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58062 ] - [ DEBUG ]  {conn-10001, pstmt-20010, rs-50008} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58062 ] - [ DEBUG ]  {conn-10001, pstmt-20010} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-1:58062 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58816 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58816 ] - [ DEBUG ]  {conn-10001, pstmt-20011} created. select dwxxb.dwmc as title, dwxxb.dwdm as id from dwxxb
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58816 ] - [ DEBUG ]  {conn-10001, pstmt-20011} Parameters : []
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58816 ] - [ DEBUG ]  {conn-10001, pstmt-20011} Types : []
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58817 ] - [ DEBUG ]  {conn-10001, pstmt-20011} executed. 0.585801 millis. select dwxxb.dwmc as title, dwxxb.dwdm as id from dwxxb
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58817 ] - [ DEBUG ]  {conn-10001, pstmt-20011, rs-50009} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58817 ] - [ DEBUG ]  {conn-10001, pstmt-20011, rs-50009} Header: [dwmc, dwdm]
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58817 ] - [ DEBUG ]  {conn-10001, pstmt-20011, rs-50009} Result: [西安理工大学, 91370000726229593Y]
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58818 ] - [ DEBUG ]  {conn-10001, pstmt-20011, rs-50009} Result: [中国重型研究院, 91370000726229594Y]
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58818 ] - [ DEBUG ]  {conn-10001, pstmt-20011, rs-50009} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58818 ] - [ DEBUG ]  {conn-10001, pstmt-20011} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-2:58818 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58823 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58823 ] - [ DEBUG ]  {conn-10001, pstmt-20012} created. select `dwxxb`.`dwdm` AS `dwdm`,`znjgxxb`.`znjgdm` AS `znjgdm`,`znjgxxb`.`znjgmc` AS `znjgmc`,`znjgfzb`.`znjgfzdm` AS `znjgfzdm`,`znjgfzb`.`znjgfzmc` AS `znjgfzmc` from ((`dwxxb` join `znjgxxb`) join `znjgfzb`) where ((`znjgxxb`.`dwdm` = `dwxxb`.`dwdm`) and (`znjgxxb`.`znjgdm` = `znjgfzb`.`znjgdm`) and (`dwxxb`.`dwdm` = ?))
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58823 ] - [ DEBUG ]  {conn-10001, pstmt-20012} Parameters : [91370000726229593Y]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58823 ] - [ DEBUG ]  {conn-10001, pstmt-20012} Types : [VARCHAR]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58829 ] - [ DEBUG ]  {conn-10001, pstmt-20012} executed. 5.6533 millis. select `dwxxb`.`dwdm` AS `dwdm`,`znjgxxb`.`znjgdm` AS `znjgdm`,`znjgxxb`.`znjgmc` AS `znjgmc`,`znjgfzb`.`znjgfzdm` AS `znjgfzdm`,`znjgfzb`.`znjgfzmc` AS `znjgfzmc` from ((`dwxxb` join `znjgxxb`) join `znjgfzb`) where ((`znjgxxb`.`dwdm` = `dwxxb`.`dwdm`) and (`znjgxxb`.`znjgdm` = `znjgfzb`.`znjgdm`) and (`dwxxb`.`dwdm` = ?))
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58829 ] - [ DEBUG ]  {conn-10001, pstmt-20012, rs-50010} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58829 ] - [ DEBUG ]  {conn-10001, pstmt-20012, rs-50010} Header: [dwdm, znjgdm, znjgmc, znjgfzdm, znjgfzmc]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58829 ] - [ DEBUG ]  {conn-10001, pstmt-20012, rs-50010} Result: [91370000726229593Y, 1000002, 计算机科学与工程学院, 1100001, 计算机科学与工程系]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20012, rs-50010} Result: [91370000726229593Y, 1000002, 计算机科学与工程学院, 1100002, 物联网与网络工程系]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20012, rs-50010} Result: [91370000726229593Y, 1000002, 计算机科学与工程学院, 1100003, 软件工程与信息安全系]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20012, rs-50010} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20012} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58830 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58830 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20013} created. select * from znjgxxb where dwdm=?
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20013} Parameters : [91370000726229593Y]
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58830 ] - [ DEBUG ]  {conn-10001, pstmt-20013} Types : [VARCHAR]
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58831 ] - [ DEBUG ]  {conn-10001, pstmt-20013} executed. 0.5362 millis. select * from znjgxxb where dwdm=?
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58831 ] - [ DEBUG ]  {conn-10001, pstmt-20013, rs-50011} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58831 ] - [ DEBUG ]  {conn-10001, pstmt-20013, rs-50011} Header: [dwdm, znjgdm, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail]
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58831 ] - [ DEBUG ]  {conn-10001, pstmt-20013, rs-50011} Result: [91370000726229593Y, 1000002, 计算机科学与工程学院, 2021-08-05, 李军怀, 13308638365, 82313398, lingxiangneng@xaut.edu.cn]
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58831 ] - [ DEBUG ]  {conn-10001, pstmt-20013, rs-50011} Result: [91370000726229593Y, 1000003, 机械与精密仪器, 2021-08-05, 欧阳秀元, 13909090901, 83213344, lingxiangneng@xaut.edu.cn]
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58831 ] - [ DEBUG ]  {conn-10001, pstmt-20013, rs-50011} Result: [91370000726229593Y, 1000004, 自动化与信息工程学院, 2021-08-05, 赵晓明, 13991239898, 98766789, lingxiangneng@xaut.edu.cn]
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20013, rs-50011} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20013} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-9:58832 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58832 ] - [ DEBUG ]  {conn-10001} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20014} created. select * from znjgxxb where dwdm=?
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20014} Parameters : [91370000726229593Y]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20014} Types : [VARCHAR]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20014} executed. 0.5674 millis. select * from znjgxxb where dwdm=?
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58832 ] - [ DEBUG ]  {conn-10001, pstmt-20014, rs-50012} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001, pstmt-20014, rs-50012} Header: [dwdm, znjgdm, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001, pstmt-20014, rs-50012} Result: [91370000726229593Y, 1000002, 计算机科学与工程学院, 2021-08-05, 李军怀, 13308638365, 82313398, lingxiangneng@xaut.edu.cn]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001, pstmt-20014, rs-50012} Result: [91370000726229593Y, 1000003, 机械与精密仪器, 2021-08-05, 欧阳秀元, 13909090901, 83213344, lingxiangneng@xaut.edu.cn]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001, pstmt-20014, rs-50012} Result: [91370000726229593Y, 1000004, 自动化与信息工程学院, 2021-08-05, 赵晓明, 13991239898, 98766789, lingxiangneng@xaut.edu.cn]
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001, pstmt-20014, rs-50012} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001, pstmt-20014} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-7:58833 ] - [ DEBUG ]  {conn-10001} pool-recycle
+2022-05-06 17:03:26  [ Druid-ConnectionPool-Create-1368556473:58835 ] - [ DEBUG ]  {conn-10002,procId-17} connected
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58843 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58843 ] - [ DEBUG ]  {conn-10002, pstmt-20015} created. select count(*) from czyxxb where znjgfzdm=?
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58844 ] - [ DEBUG ]  {conn-10002, pstmt-20015} Parameters : [1000004]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58844 ] - [ DEBUG ]  {conn-10002, pstmt-20015} Types : [BIGINT]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58845 ] - [ DEBUG ]  {conn-10002, pstmt-20015} executed. 0.9498 millis. select count(*) from czyxxb where znjgfzdm=?
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58845 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50013} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58845 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50013} Header: [count(*)]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58845 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50013} Result: [0]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58845 ] - [ DEBUG ]  {conn-10002, pstmt-20015, rs-50013} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58845 ] - [ DEBUG ]  {conn-10002, pstmt-20015} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58846 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58846 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58846 ] - [ DEBUG ]  {conn-10002, pstmt-20016} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58846 ] - [ DEBUG ]  {conn-10002, pstmt-20016} Parameters : [1000004, 10, 0]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58846 ] - [ DEBUG ]  {conn-10002, pstmt-20016} Types : [BIGINT, INTEGER, INTEGER]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58846 ] - [ DEBUG ]  {conn-10002, pstmt-20016} executed. 0.422301 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58847 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50014} open
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58847 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50014} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58847 ] - [ DEBUG ]  {conn-10002, pstmt-20016, rs-50014} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58847 ] - [ DEBUG ]  {conn-10002, pstmt-20016} closed
+2022-05-06 17:03:26  [ http-nio-8010-exec-6:58847 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017} created. select count(*) from czyxxb where znjgfzdm=?
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017} Parameters : [1100003]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017} Types : [BIGINT]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017} executed. 0.5184 millis. select count(*) from czyxxb where znjgfzdm=?
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50015} open
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50015} Header: [count(*)]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60014 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50015} Result: [4]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002, pstmt-20017, rs-50015} closed
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002, pstmt-20017} closed
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002, pstmt-20018} created. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002, pstmt-20018} Parameters : [1100003, 10, 0]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60015 ] - [ DEBUG ]  {conn-10002, pstmt-20018} Types : [BIGINT, INTEGER, INTEGER]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018} executed. 0.438301 millis. select * from czyxxb where znjgfzdm=? limit ? offset ?
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} open
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} Header: [dwdm, znjgfzdm, znjgdm, czyxm, czysfzh, czyyddh, czyjs, czydm, czymail, czygddh, zt, cjrq, czykl]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} Result: [91370000726229593Y, 1100003, 1000002, 张浩明, 610103197890902096, 13809898989, 1, 10001, lingxengfengxiang@xaut.edu.cn, 82311234, 1, 2021-08-05, 123456]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} Result: [91370000726229593Y, 1100003, 1000002, 六个名字测试, 610100909090900987, 13909787623, 1, 10003, lingfengtang@xaut.edu.cn, 32145678, 1, 2021-08-05, 123456]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} Result: [91370000726229593Y, 1100003, 1000002, 欧阳疯狂龙, 678678678909090908, 13909090908, 1, 10004, dfdsfdfsdfsdfs@xaut.edu.cn, 87787878, 1, 2021-08-05, 123456]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} Result: [91370000726229593Y, 1100003, 1000002, 冯玉琴, 710109090909299201, 13909090987, 1, 10007, ouyangsdf234sdfs@xaut.edu.cn, 82312345, 1, 2021-08-05, 123456]
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018, rs-50016} closed
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002, pstmt-20018} closed
+2022-05-06 17:03:28  [ http-nio-8010-exec-8:60016 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61206 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61206 ] - [ DEBUG ]  {conn-10002, pstmt-20019} created. select menujson from menujsontab where znjgfzdm = ? and menubz = ?
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61206 ] - [ DEBUG ]  {conn-10002, pstmt-20019} Parameters : [1100002, 0]
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61206 ] - [ DEBUG ]  {conn-10002, pstmt-20019} Types : [BIGINT, INTEGER]
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61211 ] - [ DEBUG ]  {conn-10002, pstmt-20019} executed. 5.498999 millis. select menujson from menujsontab where znjgfzdm = ? and menubz = ?
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61211 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50017} open
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61211 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50017} Header: [menujson]
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61212 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50017} Result: [{"msg": "", "code": 0, "data": [{"open": true, "isMenu": 0, "menuId": "2021-08-05 16:24:25", "menuUrl": "根目录", "menuIcon": null, "parentId": 0, "authority": "", "createTime": "2021-08-05", "updateTime": "2021-08-05", "authorityId": 1, "orderNumber": 1, "authorityName": "私有根目录"}], "count": 1}]
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61213 ] - [ DEBUG ]  {conn-10002, pstmt-20019, rs-50017} closed
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61213 ] - [ DEBUG ]  {conn-10002, pstmt-20019} closed
+2022-05-06 17:03:29  [ http-nio-8010-exec-4:61213 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63683 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63683 ] - [ DEBUG ]  {conn-10002, pstmt-20020} created. SELECT COUNT(*) FROM textstable
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63683 ] - [ DEBUG ]  {conn-10002, pstmt-20020} Parameters : []
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63683 ] - [ DEBUG ]  {conn-10002, pstmt-20020} Types : []
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63687 ] - [ DEBUG ]  {conn-10002, pstmt-20020} executed. 3.792999 millis. SELECT COUNT(*) FROM textstable
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63687 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50018} open
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63687 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50018} Header: [COUNT(*)]
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63687 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50018} Result: [3]
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63688 ] - [ DEBUG ]  {conn-10002, pstmt-20020, rs-50018} closed
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63688 ] - [ DEBUG ]  {conn-10002, pstmt-20020} closed
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63691 ] - [ DEBUG ]  {conn-10002, pstmt-20021} created. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz  FROM textstable LIMIT ?
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63691 ] - [ DEBUG ]  {conn-10002, pstmt-20021} Parameters : [10]
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63691 ] - [ DEBUG ]  {conn-10002, pstmt-20021} Types : [BIGINT]
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63691 ] - [ ERROR ]  {conn-10002, pstmt-20021} execute error. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz  FROM textstable LIMIT ?
+java.sql.SQLSyntaxErrorException: Unknown column 'dwmc' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy106.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy105.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:122)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy73.selectPage(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.BrowseServiceImpl.getAllText(BrowseServiceImpl.java:39)
+	at com.example.workproject.controller.BrowseController.getAllText(BrowseController.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63692 ] - [ DEBUG ]  {conn-10002, pstmt-20021} closed
+2022-05-06 17:03:31  [ http-nio-8010-exec-7:63692 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67579 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67579 ] - [ DEBUG ]  {conn-10002, pstmt-20022} created. SELECT COUNT(*) FROM imagestable
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67579 ] - [ DEBUG ]  {conn-10002, pstmt-20022} Parameters : []
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67579 ] - [ DEBUG ]  {conn-10002, pstmt-20022} Types : []
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67588 ] - [ DEBUG ]  {conn-10002, pstmt-20022} executed. 8.1654 millis. SELECT COUNT(*) FROM imagestable
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67588 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50019} open
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67588 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50019} Header: [COUNT(*)]
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67588 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50019} Result: [2]
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67588 ] - [ DEBUG ]  {conn-10002, pstmt-20022, rs-50019} closed
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67588 ] - [ DEBUG ]  {conn-10002, pstmt-20022} closed
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67589 ] - [ DEBUG ]  {conn-10002, pstmt-20023} created. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz,imgwidth,imgheigh,bitdepth,xppu,yppu,imagecolor,imagejiaodu,gyfx,gtfs,psbj,psjq,pshj,tppf  FROM imagestable LIMIT ?
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67589 ] - [ DEBUG ]  {conn-10002, pstmt-20023} Parameters : [10]
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67589 ] - [ DEBUG ]  {conn-10002, pstmt-20023} Types : [BIGINT]
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67589 ] - [ ERROR ]  {conn-10002, pstmt-20023} execute error. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz,imgwidth,imgheigh,bitdepth,xppu,yppu,imagecolor,imagejiaodu,gyfx,gtfs,psbj,psjq,pshj,tppf  FROM imagestable LIMIT ?
+java.sql.SQLSyntaxErrorException: Unknown column 'dwmc' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy106.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy105.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:122)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy74.selectPage(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.BrowseServiceImpl.getAllImage(BrowseServiceImpl.java:60)
+	at com.example.workproject.controller.BrowseController.getAllImage(BrowseController.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67590 ] - [ DEBUG ]  {conn-10002, pstmt-20023} closed
+2022-05-06 17:03:35  [ http-nio-8010-exec-6:67590 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68836 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68837 ] - [ DEBUG ]  {conn-10002, pstmt-20024} created. SELECT COUNT(*) FROM audiostable
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68837 ] - [ DEBUG ]  {conn-10002, pstmt-20024} Parameters : []
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68837 ] - [ DEBUG ]  {conn-10002, pstmt-20024} Types : []
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20024} executed. 7.569 millis. SELECT COUNT(*) FROM audiostable
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50020} open
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50020} Header: [COUNT(*)]
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50020} Result: [1]
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20024, rs-50020} closed
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20024} closed
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20025} created. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz,sampleratio,audiochannel,channeltype,totaltime,xcsbz,syzl  FROM audiostable LIMIT ?
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20025} Parameters : [10]
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68845 ] - [ DEBUG ]  {conn-10002, pstmt-20025} Types : [BIGINT]
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68846 ] - [ ERROR ]  {conn-10002, pstmt-20025} execute error. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz,sampleratio,audiochannel,channeltype,totaltime,xcsbz,syzl  FROM audiostable LIMIT ?
+java.sql.SQLSyntaxErrorException: Unknown column 'dwmc' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy106.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy105.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:122)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy75.selectPage(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.BrowseServiceImpl.getAllAudio(BrowseServiceImpl.java:76)
+	at com.example.workproject.controller.BrowseController.getAllAudio(BrowseController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68846 ] - [ DEBUG ]  {conn-10002, pstmt-20025} closed
+2022-05-06 17:03:36  [ http-nio-8010-exec-8:68846 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70223 ] - [ DEBUG ]  {conn-10002} pool-connect
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70223 ] - [ DEBUG ]  {conn-10002, pstmt-20026} created. SELECT COUNT(*) FROM videostable
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70223 ] - [ DEBUG ]  {conn-10002, pstmt-20026} Parameters : []
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70223 ] - [ DEBUG ]  {conn-10002, pstmt-20026} Types : []
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70230 ] - [ DEBUG ]  {conn-10002, pstmt-20026} executed. 6.889 millis. SELECT COUNT(*) FROM videostable
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70230 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50021} open
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70230 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50021} Header: [COUNT(*)]
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70230 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50021} Result: [1]
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70230 ] - [ DEBUG ]  {conn-10002, pstmt-20026, rs-50021} closed
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70230 ] - [ DEBUG ]  {conn-10002, pstmt-20026} closed
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70231 ] - [ DEBUG ]  {conn-10002, pstmt-20027} created. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz,videowidth,videoheigh,samplerate,channeltype,totaltime,xcspbz,zmbz,zmyy  FROM videostable LIMIT ?
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70231 ] - [ DEBUG ]  {conn-10002, pstmt-20027} Parameters : [10]
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70231 ] - [ DEBUG ]  {conn-10002, pstmt-20027} Types : [BIGINT]
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70231 ] - [ ERROR ]  {conn-10002, pstmt-20027} execute error. SELECT  dwdm,dwmc,znjgdm,znjgmc,znjgfzdm,znjgfzmc,czydm,czymc,assetid,assettype,assetname,asseturl,assetscsj,assetcjsj,assetscxgsj,assetfldm,assettc,assetyz,assetzy,assetmj,assetsybz,assetzfbz,assetsize,assetbqbz,assetxzbz,assetshbz,assetdacbz,videowidth,videoheigh,samplerate,channeltype,totaltime,xcspbz,zmbz,zmyy  FROM videostable LIMIT ?
+java.sql.SQLSyntaxErrorException: Unknown column 'dwmc' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy106.query(Unknown Source)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:69)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:165)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy105.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy62.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:122)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:86)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy76.selectPage(Unknown Source)
+	at com.example.workproject.Service.ServiceImpl.BrowseServiceImpl.getAllVideo(BrowseServiceImpl.java:92)
+	at com.example.workproject.controller.BrowseController.getAllVideo(BrowseController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70232 ] - [ DEBUG ]  {conn-10002, pstmt-20027} closed
+2022-05-06 17:03:38  [ http-nio-8010-exec-10:70232 ] - [ DEBUG ]  {conn-10002} pool-recycle
+2022-05-06 17:33:30  [ Druid-ConnectionPool-Destroy-1368556473:1862406 ] - [ DEBUG ]  {conn-10001} closed
+2022-05-06 17:34:30  [ Druid-ConnectionPool-Destroy-1368556473:1922413 ] - [ DEBUG ]  {conn-10002} closed

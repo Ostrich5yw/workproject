@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>文件查看</title>
+    <link rel="stylesheet" href="../iframe/assets/libs/layui/css/layui.css"/>
+    <link rel="stylesheet" href="../iframe/assets/module/admin.css?v=318"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- 正文开始 -->
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-body">
+
+
+            <!-- 表格工具栏 -->
+            <form id="unitFindForm" lay-filter="unitFindForm" class="layui-form toolbar">
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件类型:</label>
+                    <div class="layui-inline">&emsp;
+                        <button class="layui-btn" id="dropdownMenu" >
+                            <p id = "menuName">文本文件</p>
+                        </button>
+                    </div>
+
+                    <div class="layui-inline">
+                        <label class="layui-form-label">文件名称:</label>
+                        <div class="layui-input-inline">
+                            <input id="searchName" name="searchName" class="layui-input" placeholder="输入名称"/>
+                        </div>
+                    </div>
+                    <div class="layui-inline" style="width: 250px">
+                        <label class="layui-form-label">文件状态:</label>
+                        <div class="layui-input-block">
+                            <select name="searchZt" lay-filter="aihao">
+                                <option value="0">审批通过</option>
+                                <option value="1">审批不通过</option>
+                                <option value="2">待审批</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">日期范围</label>
+                        <div class="layui-input-inline">
+                            <input type="text" class="layui-input" id="searchTime" placeholder="开始 到 结束">
+                        </div>
+                    </div>
+                    <div class="layui-inline">&emsp;
+                        <button class="layui-btn icon-btn" lay-filter="fileTbSearch" lay-submit>
+                            <i class="layui-icon">&#xe615;</i>搜索
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- 数据表格 -->
+            <table id="unitTable" lay-filter="unitTable" class="layui-table"></table>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/html" id="textDialog" style="width: 600px">
+    <form id="textForm" lay-filter="textForm" class="layui-form model-form" style="padding-right: 20px;">
+        <!--        <input name="userId" type="hidden"/>-->
+        <div class="layui-row">
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分支代码:</label>
+                    <div class="layui-input-block">
+                        <input name="znjgfzdm" placeholder="请输入单位代码" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">操作员代码:</label>
+                    <div class="layui-input-block">
+                        <input name="czydm" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件名:</label>
+                    <div class="layui-input-block">
+                        <input name="assetname" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">版权标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetbqbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">下载标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetxzbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px">
+                    <legend>数据审核</legend>
+                </fieldset>
+<!--                <input type="checkbox" lay-filter="userTbStateCk" value="{{d.userId}}" lay-skin="switch"-->
+<!--                       lay-text="正常|锁定" {{d.state==0?'checked':''}} style="display: none;"/>-->
+<!--                <p style="display: none;">{{d.state==0?'正常':'锁定'}}</p>-->
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据正确性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="ZQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据可用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="KYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">上传时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetscsj" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">创建时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetcjsj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件语种:</label>
+                    <div class="layui-input-block">
+                        <input name="assetyz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件大小:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsize" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">审核标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetshbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 33px">
+<!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+<!--                <div class="layui-form-item"></div>-->
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据安全性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="AQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据一致性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="YZX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件摘要:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzy" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件密级:</label>
+                    <div class="layui-input-block">
+                        <input name="assetmj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">索引标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsybz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">转发标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzfbz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 86px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据适用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="SYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="margin-left: 6px;width: 90px">审核是否通过</label>
+                    <div class="layui-input-block" style="margin: 0!important;">
+                        <input type="checkbox" name="switch" lay-skin="switch" lay-text="通过|不通过" {{d.assetshbz==0?'checked':''}}>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="textSubmit" lay-submit>提交审核</button>
+            <button class="layui-btn" lay-filter="textLook" lay-submit>查看文件PDF</button>
+        </div>
+    </form>
+</script>
+
+<script type="text/html" id="imageDialog" style="top:20px">
+    <form id="imageForm" lay-filter="imageForm" class="layui-form model-form" style="padding-right: 20px;">
+        <!--        <input name="userId" type="hidden"/>-->
+        <div class="layui-row">
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分支代码:</label>
+                    <div class="layui-input-block">
+                        <input name="znjgfzdm" placeholder="请输入单位代码" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">操作员代码:</label>
+                    <div class="layui-input-block">
+                        <input name="czydm" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件名:</label>
+                    <div class="layui-input-block">
+                        <input name="assetname" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">版权标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetbqbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">下载标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetxzbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">转发标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzfbz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px">
+                    <legend>数据审核</legend>
+                </fieldset>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据正确性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="ZQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据可用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="KYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">上传时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetscsj" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">创建时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetcjsj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件语种:</label>
+                    <div class="layui-input-block">
+                        <input name="assetyz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件大小:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsize" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">审核标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetshbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">索引标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsybz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 33px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <!--                <div class="layui-form-item"></div>-->
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据安全性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="AQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据一致性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="YZX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item" style="margin-left: 30px">
+                    <div id="imageLook" class="layer-photos-demo" >
+                        <img style="width: 240px;height: 195px"  layer-src="http://localhost:8010/D/test2.png" src="http://localhost:8010/D/test.png" alt="图片名">
+                    </div>
+                </div>
+                <div class="layui-form-item" >
+                    <label class="layui-form-label">文件摘要:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzy" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件密级:</label>
+                    <div class="layui-input-block">
+                        <input name="assetmj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 35px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据适用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="SYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                <label class="layui-form-label" style="margin-left: 6px;width: 90px">审核是否通过</label>
+                <div class="layui-input-block" style="margin: 0!important;">
+                    <input type="checkbox" name="switch" lay-skin="switch" lay-text="通过|不通过" {{d.assetshbz==0?'checked':''}}>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="imageSubmit" lay-submit>提交审核</button>
+            <button class="layui-btn" lay-filter="imageLook" lay-submit>查看原图片</button>
+        </div>
+
+    </form>
+</script>
+
+
+<script type="text/html" id="audioDialog" style="width: 600px">
+    <form id="audioForm" lay-filter="audioForm" class="layui-form model-form" style="padding-right: 20px;">
+        <!--        <input name="userId" type="hidden"/>-->
+        <div class="layui-row">
+
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分支代码:</label>
+                    <div class="layui-input-block">
+                        <input name="znjgfzdm" placeholder="请输入单位代码" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">操作员代码:</label>
+                    <div class="layui-input-block">
+                        <input name="czydm" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件名:</label>
+                    <div class="layui-input-block">
+                        <input name="assetname" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">版权标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetbqbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">下载标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetxzbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">转发标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzfbz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px">
+                    <legend>数据审核</legend>
+                </fieldset>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据正确性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="ZQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据可用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="KYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">上传时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetscsj" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">创建时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetcjsj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件语种:</label>
+                    <div class="layui-input-block">
+                        <input name="assetyz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件大小:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsize" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">审核标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetshbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">索引标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsybz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 33px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <!--                <div class="layui-form-item"></div>-->
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据安全性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="AQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据一致性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="YZX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item" style="margin-left: 30px">
+                    <div id="audioLook"  class="wrap">
+                        <video controls autobuffer style="width: 250px;height: 73px">
+                            <source src="http://localhost:8010/D/test.mp3" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="layui-form-item" style="padding-top: 15px">
+                    <label class="layui-form-label">文件摘要:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzy" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件密级:</label>
+                    <div class="layui-input-block">
+                        <input name="assetmj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 138px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据适用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="SYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="margin-left: 6px;width: 90px">审核是否通过</label>
+                    <div class="layui-input-block" style="margin: 0!important;">
+                        <input type="checkbox" name="switch" lay-skin="switch" lay-text="通过|不通过" {{d.assetshbz==0?'checked':''}}>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="audioSubmit" lay-submit>提交审核</button>
+        </div>
+    </form>
+</script>
+
+
+<script type="text/html" id="videoDialog" style="width: 600px">
+    <form id="videoForm" lay-filter="videoForm" class="layui-form model-form" style="padding-right: 20px;">
+        <!--        <input name="userId" type="hidden"/>-->
+        <div class="layui-row">
+
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">分支代码:</label>
+                    <div class="layui-input-block">
+                        <input name="znjgfzdm" placeholder="请输入单位代码" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">操作员代码:</label>
+                    <div class="layui-input-block">
+                        <input name="czydm" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件名:</label>
+                    <div class="layui-input-block">
+                        <input name="assetname" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">版权标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetbqbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">下载标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetxzbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">转发标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzfbz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px">
+                    <legend>数据审核</legend>
+                </fieldset>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据正确性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="ZQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据可用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="KYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">上传时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetscsj" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">创建时间:</label>
+                    <div class="layui-input-block">
+                        <input name="assetcjsj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件语种:</label>
+                    <div class="layui-input-block">
+                        <input name="assetyz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件大小:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsize" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">审核标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetshbz" placeholder="请输入单位名称" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">索引标志:</label>
+                    <div class="layui-input-block">
+                        <input name="assetsybz" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 33px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <!--                <div class="layui-form-item"></div>-->
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据安全性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="AQX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据一致性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="YZX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-md4">
+                <div class="layui-form-item" style="margin-left: 30px">
+                    <div id="videoLook"  class="wrap">
+                        <video controls autobuffer style="width: 260px;height: 141.5px;">
+                            <source src="http://localhost:8010/D/test.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="layui-form-item" >
+                    <label class="layui-form-label">文件摘要:</label>
+                    <div class="layui-input-block">
+                        <input name="assetzy" placeholder="请输入单位法人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">文件密级:</label>
+                    <div class="layui-input-block">
+                        <input name="assetmj" placeholder="请输入联系人" class="layui-input"
+                               lay-verType="tips" readonly/>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 84px">
+                    <!--                    <legend>表单集合演示</legend>-->
+                </fieldset>
+                <div class="layui-form-item" style="padding-top: 13px">
+                    <label class="layui-form-label">数据适用性</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="SYX" value="Goon" title="符合" {{d.assetbqbz==0?'checked':''}}>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="margin-left: 6px;width: 90px">审核是否通过</label>
+                    <div class="layui-input-block" style="margin: 0!important;">
+                        <input type="checkbox" name="switch" lay-skin="switch" lay-text="通过|不通过" {{d.assetshbz==0?'checked':''}}>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item text-right">
+            <button class="layui-btn" lay-filter="videoSubmit" lay-submit>提交审核</button>
+        </div>
+    </form>
+</script>
+
+<!-- 表格操作列 -->
+<script type="text/html" id="unitTbBar">
+    <a class="layui-btn layui-btn-warm layui-btn-xs" lay-event="open">查看</a>
+<!--    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>-->
+</script>
+
+<!-- js部分 -->
+<script type="text/javascript" src="../iframe/assets/libs/layui/layui.js"></script>
+<script type="text/javascript" src="../iframe/assets/js/common.js?v=318"></script>
+<script>
+    layui.use(['layer', 'form', 'table', 'util', 'admin', 'xmSelect', 'layarea', 'dropdown', 'laydate'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        var form = layui.form;
+        var table = layui.table;
+        var util = layui.util;
+        var admin = layui.admin;
+        var xmSelect = layui.xmSelect;
+        var layarea = layui.layarea;
+        var laydate = layui.laydate
+        var dropdown = layui.dropdown;
+        var type = 100
+        var searchTime1 = '';
+        var searchTime2 = '';
+        laydate.render({
+            elem: '#searchTime'
+            ,range: '到'
+            ,format: 'yyyy年M月d日'
+            ,done: function(value, date1, date2){
+                // console.log(JSON.stringify(date1) == "{}")
+                searchTime1 = JSON.stringify(date1) != "{}" ? date1.year + '-' + date1.month + '-' + date1.date : ''
+                searchTime2 = JSON.stringify(date1) != "{}" ? date2.year + '-' + date2.month + '-' + date2.date : ''
+                // console.log(searchTime1,searchTime2)
+            }
+        });
+        dropdown.render({
+            elem: '#dropdownMenu' //可绑定在任意元素中，此处以上述按钮为例
+            ,data: [
+                {
+                    title: '文本文件'
+                    ,id: 100
+                },{
+                    title: '图片文件'
+                    ,id: 101
+                },{
+                    title: '音频文件'
+                    ,id: 102
+                },{
+                    title: '视频文件'
+                    ,id: 103
+                }
+            ]
+            ,id: 'dropdownMenu'
+            //菜单被点击的事件
+            ,click: function(obj){
+                // console.log(obj);
+                $("#searchName").val("")
+                $("#searchZt").val("")
+                $("#menuName").text(obj.title)
+                layer.msg('切换至：'+obj.title);
+
+                switch(obj.title) {
+                    case '文本文件':
+                        type = 100
+                        insTb.reload({
+                            page: {curr: 1},
+                            // data: {"institutionId": },
+                            url: '/browse_request/getAllText',
+                            // + obj.data.institutionId +'.json'
+                        });
+                        break;
+                    case '图片文件':
+                        type = 101
+                        insTb.reload({
+                            page: {curr: 1},
+                            // data: {"institutionId": },
+                            url: '/browse_request/getAllImage',
+                            // + obj.data.institutionId +'.json'
+                        });
+                        break;
+                    case '音频文件':
+                        type = 102
+                        insTb.reload({
+                            page: {curr: 1},
+                            // data: {"institutionId": },
+                            url: '/browse_request/getAllAudio',
+                            // + obj.data.institutionId +'.json'
+                        });
+                        break;
+                    case '视频文件':
+                        type = 103
+                        insTb.reload({
+                            page: {curr: 1},
+                            // data: {"institutionId": },
+                            url: '/browse_request/getAllVideo',
+                            // + obj.data.institutionId +'.json'
+                        });
+                        break;
+                }
+            }
+        });
+        /* 渲染表格 */
+        var insTb = table.render({
+            elem: '#unitTable',
+            // url: '/iframe/json/user1.json',
+            url: '/browse_request/getAllText',
+            id: 'testReload',
+            page: true,
+            // even: true,
+            cellMinWidth: 100,
+            cols: [
+                [
+                    {type: 'numbers'},
+                    {field: 'dwdm', title: '单位代码', sort: true, minWidth: 200},
+                    {field: 'znjgdm', title: '职能机构代码'},
+                    {field: 'znjgfzdm', title: '职能机构分组代码'},
+                    {field: 'assetid', title: '文件Id'},
+                    {field: 'assetname', title: '文件名'},
+                    {title: '操作', toolbar: '#unitTbBar', align: 'center', minWidth: 200}
+                ]
+            ],
+            where: {data:{dwmc: "理工大"}}
+        });
+
+        /* 表格搜索 */
+        form.on('submit(fileTbSearch)', function (data) {
+            console.log(searchTime1,searchTime2)
+            var mark = 0
+            if(data.field.searchName ==  '' && data.field.searchZt == ''  && searchTime1 == ''  && searchTime2 == ''){
+                switch(type){
+                    case 100:
+                        insTb.reload({url: '/browse_request/getAllText'});
+                        break;
+                    case 101:
+                        insTb.reload({url: '/browse_request/getAllImage'});
+                        break;
+                    case 102:
+                        insTb.reload({url: '/browse_request/getAllAudio'});
+                        break;
+                    case 103:
+                        insTb.reload({url: '/browse_request/getAllVideo'});
+                        break;
+                }
+                layer.msg('查询成功', {icon: 1});
+            } else {
+                switch(type){
+                    case 100:
+                        insTb.reload({
+                            url: '/browse_request/findFile?param1=100' + '&param2=' + data.field.searchName + '&param3=' + data.field.searchZt + '&param4=' + searchTime1 + '&param5=' + searchTime2,
+                            parseData: function (res) {       //自定义解析返回的数据,本来是用来做返回数据处理的
+                                mark = 1
+                                if (res.msg == 'find')
+                                    layer.msg('查询成功', {icon: 1});
+                            }
+                        })
+                        break;
+                    case 101:
+                        insTb.reload({
+                            url: '/browse_request/findFile?param1=101' + '&param2=' + data.field.searchName + '&param3=' + data.field.searchZt+ '&param4=' + searchTime1 + '&param5=' + searchTime2,
+                            parseData: function (res) {       //自定义解析返回的数据,本来是用来做返回数据处理的
+                                mark = 1
+                                if (res.msg == 'find')
+                                    layer.msg('查询成功', {icon: 1});
+                            }
+                        })
+                        break;
+                    case 102:
+                        insTb.reload({
+                            url: '/browse_request/findFile?param1=102' + '&param2=' + data.field.searchName + '&param3=' + data.field.searchZt+ '&param4=' + searchTime1 + '&param5=' + searchTime2,
+                            parseData: function (res) {       //自定义解析返回的数据,本来是用来做返回数据处理的
+                                mark = 1
+                                if (res.msg == 'find')
+                                    layer.msg('查询成功', {icon: 1});
+                            }
+                        })
+                        break;
+                    case 103:
+                        insTb.reload({
+                            url: '/browse_request/findFile?param1=103' + '&param2=' + data.field.searchName + '&param3=' + data.field.searchZt+ '&param4=' + searchTime1 + '&param5=' + searchTime2,
+                            parseData: function (res) {       //自定义解析返回的数据,本来是用来做返回数据处理的
+                                mark = 1
+                                if (res.msg == 'find')
+                                    layer.msg('查询成功', {icon: 1});
+                            }
+                        })
+                        break;
+                }
+
+                if (mark == 0)
+                    layer.msg('查询失败', {icon: 2});
+            }
+            /*
+            *   这里做如下说明
+            * 1. 使用/unit_request/getAllUnit进行没有输入时的查询，使用/unit_request/findUnit接参数的方式进行有参数时的查询
+            * 2. 使用parseData区分查询成功与失败，成功时会走parseData（本来是做返回数据格式处理的），失败则因为mark==0，弹出’查询失败‘
+            * 3. 我这里修改了table.js源码（E:\IdeaProjects\workproject\src\main\resources\static\iframe\assets\libs\layui\lay\modules\table.js）
+            *    （1）修改了error（203行）的打印内容
+            *    （2）修改为async:false
+            * */
+            return false
+        });
+
+        /* 表格工具条点击事件 */
+        table.on('tool(unitTable)', function (obj) {
+            if (obj.event === 'open') { // 修改
+                showEditModel(obj.data);
+            } else if (obj.event === 'del') { // 删除
+                doDel(obj);
+            } else if (obj.event === 'reset') { // 重置密码
+                resetPsw(obj);
+            }
+        });
+
+
+        /* 显示表单弹窗 */
+        function showEditModel(mData) {
+
+            switch (type) {
+                case 100:
+                    admin.open({
+                        type: 1,
+                        title: '查看文件信息',
+                        content: $('#textDialog').html(),
+                        area: '880px',
+                        offset: '20px',
+                        success: function (layero, dIndex) {
+                            // 回显表单数据
+                            form.val('textForm', mData);
+                            // 表单提交事件
+                            form.on('submit(textSubmit)', function (data) {
+                                console.log(data)
+                                $.ajax({
+                                    url: '/browse_request/changeTextById',
+                                    type: 'POST',
+                                    async: false,
+                                    data: {'assetname': mData.assetname, 'asseturl': mData.asseturl},
+                                    success: function (response) {
+                                        layer.close(dIndex);
+                                        // layer.msg("修改成功", {icon: 1});
+                                        window.open("http://localhost:8010/D/test.pdf")
+                                        insTb.reload({page: {curr: insTb.config.page.curr}});
+                                    }
+                                })
+                                return false;
+                            });
+                            form.on('submit(textLook)', function (data) {
+                                // console.log(mData)
+                                $.ajax({
+                                    url: '/browse_request/getTextById',
+                                    type: 'POST',
+                                    async: false,
+                                    data: {'assetname': mData.assetname, 'asseturl': mData.asseturl},
+                                    success: function (response) {
+                                        layer.close(dIndex);
+                                        // layer.msg("修改成功", {icon: 1});
+                                        window.open("http://localhost:8010/D/test.pdf")
+                                        insTb.reload({page: {curr: insTb.config.page.curr}});
+                                    }
+                                })
+                                return false;
+                            });
+                            // 禁止弹窗出现滚动条
+                            $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                        }
+                    });
+                    break;
+                case 101:
+
+                    admin.open({
+                        type: 1,
+                        title: '查看文件信息',
+                        content: $('#imageDialog').html(),
+                        area: '880px',
+                        offset: '20px',
+                        success: function (layero, dIndex) {
+                            layer.photos({
+                                photos: '#imageLook'
+                            });
+                            // 回显表单数据
+                            form.val('imageForm', mData);
+                            // 表单提交事件
+                            form.on('submit(imageSubmit)', function (data) {
+                                console.log(data)
+                                return false;
+                            });
+                            form.on('submit(imageLook)', function (data) {
+
+                                // console.log(mData)
+                                layer.photos({
+                                    photos: {"data":
+                                            [
+                                                {"src": "http://localhost:8010/D/" + mData.assetname}
+                                            ]
+                                    }
+                                });
+                                return false;
+                            });
+                            // 禁止弹窗出现滚动条
+                            $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                        }
+                    });
+                    break;
+                case 102:
+                    admin.open({
+                        type: 1,
+                        title: '查看文件信息',
+                        content: $('#audioDialog').html(),
+                        area: '880px',
+                        offset: '20px',
+                        success: function (layero, dIndex) {
+                            // 回显表单数据
+                            form.val('audioForm', mData);
+                            // 表单提交事件
+                            form.on('submit(audioSubmit)', function (data) {
+                                console.log(data)
+                                return false;
+                            });
+                            // form.on('submit(audioSubmit)', function (data) {
+                            //     // console.log(mData)
+                            //     layer.open({
+                            //         type: 2,
+                            //         title: false,
+                            //         area: ['730px', '460px'],
+                            //         shade: 0.8,
+                            //         closeBtn: 0,
+                            //         shadeClose: true,
+                            //         content: "http://localhost:8010/D/" + mData.assetname
+                            //     });
+                            //     return false;
+                            // });
+                            // 禁止弹窗出现滚动条
+                            $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                        }
+                    });
+                    break;
+                case 103:
+                    admin.open({
+                        type: 1,
+                        title: '查看文件信息',
+                        content: $('#videoDialog').html(),
+                        area: '880px',
+                        offset: '20px',
+                        success: function (layero, dIndex) {
+                            // 回显表单数据
+                            form.val('videoForm', mData);
+                            // 表单提交事件
+                            form.on('submit(videoSubmit)', function (data) {
+                                console.log(data)
+                                return false;
+                            });
+                            // form.on('submit(videoSubmit)', function (data) {
+                            //     // console.log(mData)
+                            //     layer.open({
+                            //         type: 2,
+                            //         title: false,
+                            //         area: ['730px', '460px'],
+                            //         shade: 0.8,
+                            //         closeBtn: 0,
+                            //         shadeClose: true,
+                            //         content: "http://localhost:8010/D/" + mData.assetname
+                            //     });
+                            //     return false;
+                            // });
+                            // 禁止弹窗出现滚动条
+                            $(layero).children('.layui-layer-content').css('overflow', 'visible');
+                        }
+                    });
+                    break;
+            }
+        }
+    });
+</script>
+</body>
+</html>

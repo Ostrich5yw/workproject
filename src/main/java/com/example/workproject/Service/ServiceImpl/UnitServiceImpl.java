@@ -41,10 +41,10 @@ public class UnitServiceImpl implements UnitService {
         String path = unitMapper.getMediaDir();
         mkDirUtil.mkDirFile(param[0], path);
         path += "\\" + param[0];
-        mkDirUtil.mkDirFile("Videos", path);
-        mkDirUtil.mkDirFile("Audios", path);
-        mkDirUtil.mkDirFile("Images", path);
-        mkDirUtil.mkDirFile("Text", path);
+        mkDirUtil.mkDirFile("VideosMedia", path);
+        mkDirUtil.mkDirFile("AudiosMedia", path);
+        mkDirUtil.mkDirFile("ImagesMedia", path);
+        mkDirUtil.mkDirFile("TextsMedia", path);
         unitMapper.insertUnit(param[0], param[1], Integer.parseInt(param[2]), param[3], param[4], param[5], param[6], param[7], param[8],
                 param[9], param[10], param[11], param[12]);
     }

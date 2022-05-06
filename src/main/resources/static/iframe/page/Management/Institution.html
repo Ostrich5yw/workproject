@@ -67,10 +67,10 @@
                             添加分组
                         </button>&nbsp;
 
-<!--                        <button id="institutionDelBtn"-->
-<!--                                class="layui-btn layui-btn-sm layui-btn-danger icon-btn">-->
-<!--                            <i class="layui-icon">&#xe640;</i>删除-->
-<!--                        </button>-->
+                        <!--                        <button id="institutionDelBtn"-->
+                        <!--                                class="layui-btn layui-btn-sm layui-btn-danger icon-btn">-->
+                        <!--                            <i class="layui-icon">&#xe640;</i>删除-->
+                        <!--                        </button>-->
                         <div class="layui-inline" style="width: 100px;">
                             <input name="" placeholder="选择单位名称" class="layui-input" id="selectDw" readonly="readonly">
                         </div>
@@ -108,14 +108,14 @@
                     <label class="layui-form-label layui-form-required">分支名称:</label>
                     <div class="layui-input-block">
                         <input name="znjgfzmc" placeholder="请输入分类名称" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="otherlong" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">联系人:</label>
                     <div class="layui-input-block">
                         <input name="lxrxm" placeholder="请输入联系人姓名" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="other" required/>
                     </div>
                 </div>
             </div>
@@ -124,21 +124,21 @@
                     <label class="layui-form-label layui-form-required">手机:</label>
                     <div class="layui-input-block">
                         <input name="lxryddh" placeholder="请输入联系人电话" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="phone" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">固定电话:</label>
                     <div class="layui-input-block">
                         <input name="lxrgddh" placeholder="请输入固定电话" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="gddh" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">邮箱:</label>
                     <div class="layui-input-block">
                         <input name="lxrmail" placeholder="请输入联系人邮箱" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="email" required/>
                     </div>
                 </div>
             </div>
@@ -158,22 +158,22 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">机构名称:</label>
                     <div class="layui-input-block">
-                        <input name="znjgmc" placeholder="请输入分类名称" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                        <input name="znjgmc" placeholder="请输入机构名称" class="layui-input"
+                               lay-verType="tips" lay-verify="otherlong" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">联系人:</label>
                     <div class="layui-input-block">
                         <input name="lxrxm" placeholder="请输入联系人姓名" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="other" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">手机:</label>
                     <div class="layui-input-block">
                         <input name="lxryddh" placeholder="请输入联系人电话" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="phone" required/>
                     </div>
                 </div>
             </div>
@@ -183,14 +183,14 @@
                     <label class="layui-form-label layui-form-required">固定电话:</label>
                     <div class="layui-input-block">
                         <input name="lxrgddh" placeholder="请输入固定电话" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="gddh" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">邮箱:</label>
                     <div class="layui-input-block">
                         <input name="lxrmail" placeholder="请输入联系人邮箱" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                               lay-verType="tips" lay-verify="email" required/>
                     </div>
                 </div>
             </div>
@@ -209,9 +209,9 @@
 </script>
 <!-- 表格工具列 -->
 <script type="text/html" id="institutionUserTbToolBar">
-        <button lay-event="add" class="layui-btn layui-btn-sm icon-btn">
-            <i class="layui-icon">&#xe654;</i>添加操作员
-        </button>&nbsp;
+    <button lay-event="add" class="layui-btn layui-btn-sm icon-btn">
+        <i class="layui-icon">&#xe654;</i>添加操作员
+    </button>&nbsp;
 </script>
 <!-- 表单弹窗 -->
 <script type="text/html" id="institutionUserEditDialog">
@@ -221,19 +221,19 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">姓名:</label>
                     <div class="layui-input-block">
-                        <input name="czyxm" placeholder="请输入账号" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                        <input name="czyxm" placeholder="请输入姓名" class="layui-input"
+                               lay-verType="tips" lay-verify="other" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">身份证号:</label>
                     <div class="layui-input-block">
-                        <input name="czysfzh" placeholder="请输入用户名" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                        <input name="czysfzh" placeholder="请输入身份证号" class="layui-input"
+                               lay-verType="tips" lay-verify="identity" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label class="layui-form-label layui-form-required">操作员角色:</label>
+                    <label class="layui-form-label layui-form-required">角色:</label>
                     <div class="layui-input-block">
                         <select name="czyjs" lay-verType="tips" lay-verify="required">
                             <option value="1">普通用户</option>
@@ -248,22 +248,22 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">移动电话:</label>
                     <div class="layui-input-block">
-                        <input name="czyyddh" placeholder="请输入账号" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                        <input name="czyyddh" placeholder="请输入移动电话" class="layui-input"
+                               lay-verType="tips" lay-verify="phone" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">固定电话:</label>
                     <div class="layui-input-block">
-                        <input name="czygddh" placeholder="请输入用户名" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                        <input name="czygddh" placeholder="请输入固定电话" class="layui-input"
+                               lay-verType="tips" lay-verify="gddh" required/>
                     </div>
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-form-label layui-form-required">邮箱:</label>
                     <div class="layui-input-block">
-                        <input name="czymail" placeholder="请输入用户名" class="layui-input"
-                               lay-verType="tips" lay-verify="required" required/>
+                        <input name="czymail" placeholder="请输入邮箱" class="layui-input"
+                               lay-verType="tips" lay-verify="email" required/>
                     </div>
                 </div>
             </div>
@@ -301,6 +301,33 @@
         var treeTB;
         var firstdwmc;
         var firstdwdm;
+        form.verify({
+            dwdm: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length!=18)
+                {
+                    return "单位代码必须为18位";
+                }
+            },
+            gddh: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length!=8)
+                {
+                    return "固定电话必须为8位";
+                }
+            },
+            other: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length>10)
+                {
+                    return "输入内容过长";
+                }
+            },
+            otherlong: function(value){ //自定义lay-verify的昵称，value：表单的值
+                if(value.length>25)
+                {
+                    return "输入内容过长";
+                }
+            },
+        });
+
         $.get('/institution_request/getUnit_Name_ID', function (res) {
             // console.log(res)
             firstdwmc = res[0].title;
@@ -397,21 +424,21 @@
                     form.on('submit(institutionEditSubmit)', function (data) {
                         data.field.znjgdm = insXmSel.getValue('valueStr');
                         var loadIndex = layer.load(2);
-                            $.ajax({
-                                url: '/institution_request/insertInstitution_fz',
-                                type: 'POST',
-                                async: false,
-                                // traditional: true,
-                                data: {"dwdm": dwdm4All, "znjgdm": data.field.znjgdm, "znjgfzmc": data.field.znjgfzmc
-                                    , "lxrxm": data.field.lxrxm, "lxryddh": data.field.lxryddh
-                                    , "lxrgddh": data.field.lxrgddh, "lxrmail": data.field.lxrmail},
-                                success: function (response) {
-                                    layer.close(dIndex);
-                                    layer.close(loadIndex)
-                                    layer.msg("添加成功", {icon: 1});
-                                    renderTree(dwdm4All)
-                                }
-                            })
+                        $.ajax({
+                            url: '/institution_request/insertInstitution_fz',
+                            type: 'POST',
+                            async: false,
+                            // traditional: true,
+                            data: {"dwdm": dwdm4All, "znjgdm": data.field.znjgdm, "znjgfzmc": data.field.znjgfzmc
+                                , "lxrxm": data.field.lxrxm, "lxryddh": data.field.lxryddh
+                                , "lxrgddh": data.field.lxrgddh, "lxrmail": data.field.lxrmail},
+                            success: function (response) {
+                                layer.close(dIndex);
+                                layer.close(loadIndex)
+                                layer.msg("添加成功", {icon: 1});
+                                renderTree(dwdm4All)
+                            }
+                        })
                         return false;
                     });
                     // 渲染下拉树
@@ -558,7 +585,11 @@
         });
         form.on('switch(operatorTbStateCk)', function (obj) {
             var loadIndex = layer.load(2);
+            // console.log(obj.value)
+            // console.log(document.getElementById("recordZt"+obj.value).value)
+            // console.log(document.getElementById("recordZt1000000"))
             var temp  = document.getElementById("recordZt"+obj.value).value == 1 ? 0 : 1
+            // console.log(temp)
             $.ajax({
                 url: '/operator_request/updateOperator',
                 type: 'POST',
@@ -568,7 +599,8 @@
                 success: function (response) {
                     layer.close(loadIndex)
                     layer.msg("修改成功", {icon: 1});
-                    // insTb.reload({page: {curr: insTb.config.page.curr}});
+                    // insTb.refresh()
+                    insTb.reload({page: {curr: insTb.config.page.curr}});
                 }
             })
         });

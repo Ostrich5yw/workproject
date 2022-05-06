@@ -15,8 +15,21 @@ public class MenuController {
     MenuService menuService;
 
     @ResponseBody
-    @RequestMapping(value = "/updateJson", method = RequestMethod.POST)
-    public void updateJson(String[] res, String name){
-        menuService.updateMenu(res, name);
+    @RequestMapping(value = "/getMenu", method = RequestMethod.GET)
+    public String getMenu(long znjgfzdm, int menubz){
+//        System.out.println(znjgfzdm + " " + menubz);
+        return menuService.getMenu(znjgfzdm, menubz);
     }
+
+    @ResponseBody
+    @RequestMapping(value = "/updateMenu", method = RequestMethod.POST)
+    public void updateMenu(String[] res, long znjgfzdm, int menubz){
+        menuService.updateMenu(res, znjgfzdm, menubz);
+    }
+
+//    @ResponseBody
+//    @RequestMapping(value = "/insertJson", method = RequestMethod.POST)
+//    public void insertMenu(String dwdm, long znjgdm, long znjgfzdm, int menubz, String[] res){
+//        menuService.insertMenu(dwdm, znjgdm, znjgfzdm, menubz, res);
+//    }
 }

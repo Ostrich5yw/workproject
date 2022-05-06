@@ -61,4 +61,8 @@ public class PageController {
     public String testPage(){
         return "iframe/page/test.html";
     }
+    @RequestMapping("/browse")
+    public String browsePage(){
+        return "iframe/page/Browse/Browse.html";
+    }
 }

@@ -3,6 +3,7 @@ package com.example.workproject.Service.ServiceImpl;
 import com.example.workproject.Service.InstitutionService;
 import com.example.workproject.entity.Mapper.InstitutionBranch_MybatisPlus_Mapper;
 import com.example.workproject.entity.Mapper.InstitutionMapper;
+import com.example.workproject.entity.Mapper.MenuMapper;
 import com.example.workproject.entity.PoJo.*;
 import com.example.workproject.util.mkDirUtil;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,9 @@ import java.util.*;
 public class InstitutionServiceImpl implements InstitutionService {
     @Resource
     InstitutionMapper institutionMapper;
+
+    @Resource
+    MenuMapper menuMapper;
 
     @Resource
     InstitutionBranch_MybatisPlus_Mapper institutionBranch_mybatisPlus_mapper;
@@ -51,6 +55,8 @@ public class InstitutionServiceImpl implements InstitutionService {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String createTime = simpleDateFormat.format(date);
+        SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String createTime2 = simpleDateFormat2.format(date);
         institutionBranchBean institutionBranchBean = new institutionBranchBean();
         institutionBranchBean.setCjrq(createTime);
         institutionBranchBean.setDwdm(dwdm);
@@ -61,11 +67,12 @@ public class InstitutionServiceImpl implements InstitutionService {
         institutionBranchBean.setZnjgdm(Integer.parseInt(znjgdm));
         institutionBranchBean.setZnjgfzmc(znjgfzmc);
         int Id = institutionMapper.getMaxIndexInstitution_fz() + 1;
+        institutionMapper.updateMaxIndexInstitution_fz();
         institutionBranchBean.setZnjgfzdm(Id);
         institutionBranch_mybatisPlus_mapper.insert(institutionBranchBean);
 //        institutionMapper.insertInstitution(Integer.parseInt(znjgdm), Id, 6);
 
-        String path = institutionMapper.getPath();
+//        String path = institutionMapper.getPath();
         String json1 = "{\n" +
                 "    \"msg\":\"\",\n" +
                 "    \"code\":0,\n" +
@@ -81,6 +88,7 @@ public class InstitutionServiceImpl implements InstitutionService {
                 "            \"updateTime\":\"" + createTime + "\",\n" +
                 "            \"authorityId\":1,\n" +
                 "            \"orderNumber\":1,\n" +
+                "            \"menuId\":\""+ createTime2 +"\",\n" +
                 "            \"authorityName\":\"公有根目录\"\n" +
                 "        }\n" +
                 "    ],\n" +
@@ -101,13 +109,17 @@ public class InstitutionServiceImpl implements InstitutionService {
                 "            \"updateTime\":\"" + createTime + "\",\n" +
                 "            \"authorityId\":1,\n" +
                 "            \"orderNumber\":1,\n" +
+                "            \"menuId\":\""+ createTime2 +"\",\n" +
                 "            \"authorityName\":\"私有根目录\"\n" +
                 "        }\n" +
                 "    ],\n" +
                 "    \"count\":1\n" +
                 "}";
-        mkDirUtil.mkJsonFile(json1, "publicMenu" + String.valueOf(Id), path);
-        mkDirUtil.mkJsonFile(json2, "privateMenu" + String.valueOf(Id), path);
+//        mkDirUtil.mkJsonFile(json1, "publicMenu" + String.valueOf(Id), path);
+//        mkDirUtil.mkJsonFile(json2, "privateMenu" + String.valueOf(Id), path);
+        menuMapper.insertMenu(dwdm, Integer.parseInt(znjgdm), Id, 1, json1);
+        menuMapper.insertMenu(dwdm, Integer.parseInt(znjgdm), Id, 0, json2);
+
     }
 
     @Override
@@ -115,7 +127,9 @@ public class InstitutionServiceImpl implements InstitutionService {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String cjrq = simpleDateFormat.format(date);
+//        System.out.println(institutionMapper.getMaxIndexInstitution());
         int Id = institutionMapper.getMaxIndexInstitution() + 1;
+        institutionMapper.updateMaxIndexInstitution();
         institutionMapper.insertInstitution(dwdm, Id, znjgmc, cjrq, lxrxm, lxryddh, lxrgddh, lxrmail);
     }
 }

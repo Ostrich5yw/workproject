@@ -2,9 +2,13 @@ package com.example.workproject;
 
 //import com.example.workproject.util.asposeUtil;
 //import org.junit.jupiter.api.Test;
+//import com.aspose.cells.License;
+//import com.example.workproject.util.asposeUtil;
 import com.example.workproject.util.mkDirUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.io.InputStream;
 //import ws.schild.jave.EncoderException;
 //import ws.schild.jave.info.MultimediaInfo;
 //import ws.schild.jave.progress.EncoderProgressListener;
@@ -15,7 +19,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class TestUtils {
     @Test
     public void test() {
-        mkDirUtil.mkJsonFile("wohao", "file", "D:\\mapdirconfig");
+//        asposeUtil.excel2pdf("D:\\测试.xlsx", "D:\\test.pdf");
+//        asposeUtil.doc2pdf("C:\\Users\\PanGPanG5\\Desktop\\1.txt", "C:\\Users\\PanGPanG5\\Desktop\\1.pdf");
+//        mkDirUtil.mkJsonFile("wohao", "file", "D:\\mapdirconfig");
     }
 }
 //    @Test

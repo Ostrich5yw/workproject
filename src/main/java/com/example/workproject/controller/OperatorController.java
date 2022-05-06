@@ -15,7 +15,7 @@ public class OperatorController {
 
     @ResponseBody
     @RequestMapping("/getOperatorByInstitutionDM")
-    public String getOperatorByInstitutionDM(int institutionId, int page, int limit) {
+    public String getOperatorByInstitutionDM(long institutionId, int page, int limit) {
 //        System.out.println(institutionId + " " + page+ " " +limit);
         return operatorService.getOperatorByInstitutionDM(institutionId, page, limit);
     }
